@@ -1,0 +1,6 @@
+{
+  "name": "Nusa Culinary",
+  "description": "Jelajahi kekayaan kuliner nusantara, bumbu warisan dan cita rasa autentik Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
