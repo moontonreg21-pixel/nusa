@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface JawaBaratDetailProps {
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
@@ -17,7 +16,7 @@ interface Dish {
   cookingSteps: string[];
 }
 
-export function JawaBaratDetail({ onBack, onAskAI, onViewRecipe }: JawaBaratDetailProps) {
+export function JawaBaratDetail({ onBack, onViewRecipe }: JawaBaratDetailProps) {
   const [selectedDish] = useState<Dish | null>(null);
 
   const setSelectedDish = (dish: Dish | null) => {

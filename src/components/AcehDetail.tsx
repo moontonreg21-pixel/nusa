@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface AcehDetailProps {
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
@@ -17,7 +16,7 @@ interface Dish {
   cookingSteps: string[];
 }
 
-export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
+export function AcehDetail({ onBack, onViewRecipe }: AcehDetailProps) {
   const [selectedDish] = useState<Dish | null>(null);
 
   const setSelectedDish = (dish: Dish | null) => {
@@ -40,7 +39,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
       name: "Mie Aceh Special",
       rating: "4.9",
       description: "Simfoni rempah dalam balutan mie kuning tebal basah dengan kuah kari kental berempah tajam khas tanah Rencong, disuguhkan berpasangan dengan kepiting, udang windu segar, atau irisan daging sapi empuk melumer di lidah dng emping melinjo renyah.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6zl4UZTFaQKjcuJiNotQfB5Id8oCpSdiZ3598oWv93XcOTSQJeAfK22k-N4ACi8LoCa31La3dzx034D7T9TPvbdrgTcHjvkiV9uxwZFrbYQ5PCpYsAGkzu-DRLZEGM0pYpxQLY5tf6SPdodSOGnfLqhzHTN_zogslm-y02H3P4pBqKXq234HYOi_WBxIJpA118TMhwvvcZcuLh8hGJW2dYZJRSBlxE0BRpu3WUBjae5fy_VQtUuvQxTPelGaESmYUirbcJMrA2zE",
+      imageUrl: "/regions/aceh-mie-aceh.jpg",
       history: "Mie Aceh merupakan cerminan akulturasi asimilasi budaya sejarah pelabuhan niaga strategis Selat Malaka di masa lampau. Kuah kari berempah tebal melambangkan pengaruh boga India, pemakaian mi kuning tebal dipengaruhi boga Tionghoa, serta lauk pauk kambing/sapi merepresentasikan pengaruh cita rasa Timur Tengah.",
       ingredients: [
         "400g Mi kuning basah tebal (mie kuning Aceh)",
@@ -64,7 +63,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
       name: "Sate Matang",
       rating: "4.8",
       description: "Sate daging sapi atau kambing berlemak muda empuk khas kota Matang Glumpang Dua, dimarinasi dng ketumbar dan serai, garing panggang arang kelapa, disuguhkan berpasangan dng saus kacang cokelat kental manis-gurih serta semangkuk soto kuah kaldu sapi hangat beraroma pekat kapulaga.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDzGQC5HyjXHx-9iEwqn1V32VEywiCUDF-4SMrwUnV1r-72x8ozFA-JEL77PweDKbmpbcy6MlJOaNn1_a6TFW0pV8uwZhLpiHL2cReRTBoIsxn2ayZFQHXl-gghc-unnT15K9DhhpsATIr6LvVGlGWvqEcKxl5KnS6c_1OuLZgPOzAyIPpOvEzf0SaLxt2wheDonqhuoYBk3zS3WPQ65xHvgnQK_NlHvUbdckQxhQocnyjToy9w210MAWYu-FI4FqmomDfYBUIT3Rg",
+      imageUrl: "/regions/aceh-sate-matang.jpeg",
       history: "Sate Matang legendaris ini mulai berkembang luas sejak dekade 1970-an di daerah Bireuen. Kombinasi sate kering harum disandingkan dng kuah kaldu soto berempah kental menggambarkan sifat ketangguhan tekad serta ketulusan hangat persaudaraan masyarakat Aceh menyambut kerabat jauh.",
       ingredients: [
         "500g Daging sapi has dalam atau kambing muda, potong dadu",
@@ -85,7 +84,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
       name: "Ayam Tangkap",
       rating: "4.8",
       description: "Ayam kampung muda gurih empuk yang dipotong kecil garing, dimarinasi bumbu ketumbar jinten kunyit matang, lalu digoreng garing renyah bersama tumpukan royal daun temuru (daun kari), helai daun pandan wangi, dan irisan cabai hijau pedas yang menghasilkan wewangian alam herba yang eksotis.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuA9LqxJN4acxL7yl_H5fanBFgrTero64A2bPxyyZYtF-QQI6CL_qnAngNQBrpX-rQsCUSNgHe3fiKN8YFG8K14s7w0_FKEDgbJ0YCFwldvobQ0JOEIow0ctWVaEC45GOe20nLpVwdUFDNTSM0sU1rP9eLErdVWHI1dBzUUZ1_DDTH_69k6nvWA5vgcMz-s_BhzBB_dQNtetvLQWioLiDvmaJRNsZL1YGej0L_M0s7OGXY6MKBBE1TwH4bjdouSeeyOD_bxakEUuml4",
+      imageUrl: "/regions/aceh-ayam-tangkap.jpg",
       history: "Ayam Tangkap menggambarkan kearifan suku Aceh pesisir yang rimbun dng tanaman herba penyembuh alami khasiat hutan. Daun temuru (salam koja) dipercaya melancarkan pembuluh darah dan membuang angin, berpadu dng daging ayam garing untuk bekal prajurit perang Sultan Samudra Pasai.",
       ingredients: [
         "1 ekor Ayam kampung muda empuk, bersihkan lalu potong kecil 4cm (bekakak)",
@@ -107,7 +106,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
       name: "Kuah Pliek U",
       rating: "4.7",
       description: "Sup sayur sayuran pegunungan yang sangat kaya rasa rempah, terbuat dari paduan buah melinjo, kacang panjang, labu air, buah rimbang dng kucuran santan dan Pliek U (ampas kelapa fermentasi sisa perasan minyak kelapa murni) yang mendatangkan aroma pekat gurih asam unik bergizi tanah rencong.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBABd1X1tVdyMjMnaKNiJvAmAt7VrEsF0yYajSzy7jtWhTcvEbhvKoLTZHXlj3Pu5fviQGByO38hEw-OQditv0gDgiiv0Azq7WPMUBTdlqbWS_L5So9T-trrTlKZOZoJLW91duUNvmP339Gqyz9ELi2g5-AbILxMymVqDFCJvQXe1QcHHlHOuTKfYsbOLcgQ4a3e_X4kuXq9Fn2ZRuSHT-cU-akHBetJtRtKpECbFaXZivvcymT1Ez_7Zhedub4c-HAxXDLjjNKcd4",
+      imageUrl: "/regions/aceh-kuah-pliek-u.jpg",
       history: "Kuah Pliek U merupakan mahakarya kuliner adat yang menjadi lambang kekompakan masyarakat agraris Aceh. Pengolahan kelapa fermentasi berhari-hari (Pliek U) adalah bentuk pelestarian pangan tanpa sisa, merepresentasikan rasa syukur luhur mendalam atas kerimbunan hasil bumi nusa Serambi Mekkah.",
       ingredients: [
         "100g Pliek U murni kualitas prima, ulek halus peras air hangat",
@@ -128,7 +127,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
       name: "Timphan",
       rating: "4.8",
       description: "Kudapan kue basah tradisional bertekstur legit kenyal, terbuat dari adonan tepung ketan putih dicampur labu tanah kuning lumat manis, diberi isian srikaya telur kelapa wangi pandan adat, dibungkus melingkar daun pisang muda berminyak lalu dikukus semerbak wangi.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDfw7yKU2KaTNOfyHmZi_CYxrDWazDk7b1mY5dVXLOWsUqnuu0FjiGn-hf9WFXzQBnPigqDTd09MGb5uH4hOrEeX8tCvf6ksz2ADzIA8SxPEtopJlpWQAebHOzLFAje72mz4D_ptLlkFTErmv_vGSRVwK4cdjxPY7s7IHTohrDVIyol8dX4zJAWZhS9gRgmHwGZmufAXLaEIaIKyf8dPiWRIz4A5sQFhE4LsEuquIz-kNzwMS5_J029oIbviV0bg0frBck4fW27C6s",
+      imageUrl: "/regions/aceh-timphan.jpg",
       history: "Kue Timphan menempati status adat wajib pelengkap kemeriahan hari raya suci Idul Fitri maupun Idul Adha di Aceh. Terdapat ungkapan cinta rakyat Aceh: 'Uroe goet Buluen goet Timphan ma peugoet' yang berarti Hari baik, Bulan baik, Timphan buatan ibu menyambut kedatangan sanak saudara seiman.",
       ingredients: [
         "250g Tepung ketan putih premium murni",
@@ -167,7 +166,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
         <img 
           alt="Baiturrahman Grand Mosque Banda Aceh" 
           className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKK_PKUNTLVn6j6XtEZKRva0mPxvq0hD4MQ_kgM1t4XH3Lvu2haqAkKhfRcYo3z4z-6XbTdz91Z2C7zOzT4sVXuY8ZLIG2f0pld-fRJxUk2LzLUQEcmafuy23yMYEt-mvnsAyEwFS5leaWrJDxt8YclC8pxGP3QHOQMXJlplslH_OmqzkI2hzO_ZURMFQ-RmiWhKIWMlCVHqvhBQQvKk27NIlIzBVc-lJeKbCRbIQ3UhxCwpfB18DLlULTS7L1M3DZgKzbn2jFxE8" 
+          src="/regions/aceh-baiturrahman-aerial.jpg" 
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-transparent to-transparent"></div>
@@ -195,7 +194,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
           <img 
             alt="The majestic structure of Baiturrahman Grand Mosque" 
             className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKK_PKUNTLVn6j6XtEZKRva0mPxvq0hD4MQ_kgM1t4XH3Lvu2haqAkKhfRcYo3z4z-6XbTdz91Z2C7zOzT4sVXuY8ZLIG2f0pld-fRJxUk2LzLUQEcmafuy23yMYEt-mvnsAyEwFS5leaWrJDxt8YclC8pxGP3QHOQMXJlplslH_OmqzkI2hzO_ZURMFQ-RmiWhKIWMlCVHqvhBQQvKk27NIlIzBVc-lJeKbCRbIQ3UhxCwpfB18DLlULTS7L1M3DZgKzbn2jFxE8"
+            src="/regions/aceh-baiturrahman-sunset.jpg"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#131311]/50 to-transparent"></div>
@@ -499,7 +498,7 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
                   <ul className="flex flex-col gap-2">
                     {selectedDish.ingredients.map((ing, i) => (
                       <li key={i} className="font-sans text-xs text-on-surface-variant flex items-start gap-2">
-                        <span className="text-primary text-[10px] mt-1 select-none">✦</span>
+                        <span className="text-primary text-[10px] mt-1 select-none">âœ¦</span>
                         <span>{ing}</span>
                       </li>
                     ))}
@@ -527,3 +526,4 @@ export function AcehDetail({ onBack, onAskAI, onViewRecipe }: AcehDetailProps) {
     </div>
   );
 }
+

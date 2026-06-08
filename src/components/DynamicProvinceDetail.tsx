@@ -5,11 +5,10 @@ import { EXTRA_PROVINCES_DETAILS, ExtraDish } from '../extraDishesData';
 interface DynamicProvinceDetailProps {
   provinceId: string;
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
-export function DynamicProvinceDetail({ provinceId, onBack, onAskAI, onViewRecipe }: DynamicProvinceDetailProps) {
+export function DynamicProvinceDetail({ provinceId, onBack, onViewRecipe }: DynamicProvinceDetailProps) {
   const detail = EXTRA_PROVINCES_DETAILS[provinceId];
   const [selectedDish] = useState<ExtraDish | null>(null);
 
@@ -27,7 +26,7 @@ export function DynamicProvinceDetail({ provinceId, onBack, onAskAI, onViewRecip
       });
     }
   };
-  const [activeTab, setActiveTab] = useState<'recipe' | 'philosophy' | 'ai'>('recipe');
+  const [activeTab, setActiveTab] = useState<'recipe' | 'philosophy'>('recipe');
 
   if (!detail) {
     return (
@@ -42,27 +41,6 @@ export function DynamicProvinceDetail({ provinceId, onBack, onAskAI, onViewRecip
       </div>
     );
   }
-
-  const handleAskAIQuery = (dish: ExtraDish, queryType: 'veg' | 'spice' | 'history' | 'custom') => {
-    let query = '';
-    switch (queryType) {
-      case 'veg':
-        query = `Halo Chef, saya ingin membuat versi vegetarian (tanpa daging/ikan) dari hidangan tradisional "${dish.name}" khas ${detail.title}. Hidangan pengganti apa yang paling cocok agar bumbu rempah autentiknya tetap menonjol?`;
-        break;
-      case 'spice':
-        query = `Halo Chef, tolong jelaskan detail rahasia bumbu rempah "${dish.name}" dari ${detail.title}. Bagaimana teknik menumis atau membakar rempah tersebut agar menghasilkan aroma kalio/karamelisasi pusaka yang sempurna?`;
-        break;
-      case 'history':
-        query = `Tolong jelaskan lebih dalam nilai sejarah, asimilasi budaya, dan keterkaitan sosiologis masyarakat setempat terhadap terciptanya kuliner luar biasa buatan rumah "${dish.name}".`;
-        break;
-      case 'custom':
-      default:
-        query = `Bagaimana tips koki profesional tingkat dunia untuk menghasilkan hidangan "${dish.name}" khas ${detail.title} dengan tekstur daging yang ekstra lembut dan bumbu karamel yang meresap sempurna?`;
-        break;
-    }
-    setSelectedDish(null); // Close modal
-    onAskAI(query);
-  };
 
   return (
     <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
@@ -183,7 +161,7 @@ export function DynamicProvinceDetail({ provinceId, onBack, onAskAI, onViewRecip
             Masakan Pusaka {detail.title.split(': ')[1] || detail.title}
           </h3>
           <p className="font-sans text-xs md:text-sm text-on-surface-variant leading-relaxed mt-2">
-            Klik hidangan di bawah ini untuk melihat detail resep autentik, takaran bumbu rempah pusaka, nilai historisnya secara langsung, serta panduan bantuan AI koki.
+            Klik hidangan di bawah ini untuk melihat detail resep autentik, takaran bumbu rempah pusaka, dan nilai historisnya secara langsung.
           </p>
         </div>
 

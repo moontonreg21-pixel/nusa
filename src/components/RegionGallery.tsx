@@ -46,7 +46,7 @@ export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery }:
         name: 'Bali',
         title: 'Bali: Pulau Dewata',
         desc: 'Bukan sekadar destinasi, melainkan simfoni rasa kuliner agung. Dari gurihnya Babi Guling hingga harum rempah base genep dan kelapa parut Sate Lilit gurih nan legendaris.',
-        bannerUrl: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80',
+        bannerUrl: '/regions/bali.jpg',
         actionLabel: 'JELAJAHI BALI'
       },
       {
@@ -54,7 +54,7 @@ export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery }:
         name: 'Sumatera Barat',
         title: 'Sumatera Barat: Bumi Minangkabau',
         desc: 'Rumah bagi rendang pusaka yang diakui dunia. Racikan bumbu rempah kelapa karamel hitam, berpadu keagungan budaya adat Minang dalam kesabaran waktu membakar rasa emas.',
-        bannerUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBoOqtKJkISKamFTHGPJX0AV13gwXX1jd8gVDVVZdNhqHZOmOUB-QdvtW1l2IvxaB1eVeFqj5CeFmLNU9cDNoNkR6sSD-PTEE4KteXpPIGB5d1-zh9hdJnqkvIh8a3vEYeHzj09ZAW_k9kv4fNsWJpjJCl91h1VkALYE4NO1BdNrINikW6_oXNKb4QU2DGNDPf12PXXRuXa5ESIcAF2JAT496PHYijUjM9s8_w6_Noiy3S1RoAwjmohKssI-Qe8nAHrMUfb9OVCrqA',
+        bannerUrl: '/regions/sumatera-barat.jpg',
         actionLabel: 'JELAJAHI SUMBAR'
       },
       {
@@ -62,7 +62,7 @@ export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery }:
         name: 'Yogyakarta',
         title: 'Yogyakarta: Istana Budaya',
         desc: 'Manis gurih Gudeg Jogja bercerita tentang kesabaran leluhur dalam harmoni rasa. Olahan tulus nangka muda, santan tua kelapa gurih, serta manis madu gula aren Mataram.',
-        bannerUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCsjcdO9IaHBaPBKLOOgcORvNF1mr2WwbIlGg4aPON-xxkFzzKMcRQT95U9zChELszomMV5Su4IQeCWM1B8O4c7OmBHMG0pXdREhW0Z35wyMieDsOjDrIX5LWHboyMWW2OAuM7hYXAM-KjdweJ6Rik30eRDWu4L7qrZ2lpAJA2HKAataFhzr1-kk3wyQXdpvzKjwVBUiOBaHFB-ugikqTgyrOj9ng1E9_N7KvURXiyS6SBG2iywDDUsjjOVj1ca6G-U1Z5ld6NRP80',
+        bannerUrl: '/regions/yogyakarta.jpg',
         actionLabel: 'JELAJAHI JOGJA'
       },
       {
@@ -70,7 +70,7 @@ export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery }:
         name: 'Papua',
         title: 'Papua: Bumi Cendrawasih',
         desc: 'Eksotisme rasa di timur nusantara terpancar dalam sepiring Papeda Kuah Kuning segar. Kelembutan sagu berpadu kuah rempah murni aromatik, melambangkan kemurnian alam rimba luas.',
-        bannerUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDQwLv1J3l2tnMuOvnXcntYTv6tVoQq001M1EHEEXfvv5Nx46YgZOd1EqMS4e9J4YGyNzXkq00iaNXK5wPPjri25yMkhwxjU2XELmnS9OaeOTQMUTJ3-qDQezInTRzmzDqiIW2TlffCcTMDGi95CO4dK5XQXooorBr8PRIxsPQBWRfHOwQeuD7KvJGCrv5qJjuNzqnQbcV-q2Wnn1QlQuPpB-J0wmU1LFZqfjL_3_pCdERxiMXCSvGwlw07smRzX3FLnJ1fpmwhVjo',
+        bannerUrl: '/regions/papua.jpg',
         actionLabel: 'JELAJAHI PAPUA'
       }
     ];

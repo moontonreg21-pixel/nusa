@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface SumateraBaratDetailProps {
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
@@ -17,7 +16,7 @@ interface Dish {
   cookingSteps: string[];
 }
 
-export function SumateraBaratDetail({ onBack, onAskAI, onViewRecipe }: SumateraBaratDetailProps) {
+export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetailProps) {
   const [selectedDish] = useState<Dish | null>(null);
 
   const setSelectedDish = (dish: Dish | null) => {

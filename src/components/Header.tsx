@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface HeaderProps {
-  onNavClick: (view: 'home' | 'gallery' | 'ai-chat' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail') => void;
+  onNavClick: (view: 'home' | 'gallery' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail') => void;
   activeView: string;
 }
 
@@ -124,4 +124,3 @@ export function Header({ onNavClick, activeView }: HeaderProps) {
     </header>
   );
 }
-

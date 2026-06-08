@@ -71,10 +71,10 @@ export function AboutUs() {
               <span className="material-symbols-outlined font-semibold">soup_kitchen</span>
             </div>
             <h4 className="font-serif text-lg text-primary font-semibold">
-              Kecerdasan Memasak
+              Panduan Memasak
             </h4>
             <p className="font-sans text-xs text-on-surface-variant/90 leading-relaxed text-justify">
-              Menerapkan teknologi pemrosesan bahasa untuk merekayasa asisten kuliner AI berpengetahuan koki tingkat tinggi, siap membimbing Anda mengolah rendang, melilit sate, hingga menggulung papeda secara langsung.
+              Menyusun panduan memasak yang jelas, runtut, dan mudah diikuti agar setiap pengunjung dapat mengolah rendang, melilit sate, hingga menggulung papeda dengan percaya diri di dapur.
             </p>
           </div>
 

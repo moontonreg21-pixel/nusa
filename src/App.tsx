@@ -3,7 +3,6 @@ import { Header } from './components/Header';
 import { HomeHero } from './components/HomeHero';
 import { RegionGallery } from './components/RegionGallery';
 import { RegionDetailModal } from './components/RegionDetailModal';
-import { AICulinaryExpert } from './components/AICulinaryExpert';
 import { AboutUs } from './components/AboutUs';
 import { YogyakartaDetail } from './components/YogyakartaDetail';
 import { BaliDetail } from './components/BaliDetail';
@@ -19,16 +18,15 @@ import { NusaTenggaraTimurDetail } from './components/NusaTenggaraTimurDetail';
 import { ProvinceData } from './types';
 import { RecipeDetailView, RecipeDetail } from './components/RecipeDetailView';
 import { motion, AnimatePresence } from 'motion/react';
+import { YouTubeMusicPlayer } from './components/YouTubeMusicPlayer';
 
 export default function App() {
-  const [activeView, setActiveView] = useState<'home' | 'gallery' | 'ai-chat' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail'>('home');
+  const [activeView, setActiveView] = useState<'home' | 'gallery' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail'>('home');
   const [selectedProvince, setSelectedProvince] = useState<ProvinceData | null>(null);
   const [selectedRecipe, setSelectedRecipe] = useState<RecipeDetail | null>(null);
   const [prevViewForRecipe, setPrevViewForRecipe] = useState<string>('gallery');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  
-  // To handle initial query pass for the AI chat panel
-  const [passInitialQuery, setPassInitialQuery] = useState<string>('');
+  const [musicStarted, setMusicStarted] = useState<boolean>(false);
 
   // Clear any existing light theme class & cache
   useEffect(() => {
@@ -37,7 +35,7 @@ export default function App() {
     localStorage.removeItem('nusa-theme');
   }, []);
 
-  const handleNavTransition = (view: 'home' | 'gallery' | 'ai-chat' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail') => {
+  const handleNavTransition = (view: 'home' | 'gallery' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail') => {
     setActiveView(view);
     // Auto-scroll to top on view change
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -77,15 +75,30 @@ export default function App() {
     handleNavTransition('recipe-detail');
   };
 
-  const handleAskAIChef = (query: string) => {
-    setSelectedProvince(null); // Close modal
-    setPassInitialQuery(query);
-    setActiveView('ai-chat');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const musicEnabledViews = [
+    'gallery',
+    'about',
+    'yogyakarta',
+    'bali',
+    'kaltim',
+    'papua',
+    'jabar',
+    'aceh',
+    'sumbar',
+    'sulsel',
+    'maluku',
+    'ntt',
+    'province-detail',
+    'recipe-detail'
+  ];
+  const shouldPlayMusic = musicStarted && musicEnabledViews.includes(activeView);
 
   return (
     <div className="min-h-screen bg-surface text-on-surface font-sans flex flex-col justify-between selection:bg-primary selection:text-on-primary">
+      {shouldPlayMusic && (
+        <YouTubeMusicPlayer />
+      )}
+
       {/* 1. Header */}
       {activeView !== 'home' && (
         <Header 
@@ -108,6 +121,7 @@ export default function App() {
               {/* Home Hero visuals */}
               <HomeHero 
                 onStartExploration={() => {
+                  setMusicStarted(true);
                   handleNavTransition('gallery');
                 }} 
               />
@@ -126,21 +140,6 @@ export default function App() {
                 onSelectProvince={handleSelectProvince} 
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
-              />
-            </motion.div>
-          )}
-
-          {activeView === 'ai-chat' && (
-            <motion.div
-              key="ai-chat"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.4 }}
-            >
-              <AICulinaryExpert 
-                initialQuery={passInitialQuery} 
-                onClearInitialQuery={() => setPassInitialQuery('')}
               />
             </motion.div>
           )}
@@ -167,7 +166,6 @@ export default function App() {
             >
               <YogyakartaDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -183,7 +181,6 @@ export default function App() {
             >
               <BaliDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -199,7 +196,6 @@ export default function App() {
             >
               <KalimantanTimurDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -215,7 +211,6 @@ export default function App() {
             >
               <PapuaDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -231,7 +226,6 @@ export default function App() {
             >
               <JawaBaratDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -247,7 +241,6 @@ export default function App() {
             >
               <AcehDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -263,7 +256,6 @@ export default function App() {
             >
               <SumateraBaratDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -279,7 +271,6 @@ export default function App() {
             >
               <SulawesiSelatanDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -295,7 +286,6 @@ export default function App() {
             >
               <MalukuDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -311,7 +301,6 @@ export default function App() {
             >
               <NusaTenggaraTimurDetail 
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -328,7 +317,6 @@ export default function App() {
               <DynamicProvinceDetail 
                 provinceId={selectedProvince.id}
                 onBack={() => handleNavTransition('gallery')}
-                onAskAI={handleAskAIChef}
                 onViewRecipe={handleViewRecipe}
               />
             </motion.div>
@@ -344,6 +332,7 @@ export default function App() {
             >
               <RecipeDetailView 
                 recipe={selectedRecipe}
+                onVideoPlay={() => setMusicStarted(false)}
                 onBack={() => {
                   if (prevViewForRecipe === 'recipe-detail' || !prevViewForRecipe) {
                     handleNavTransition('gallery');
@@ -351,7 +340,6 @@ export default function App() {
                     handleNavTransition(prevViewForRecipe as any);
                   }
                 }}
-                onAskAI={handleAskAIChef}
               />
             </motion.div>
           )}
@@ -362,52 +350,10 @@ export default function App() {
       <RegionDetailModal 
         province={selectedProvince} 
         onClose={() => setSelectedProvince(null)} 
-        onAskAI={handleAskAIChef}
         onViewRecipe={handleViewRecipe}
       />
 
-      {/* 4. Floating AI Chef Chat Bubble */}
-      {activeView !== 'ai-chat' && activeView !== 'home' && (
-        <motion.button
-          id="floating-chat-bubble"
-          onClick={() => handleNavTransition('ai-chat')}
-          initial={{ scale: 0, opacity: 0, y: 30 }}
-          animate={{ scale: 1, opacity: 1, y: 0 }}
-          exit={{ scale: 0, opacity: 0, y: 30 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="fixed bottom-6 right-6 z-40 flex items-center justify-center w-12 h-12 rounded-full bg-primary text-on-primary shadow-[0_8px_24px_rgba(233,193,118,0.25)] hover:shadow-[0_12px_32px_rgba(233,193,118,0.40)] border border-primary/20 cursor-pointer group"
-          title="Tanya AI Koki"
-        >
-          {/* Active AI online blinking indicator */}
-          <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-surface"></span>
-          </span>
-          
-          {/* Crossed spoon and fork icon SVG */}
-          <svg 
-            className="w-5.5 h-5.5 text-on-primary group-hover:rotate-12 transition-transform duration-300" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {/* Spoon */}
-            <path d="M17 4 C15.5 4 14.5 5.5 14.5 7 C14.5 8.5 15.5 9.5 17 9.5 C18.5 9.5 19.5 8.5 19.5 7 C19.5 5.5 18.5 4 17 4 Z" fill="currentColor" />
-            <path d="M15.5 8.5 L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            {/* Fork */}
-            <path d="M7 6 L7 10 M5 6 L5 10 M9 6 L9 10 M5 10 C5 11.5 6 12.5 7.5 12.5 C9 12.5 10 11.5 10 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            <path d="M7.5 12 L17 19.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          </svg>
-
-          {/* Hover helper text tooltip */}
-          <span className="absolute right-14 scale-0 group-hover:scale-100 origin-right transition-all duration-200 bg-surface-container border border-primary/20 text-on-surface-variant text-[10px] tracking-wider uppercase font-semibold px-2.5 py-1.5 rounded-md shadow-lg whitespace-nowrap select-none pointer-events-none">
-            Tanya AI Koki
-          </span>
-        </motion.button>
-      )}
-
-      {/* 5. Footer */}
+      {/* 4. Footer */}
       {activeView !== 'home' && (
         <footer className="bg-surface border-t border-primary/10 mt-20">
           <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 flex flex-col md:flex-row justify-between items-center gap-8">

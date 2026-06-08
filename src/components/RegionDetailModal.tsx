@@ -5,11 +5,10 @@ import { motion, AnimatePresence } from 'motion/react';
 interface RegionDetailModalProps {
   province: ProvinceData | null;
   onClose: () => void;
-  onAskAI: (initialQuery: string) => void;
   onViewRecipe: (recipe: any) => void;
 }
 
-export function RegionDetailModal({ province, onClose, onAskAI, onViewRecipe }: RegionDetailModalProps) {
+export function RegionDetailModal({ province, onClose, onViewRecipe }: RegionDetailModalProps) {
   if (!province) return null;
 
   const [activeTab, setActiveTab] = useState<'recipe' | 'philosophy'>('recipe');
@@ -20,26 +19,6 @@ export function RegionDetailModal({ province, onClose, onAskAI, onViewRecipe }: 
       ...prev,
       [idx]: !prev[idx]
     }));
-  };
-
-  const handleAskAIQuery = (queryType: 'veg' | 'spice' | 'history' | 'custom') => {
-    let query = '';
-    switch (queryType) {
-      case 'veg':
-        query = `Halo Chef, saya ingin membuat versi vegetarian (tanpa daging) dari hidangan tradisional ${province.dishName} khas ${province.name}. Bahan pengganti apa saja yang paling cocok agar bumbu rempah autentiknya tetap menonjol?`;
-        break;
-      case 'spice':
-        query = `Halo Chef, tolong jelaskan rincian rahasia bumbu rempah "${province.dishName}" dari ${province.name}. Bagaimana teknik menumis atau membakar rempah tersebut agar menghasilkan aroma kalio/karamelisasi pusaka yang sempurna?`;
-        break;
-      case 'history':
-        query = `Tolong jelaskan lebih dalam nilai sejarah sejarah, asimilasi budaya, dan keterkaitan sosiologis masyarakat ${province.name} terhadap terciptanya kuliner luar biasa buatan rumah "${province.dishName}".`;
-        break;
-      case 'custom':
-      default:
-        query = `Bagaimana tips koki profesional tingkat dunia untuk menghasilkan hidangan "${province.dishName}" khas ${province.name} dengan tekstur daging yang ekstra lembut dan bumbu karamel yang meresap sempurna?`;
-        break;
-    }
-    onAskAI(query);
   };
 
   return (

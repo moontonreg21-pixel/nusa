@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface PapuaDetailProps {
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
@@ -18,7 +17,7 @@ interface Dish {
   cookingSteps: string[];
 }
 
-export function PapuaDetail({ onBack, onAskAI, onViewRecipe }: PapuaDetailProps) {
+export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
   const [selectedDish] = useState<Dish | null>(null);
   const [activeTab, setActiveTab] = useState<'recipe' | 'philosophy'>('recipe');
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
@@ -195,18 +194,6 @@ export function PapuaDetail({ onBack, onAskAI, onViewRecipe }: PapuaDetailProps)
     }
   ];
 
-  const handleAskAIChef = (dish: Dish, topic: string) => {
-    let query = "";
-    if (topic === "veg") {
-      query = `Halo Chef, bagaimana cara menyiasati hidangan tradisional khas Papua "${dish.name}" agar ramah bagi seorang vegetarian tanpa menghilangkan aroma dan esensi laut atau rempah autentiknya?`;
-    } else if (topic === "spices") {
-      query = `Halo Chef, tolong jelaskan rincian rahasia bumbu bumbu pusaka "${dish.name}" khas Papua. Bagaimana teknik mengolah bahan sagu dan ikan segar agar rasanya bisa begitu merasuk ke dalam serat terdalam?`;
-    } else {
-      query = `Bagaimana rahasia penyajian terbaik hidangan "${dish.name}" khas Papua agar cita rasanya sama indahnya seperti masakan rumahan autentik di perkampungan raja ampat?`;
-    }
-    onAskAI(query);
-  };
-
   return (
     <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back navigation button */}
@@ -359,7 +346,7 @@ export function PapuaDetail({ onBack, onAskAI, onViewRecipe }: PapuaDetailProps)
             Masakan Pusaka Khas Papua
           </h3>
           <p className="font-sans text-xs md:text-sm text-on-surface-variant leading-relaxed mt-2">
-            Klik pada salah satu hidangan di bawah ini untuk melihat takaran bumbu autentik, langkah pembuatan tradisional, cerita sejarah adat, serta panduan bantuan AI koki kami.
+            Klik pada salah satu hidangan di bawah ini untuk melihat takaran bumbu autentik, langkah pembuatan tradisional, dan cerita sejarah adat.
           </p>
         </div>
 

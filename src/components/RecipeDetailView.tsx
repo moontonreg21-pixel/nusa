@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 
 export interface RecipeDetail {
@@ -18,12 +18,17 @@ export interface RecipeDetail {
 interface RecipeDetailViewProps {
   recipe: RecipeDetail;
   onBack: () => void;
-  onAskAI: (query: string) => void;
+  onVideoPlay?: () => void;
 }
 
-export function RecipeDetailView({ recipe, onBack, onAskAI }: RecipeDetailViewProps) {
+export function RecipeDetailView({ recipe, onBack, onVideoPlay }: RecipeDetailViewProps) {
   const [checkedIngredients, setCheckedIngredients] = useState<Record<number, boolean>>({});
   const [activeStep, setActiveStep] = useState<number | null>(null);
+  const videoIframeRef = useRef<HTMLIFrameElement | null>(null);
+  const showMieAcehVideo = recipe.name.toLowerCase().includes('mie aceh');
+  const youtubePlayerUrl = `https://www.youtube.com/embed/OGtn3u23Yjw?enablejsapi=1&playsinline=1&rel=0&modestbranding=1${
+    typeof window !== 'undefined' ? `&origin=${encodeURIComponent(window.location.origin)}` : ''
+  }`;
 
   const toggleIngredient = (idx: number) => {
     setCheckedIngredients(prev => ({
@@ -32,10 +37,43 @@ export function RecipeDetailView({ recipe, onBack, onAskAI }: RecipeDetailViewPr
     }));
   };
 
-  const speakWithAIChef = () => {
-    const query = `Halo Chef, tolong ajari saya panduan langkah demi langkah yang interaktif dan komprehensif untuk memasak hidangan ${recipe.name} khas ${recipe.provinceName}. Berikan tips-tips eksklusif koki bintang lima agar masakan saya beraroma autentik dan bumbunya benar-benar meresap!`;
-    onAskAI(query);
-  };
+  useEffect(() => {
+    if (!showMieAcehVideo) return;
+
+    const registerYouTubeStateListener = () => {
+      videoIframeRef.current?.contentWindow?.postMessage(
+        JSON.stringify({ event: 'listening', id: 'mie-aceh-youtube-player' }),
+        'https://www.youtube.com'
+      );
+      videoIframeRef.current?.contentWindow?.postMessage(
+        JSON.stringify({ event: 'command', func: 'addEventListener', args: ['onStateChange'] }),
+        'https://www.youtube.com'
+      );
+    };
+
+    const handleYouTubeMessage = (event: MessageEvent) => {
+      if (event.origin !== 'https://www.youtube.com') return;
+
+      try {
+        const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+        if (data?.event === 'onStateChange' && data?.info === 1) {
+          onVideoPlay?.();
+        }
+      } catch {
+        // Ignore unrelated postMessage payloads.
+      }
+    };
+
+    window.addEventListener('message', handleYouTubeMessage);
+    const registerTimer = window.setInterval(registerYouTubeStateListener, 1200);
+    const initialTimer = window.setTimeout(registerYouTubeStateListener, 500);
+
+    return () => {
+      window.removeEventListener('message', handleYouTubeMessage);
+      window.clearInterval(registerTimer);
+      window.clearTimeout(initialTimer);
+    };
+  }, [showMieAcehVideo, onVideoPlay]);
 
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-8 py-8 animate-fade-in text-on-surface">
@@ -60,27 +98,54 @@ export function RecipeDetailView({ recipe, onBack, onAskAI }: RecipeDetailViewPr
         {/* Left Column (5 Cols) - Visual Hero & Ingredients */}
         <div className="lg:col-span-5 flex flex-col gap-8">
           
-          {/* Main Hero Image Panel */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-primary/20 bg-surface-container-low shadow-[0_15px_35px_rgba(0,0,0,0.5)] group">
-            <img 
-              src={recipe.imageUrl} 
-              alt={recipe.name} 
-              className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-surface-lowest via-transparent to-transparent"></div>
-            
-            {recipe.rating && (
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1.5 font-sans text-[10px] tracking-wider font-black rounded-full flex items-center gap-1 shadow-2xl">
-                <span className="material-symbols-outlined text-[11px] leading-none text-on-primary font-bold" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span>{recipe.rating} RATING</span>
-              </div>
-            )}
+          {/* Main Hero Media Panel */}
+          <div
+            className={`relative rounded-2xl overflow-hidden border border-primary/20 bg-surface-container-low shadow-[0_15px_35px_rgba(0,0,0,0.5)] group ${showMieAcehVideo ? 'aspect-video' : 'aspect-[4/3]'}`}
+            onPointerDownCapture={showMieAcehVideo ? onVideoPlay : undefined}
+            onFocusCapture={showMieAcehVideo ? onVideoPlay : undefined}
+          >
+            {showMieAcehVideo ? (
+              <>
+                <iframe
+                  ref={videoIframeRef}
+                  id="mie-aceh-youtube-player"
+                  className="absolute inset-0 h-full w-full"
+                  src={youtubePlayerUrl}
+                  title="Tutorial Mie Aceh Special"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+                {recipe.rating && (
+                  <div className="pointer-events-none absolute top-4 right-4 bg-primary text-on-primary px-3 py-1.5 font-sans text-[10px] tracking-wider font-black rounded-full flex items-center gap-1 shadow-2xl">
+                    <span className="material-symbols-outlined text-[11px] leading-none text-on-primary font-bold" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                    <span>{recipe.rating} RATING</span>
+                  </div>
+                )}
+              </>
+            ) : (
+              <>
+                <img 
+                  src={recipe.imageUrl} 
+                  alt={recipe.name} 
+                  className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface-lowest via-transparent to-transparent"></div>
+                
+                {recipe.rating && (
+                  <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1.5 font-sans text-[10px] tracking-wider font-black rounded-full flex items-center gap-1 shadow-2xl">
+                    <span className="material-symbols-outlined text-[11px] leading-none text-on-primary font-bold" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                    <span>{recipe.rating} RATING</span>
+                  </div>
+                )}
 
-            <div className="absolute bottom-4 left-6 z-10">
-              <span className="font-sans text-[9px] tracking-[0.25em] font-black text-primary uppercase">CITA RASA LEGENDARIS</span>
-              <h2 className="font-serif text-2xl font-bold text-on-surface mt-1">{recipe.name}</h2>
-            </div>
+                <div className="absolute bottom-4 left-6 z-10">
+                  <span className="font-sans text-[9px] tracking-[0.25em] font-black text-primary uppercase">CITA RASA LEGENDARIS</span>
+                  <h2 className="font-serif text-2xl font-bold text-on-surface mt-1">{recipe.name}</h2>
+                </div>
+              </>
+            )}
           </div>
 
           {/* Quick Stats Panel */}
@@ -209,28 +274,6 @@ export function RecipeDetailView({ recipe, onBack, onAskAI }: RecipeDetailViewPr
                 </div>
               );
             })}
-          </div>
-
-          {/* Live Interactive Assistant Call Action Block */}
-          <div className="mt-8 p-6 md:p-8 bg-surface-container-low/50 border border-primary/25 rounded-2xl flex flex-col items-center gap-5 text-center shadow-md">
-            <span className="material-symbols-outlined text-primary text-3xl font-semibold animate-pulse" style={{ fontVariationSettings: "'FILL' 1" }}>
-              temp_preferences_custom
-            </span>
-            <div className="max-w-md">
-              <h5 className="font-serif text-lg text-on-surface font-bold">
-                Butuh Bimbingan Interaktif Langsung?
-              </h5>
-              <p className="font-sans text-xs text-on-surface-variant/90 leading-relaxed mt-2">
-                Jangan khawatir tentang takaran bumbu atau suhu api! Koki asisten AI handal kami siap menuntun Anda memasak hidangan <strong>{recipe.name}</strong> ini secara interaktif di dapur tiap detik Anda melangkah.
-              </p>
-            </div>
-            
-            <button 
-              onClick={speakWithAIChef}
-              className="cursor-pointer w-full bg-primary text-on-primary font-sans text-xs tracking-widest font-extrabold py-3.5 rounded-lg active:scale-95 transition-all shadow-[0_4px_15px_rgba(233,193,118,0.25)] hover:shadow-[0_8px_25px_rgba(233,193,118,0.4)] text-center uppercase"
-            >
-              Pandu Saya dengan AI Koki
-            </button>
           </div>
 
         </div>

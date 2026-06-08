@@ -7,7 +7,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "SUMATERA",
     description: "Kekayaan rempah tanah Rencong dalam setiap suapan Mie Aceh.",
     dishName: "Mie Aceh",
-    imageUrl: "https://www.indonesia.travel/contentassets/0f6a0d685f7d4a9bbe0d95931f919814/bandaaceh.jpg",
+    imageUrl: "/regions/aceh-baiturrahman-aerial.jpg",
     ingredients: [
       "400g mi kuning tebal basah",
       "150g daging sapi, potong dadu",
@@ -73,7 +73,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "JAWA",
     description: "Manisnya harmoni Gudeg di kota yang sarat tradisi.",
     dishName: "Gudeg Jogja",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCsjcdO9IaHBaPBKLOOgcORvNF1mr2WwbIlGg4aPON-xxkFzzKMcRQT95U9zChELszomMV5Su4IQeCWM1B8O4c7OmBHMG0pXdREhW0Z35wyMieDsOjDrIX5LWHboyMWW2OAuM7hYXAM-KjdweJ6Rik30eRDWu4L7qrZ2lpAJA2HKAataFhzr1-kk3wyQXdpvzKjwVBUiOBaHFB-ugikqTgyrOj9ng1E9_N7KvURXiyS6SBG2iywDDUsjjOVj1ca6G-U1Z5ld6NRP80",
+    imageUrl: "/regions/yogyakarta.jpg",
     ingredients: [
       "1kg nangka muda (tewel), potong kotak sedang",
       "5 butir telur bebek, rebus matang lalu kupas kulit",
@@ -105,7 +105,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "SULAWESI",
     description: "Gurihnya Coto Makassar, warisan pelaut tangguh.",
     dishName: "Coto Makassar",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCwUGWF6srLGSPe5Ge_OSwMbrKYOM0ipnR_V1qOqaINK62H-3uf_q9kZ8tGMDdIQAMIv59zoJBIuBzN4yxmz0s-_y3kS4LJ2eLxqMoLVbv3R6a8XBB7I8dRuIvHOhUZBPrMBlox5ikDWUcv2sRs4rOPUBdHU7406ZgLLa4ZNHI7xEuF192GeurVG_xMzH3tHDEcVeb6vKy5ApJZ7_JlXOGm4oj-6Ubky-YHviN8qVWQRnT0NZUj1vrRnR_uHNXUa3rk8YuwpDl1TRk",
+    imageUrl: "/regions/sulawesi-selatan.jpg",
     ingredients: [
       "500g daging sapi sandung lamur",
       "500g jeroan sapi (babat/paru/jantung) rebus matang",
@@ -137,7 +137,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "JAWA",
     description: "Kesegaran bumi Parahyangan dalam balutan Sate Maranggi.",
     dishName: "Sate Maranggi",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuA_QOSNIuVq7v7vYLltfiFNT1VJVRshVhdXxfO6gnHOeLfNd1vtJ-jvc8Jpgx_bjWY5W1WPXlFPYpUnA9uD7f9zN609kOQ-TzW9QTsMq6_zC76tg-FugpBqF1Wx5_eKY6NXbbZPRrvWLIzwe82h8spqvFp_K4tY0Ow7_GclW3LQy0xOu6yuOVg0KHrp3IbDWdPsE2Wl1IvwWrvwJE0lnK-N73fLFKGrEi7sY2A2KtKzcOTv_RtGpQlK97KziHHo9DeBqoKHtb87Rig",
+    imageUrl: "/regions/jawa-barat.jpg",
     ingredients: [
       "600g daging sapi bagian has dalam, potong dadu 2cm",
       "100g lemak sapi muda, potong kecil-kecil",
@@ -167,7 +167,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "PAPUA",
     description: "Eksotisme Papeda dan Ikan Kuah Kuning dari timur fajar.",
     dishName: "Papeda & Ikan Kuah Kuning",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDQwLv1J3l2tnMuOvnXcntYTv6tVoQq001M1EHEEXfvv5Nx46YgZOd1EqMS4e9J4YGyNzXkq00iaNXK5wPPjri25yMkhwxjU2XELmnS9OaeOTQMUTJ3-qDQezInTRzmzDqiIW2TlffCcTMDGi95CO4dK5XQXooorBr8PRIxsPQBWRfHOwQeuD7KvJGCrv5qJjuNzqnQbcV-q2Wnn1QlQuPpB-J0wmU1LFZqfjL_3_pCdERxiMXCSvGwlw07smRzX3FLnJ1fpmwhVjo",
+    imageUrl: "/regions/papua.jpg",
     ingredients: [
       "250g tepung sagu murni kualitas premium",
       "1000ml air mendidih murni",
@@ -199,7 +199,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "MALUKU",
     description: "Jejak Kepulauan Rempah dalam Ikan Kuah Pala Banda.",
     dishName: "Ikan Kuah Pala Banda",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCEH0s2j9W9SKeCaPu4TG2vtiIutjkH8UtKV0l75scVwMps0fQDkKNu80ZVX4FdREYbgokWShn8RZccQNrj3-7JtGqAm_97Md463-dr_R1AYnTUH__z39SKIpcrB2L2cDqPUA5UqQV216H89q3qMFVW2v_sKqhAq740VfenYnWIpI9w0nwQ_ZwHdRMXlSWduEZoejXD4AqYCIQPdIS958RWjj2YfSLZDbplRd-P1KSRrye9EPYrUJMPF8nSdWmlUmZEyNIl_6ykXN4",
+    imageUrl: "/regions/maluku.jpg",
     ingredients: [
       "600g ikan kakap putih segar (atau kerapu)",
       "2 buah pala Banda segar, belah ambil daging buahnya dan iris tipis",
@@ -231,7 +231,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "KALIMANTAN",
     description: "Keaslian rasa pesisir dalam Nasi Kuning Banjar yang khas.",
     dishName: "Nasi Kuning Banjar Haruan Habang",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCt62iGtw6Wju0shoXWv0IsZ92JCzTPxSvDEzolZmGg1KAAIscqMfVzCVQKSC09uTdmLDpOazMXAT43NSxO8CgVy638Ma4ieiJL6UKucTiZaPz_gVDOko4BthZdVwcdeWJ0DgEPU8wlJHeJObpJwHVmJaLPE5XOcAr__ATa5YVKfFZl1YAlOgpAr5HqFE1M02uJC5h68Gn_FqfcefxaNAQsBJ-3Wzbg1yhvzpwFWTzpr5OE-Z9qGG1bo8Wm2N1VmaMW0A84MuB_VdA",
+    imageUrl: "/regions/kalimantan-timur.jpg",
     ingredients: [
       "500g beras aromatik cuci bersih",
       "1 sdm air kunyit kental hasil parutan kunyit tua murni",
@@ -262,7 +262,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "NUSA TENGGARA",
     description: "Aroma asap Se'i Sapi yang legendaris dari tanah Flobamora.",
     dishName: "Se'i Sapi NTT",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAJvgVf2kyBQsWip8tEZvAQREscacUsbNYgfEQS3WqIpyGjZ13pTo2Nj-PJNtzbyAcxXV8VI0W6MncivrB96PujL49jV98r_daG4sJQUEfvgdpDCn39yc4rs_IZgmJtKlv4nKjiHaEpZ_XA6R7PSw8tjvh9ZF1TZC7o3BMjCpz48PQcsJ28I2oC7xVn3KkOc_g-EA2Xi20B7xever52mP0dfnMzrCLSnCjSC2-JmZXBuSlmHondVMRf8i6AwvM7SVKME3Jy99wL-P0",
+    imageUrl: "/regions/nusa-tenggara-timur.jpg",
     ingredients: [
       "800g daging sapi bagian khas luar lemak tipis (tenderloin/strip)",
       "Bumbu marinasi daging: 4 siung bawang putih cincang sangat halus, 1 sdm merica bubuk hitam murni, 1 sdm garam laut kasar.",
@@ -289,7 +289,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "BALI",
     description: "Perpaduan mistis bumbu rempah dalam sebatang Sate Lilit.",
     dishName: "Sate Lilit Ikan Tenggiri",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuADzjxRwGtkDzPlNh-BSEcHVrZ-UnqMdLS7MZs0vMADigKgTSkvKNhiOOleB2j_YHyLSUR-NMLeYV2f7_itVyu0E0caGKYn3caJcILhx7u9Vz4KPktkAYFZezAjJyqIOs-3CrPu4AholClh1WcwolLx_NzlkbAvieB33buLbWBsPOFd6TxplHRaaRi9WKhMGLJ_rIc4PG0JxCXjxgtYR_933z98IrWqICA86peIT0SKMsMmPvcrC8Eraasa_wK7oyw7uqCT-DteVkc",
+    imageUrl: "/regions/bali.jpg",
     ingredients: [
       "500g daging ikan tenggiri giling super halus dingin",
       "5 sdm kelapa parut muda gurih",

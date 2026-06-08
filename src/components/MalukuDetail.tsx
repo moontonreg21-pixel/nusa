@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface MalukuDetailProps {
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
@@ -17,7 +16,7 @@ interface Dish {
   cookingSteps: string[];
 }
 
-export function MalukuDetail({ onBack, onAskAI, onViewRecipe }: MalukuDetailProps) {
+export function MalukuDetail({ onBack, onViewRecipe }: MalukuDetailProps) {
   const [selectedDish] = useState<Dish | null>(null);
 
   const setSelectedDish = (dish: Dish | null) => {

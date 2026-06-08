@@ -1,4 +1,4 @@
-import { ProvinceData } from './types';
+﻿import { ProvinceData } from './types';
 
 export interface ExtraDish {
   name: string;
@@ -38,7 +38,7 @@ export const EXTRA_PROVINCES_DETAILS: Record<string, ExtraProvinceDetail> = {
     provinceId: "aceh",
     title: "Aceh: Serambi Mekkah",
     subtitle: "RASA REMPAH KUAT DI TANAH RENCONG",
-    heroImageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBHPnfzQJS5ASgvoYA9WdENpUITXXBTOLrh1L3NbSc7frqov3i0065DORzEviE1SI3D3bZzj6e6vbP4Pn7EnxBNdtxL0qNN8F0Nxjt_ZSs7mdHTMfrH0RaowniCCVQTGheHVBpcpCNWNQRFxiE7R-2TCqwkBOR9VUOj0IZ0RHSn7myt1bo_DQbbdHCJbr-p7b9mNdobVfJBSX14nScoxl2z4ZDSVRqxqsni9tS2U5IAPwzr76Hj77awvBy-veBxjS9swO85doh6JzA",
+    heroImageUrl: "/regions/aceh-baiturrahman-aerial.jpg",
     philosophyTitle: "Filosofi Peumulia Jamee & Tradisi Meurami",
     philosophyDesc: "Bagi masyarakat Aceh, menjamu tamu (Peumulia Jamee) adalah kewajiban adat dan keagamaan yang sakral. Kuliner Aceh dicirikan oleh kombinasi bumbu rempah-rempah basah yang kaya dan kuat, seperti kelapa gongseng (u deuluek), ketumbar, merica, dan kapulaga. Hidangan dimasak bersama-sama dalam kuali tanah liat besar (belanga) pada tradisi kuah beulangong untuk merayakan kebersamaan, rasa syukur, serta gotong royong warga.",
     quote: "Adat bak Po Teumeureuhom, Hukom bak Syiah Kuala, Kanun bak Putroe Phang, Reusam bak Bentara.",
@@ -54,7 +54,7 @@ export const EXTRA_PROVINCES_DETAILS: Record<string, ExtraProvinceDetail> = {
         name: "Mie Aceh Daging",
         rating: "4.9",
         description: "Mie kuning basah tebal khas Aceh yang disiram kuah kari kental kecokelatan yang harum rempah pedas, ditumis bersama potongan empuk daging sapi, taburan bawang goreng seledri, kerupuk emping renyah, dan acar bawang merah segar.",
-        imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBHPnfzQJS5ASgvoYA9WdENpUITXXBTOLrh1L3NbSc7frqov3i0065DORzEviE1SI3D3bZzj6e6vbP4Pn7EnxBNdtxL0qNN8F0Nxjt_ZSs7mdHTMfrH0RaowniCCVQTGheHVBpcpCNWNQRFxiE7R-2TCqwkBOR9VUOj0IZ0RHSn7myt1bo_DQbbdHCJbr-p7b9mNdobVfJBSX14nScoxl2z4ZDSVRqxqsni9tS2U5IAPwzr76Hj77awvBy-veBxjS9swO85doh6JzA",
+        imageUrl: "/regions/aceh-mie-aceh.jpg",
         history: "Mencerminkan sejarah pelabuhan niaga Aceh kuno. Mie kuning dipengaruhi kebiasaan Tiongkok, kuah kari kental dipengaruhi rempah India, dan penggunaan daging sapi mencerminkan kesukaan masyarakat Timur Tengah.",
         ingredients: [
           "400g mi kuning basah tebal",
@@ -75,7 +75,7 @@ export const EXTRA_PROVINCES_DETAILS: Record<string, ExtraProvinceDetail> = {
         name: "Ayam Tangkap",
         rating: "4.8",
         description: "Potongan ayam kampung muda yang digoreng garing dalam tumpukan bumbu rempah dedaunan aromatik melimpah (daun koja/temurui dan daun pandan) yang kering garing kriuk gurih aromatik.",
-        imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBzbWFMQVFomUvm67o1KRtFglhoRoU6Z9mTPOqTFN7CEE-VTT0A6CEY3HOUXQTkyZYus-LRriXgS4Np0Hq7FcO1RHGKPM7eXpIViWwilRYmK-dvlMHDnrgIKD7DoKtcZvVFe5bgiwg9ZwYF8_Nuy-pSOmCpHQOYn4yQCZq6gzR7zM0Wg6tr11D4YWPVc70LtPTpVTk8p-M0s2z75Uz1KueAe4xy_4RflPlT5VtjCN4iP9Swe9_273KEBTBAfpvHUfJjeEGotdrS0k0",
+        imageUrl: "/regions/aceh-ayam-tangkap.jpg",
         history: "Ayam Tangkap lahir dari tradisi makan bersama masyarakat pedesaan Aceh Besar. Nama 'tangkap' melambangkan kebiasaan memotong ayam peliharaan segar di kebun ketika ada sanak keluarga yang datang bertamu.",
         ingredients: [
           "1 ekor ayam kampung muda, potong 24 bagian kecil",
@@ -96,7 +96,7 @@ export const EXTRA_PROVINCES_DETAILS: Record<string, ExtraProvinceDetail> = {
         name: "Kuah Pliek U",
         rating: "4.7",
         description: "Gulai sayur khas Aceh yang rasanya asam, gurih, dan segar unik dengan bahan utama 'Pliek U' (ampas kelapa sisa pembuatan minyak kelapa tradisional/cliek u yang dibusukkan lalu difermentasi).",
-        imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCsjcdO9IaHBaPBKLOOgcORvNF1mr2WwbIlGg4aPON-xxkFzzKMcRQT95U9zChELszomMV5Su4IQeCWM1B8O4c7OmBHMG0pXdREhW0Z35wyMieDsOjDrIX5LWHboyMWW2OAuM7hYXAM-KjdweJ6Rik30eRDWu4L7qrZ2lpAJA2HKAataFhzr1-kk3wyQXdpvzKjwVBUiOBaHFB-ugikqTgyrOj9ng1E9_N7KvURXiyS6SBG2iywDDUsjjOVj1ca6G-U1Z5ld6NRP80",
+        imageUrl: "/regions/aceh-kuah-pliek-u.jpg",
         history: "Kuah Pliek U merupakan sup legendaris peninggalan nenek moyang di pesisir utara Aceh yang mencerminkan pemanfaatan arif buah kelapa kelapa secara total tanpa ada limbah terbuang sia-sia.",
         ingredients: [
           "150g Pliek U kualitas terbaik (haluskan, saring dengan air hangat)",
@@ -117,7 +117,7 @@ export const EXTRA_PROVINCES_DETAILS: Record<string, ExtraProvinceDetail> = {
         name: "Kue Timphan",
         rating: "4.8",
         description: "Kue basah tradisional manis khas Aceh berbahan dasar tepung ketan dengan adonan labu kuning atau pisang raja, diisi srikaya manis kelapa parut mentega, dibungkus daun pisang muda lalu dikukus hingga kenyal harum.",
-        imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCt62iGtw6Wju0shoXWv0IsZ92JCzTPxSvDEzolZmGg1KAAIscqMfVzCVQKSC09uTdmLDpOazMXAT43NSxO8CgVy638Ma4ieiJL6UKucTiZaPz_gVDOko4BthZdVwcdeWJ0DgEPU8wlJHeJObpJwHVmJaLPE5XOcAr__ATa5YVKfFZl1YAlOgpAr5HqFE1M02uJC5h68Gn_FqfcefxaNAQsBJ-3Wzbg1yhvzpwFWTzpr5OE-Z9qGG1bo8Wm2N1VmaMW0A84MuB_VdA",
+        imageUrl: "/regions/aceh-timphan.jpg",
         history: "Timphan adalah sajian wajib agung pada hari raya Idul Fitri maupun Idul Adha di Aceh. Ada pepatah: 'Lhee tingkat geutanyoe udep, tabayeuet adat mumat timphan' melambangkan kebersamaan lebaran belum komplet tanpa kue ini.",
         ingredients: [
           "250g tepung ketan putih murni",
@@ -791,3 +791,4 @@ export const EXTRA_PROVINCES_DETAILS: Record<string, ExtraProvinceDetail> = {
     siteDesc: "Pulau purba savana gersang rumah spesies kadal raksasa purba Komodo di Manggarai Barat, salah satu keajaiban alam warisan dunia UNESCO terdepan."
   }
 };
+

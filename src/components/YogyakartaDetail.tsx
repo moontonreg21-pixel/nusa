@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface YogyakartaDetailProps {
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
@@ -17,7 +16,7 @@ interface Dish {
   cookingSteps: string[];
 }
 
-export function YogyakartaDetail({ onBack, onAskAI, onViewRecipe }: YogyakartaDetailProps) {
+export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps) {
   const [selectedDish] = useState<Dish | null>(null);
 
   const setSelectedDish = (dish: Dish | null) => {

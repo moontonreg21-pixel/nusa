@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface SulawesiSelatanDetailProps {
   onBack: () => void;
-  onAskAI: (query: string) => void;
   onViewRecipe?: (recipe: any) => void;
 }
 
@@ -17,7 +16,7 @@ interface Dish {
   cookingSteps: string[];
 }
 
-export function SulawesiSelatanDetail({ onBack, onAskAI, onViewRecipe }: SulawesiSelatanDetailProps) {
+export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanDetailProps) {
   const [selectedDish] = useState<Dish | null>(null);
 
   const setSelectedDish = (dish: Dish | null) => {
