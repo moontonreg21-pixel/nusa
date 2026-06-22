@@ -39,7 +39,7 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
       name: "Coto Makassar",
       rating: "4.9",
       description: "Sajian sup legendaris khas Kerajaan Gowa abad ke-16, terdiri dari irisan daging sapi sandung lamur dan jeroan empuk gurih dimasak lama dalam siraman kaldu air tajin pekat bercampur lumatan gilingan kacang tanah goreng melimpah dng 40 rempah herba nusantara.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCwUGWF6srLGSPe5Ge_OSwMbrKYOM0ipnR_V1qOqaINK62H-3uf_q9kZ8tGMDdIQAMIv59zoJBIuBzN4yxmz0s-_y3kS4LJ2eLxqMoLVbv3R6a8XBB7I8dRuIvHOhUZBPrMBlox5ikDWUcv2sRs4rOPUBdHU7406ZgLLa4ZNHI7xEuF192GeurVG_xMzH3tHDEcVeb6vKy5ApJZ7_JlXOGm4oj-6Ubky-YHviN8qVWQRnT0NZUj1vrRnR_uHNXUa3rk8YuwpDl1TRk",
+      imageUrl: "https://i.pinimg.com/736x/fd/54/90/fd5490feb98bef06c2a93d92624e1295.jpg",
       history: "Coto Makassar lahir bergengsi dari dapur istana luhur Kerajaan Gowa pada abad ke-16. Berdasarkan silsilah adat, daging sapi has murni disajikan eksklusif bagi keluarga bangsawan istana, sedangkan bagian usus, paru, babat diolah kreatif bersahaja dng air tajin dan kacang tanah gurih berkalori tinggi bagi prajurit perang tangguh pengembara laut Phinisi.",
       ingredients: [
         "500g Daging sapi sandung lamur murni empuk",
@@ -63,7 +63,7 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
       name: "Sop Konro",
       rating: "4.9",
       description: "Sop iga sapi potong tebal berukuran raksasa yang direbus perlahan sangat empuk, disuguhkan berdampingan dng siraman kuah cokelat hitam pekat legendaris beraroma herba dari buah kluwek, ketumbar sangrai, sereh, kayu manis, dan cengkih kering saring.",
-      imageUrl: "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&q=80&w=600",
+      imageUrl: "https://i.pinimg.com/736x/9c/0e/5c/9c0e5c27169e91f9a17f6c0c87c632c7.jpg",
       history: "Sop Konro berakar dari tradisi luhur perayaan potong kerbau liar suku Bugis-Makassar pegunungan di masa lampau. Awalnya dihidangkan menyajikan iga miring sapi/kerbau (konro) utuh raksasa di atas nampan adat bambu, melambangkan keperkasaan spiritual, ketangguhan fisik dan sambutan mulia menjamu tetua klan.",
       ingredients: [
         "1kg Iga sapi berdaging tebal (tulang konro lebar potongan melintang)",
@@ -86,7 +86,7 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
       name: "Pallubasa",
       rating: "4.8",
       description: "Sajian boga sup jeroan dan daging sapi empuk khas Makassar, berkuah cokelat pekat gurih berkat limpahan aroma rempah ketumbar dan kelapa parut tua yang disangrai kering giling halus (alas) pecah minyak alami.",
-      imageUrl: "https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&q=80&w=600",
+      imageUrl: "https://i.pinimg.com/736x/20/f6/15/20f6150b2999635cc0ec6ba589800a2f.jpg",
       history: "Meskipun sekilas berpenampilan mirip Coto, Pallubasa terlahir dng latar belakang budaya yang kontras. Pallubasa ('palu' berarti basah/kuah, 'basa' berarti berkuah tebal) dahulu merupakan boga bergizi tinggi terjangkau yang diciptakan para pekerja pelabuhan niaga pesisir Makassar (Paotere) peneman nasi hangat sehabis mengangkut barang.",
       ingredients: [
         "500g Daging sapi has atau daging kelapa sapi, potong dadu tipis",
@@ -108,7 +108,7 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
       name: "Es Pisang Ijo",
       rating: "4.8",
       description: "Sajian kudapan pencuci mulut menyegarkan terbuat dari pisang raja manis dibalut balutan adonan tepung beras ketan berwarna hijau pandan suji harum alami, disajikan bersisian dng bubur sumsum putih gurih santan, serutan es pasir murni dan siraman sirup merah DHT legendaris.",
-      imageUrl: "https://images.unsplash.com/photo-1598515214211-89d3e73ae83b?auto=format&fit=crop&q=80&w=600",
+      imageUrl: "https://i.pinimg.com/736x/87/ac/f7/87acf7a807bdafe12ba2419e6534d66d.jpg",
       history: "Es Pisang Ijo melambangkan keteduhan jiwa, kelapangan dada, dan kerukunan bersahaja hidup rakyat utama suku Bugis-Makassar. Balutan kulit sutera hijau melambangkan ketulusan hati yang subur menyambut fajar kehidupan baru dng berkah rohani keindahan cita rasa alami.",
       ingredients: [
         "6 buah Pisang raja tua manis kukus matang bersama kulitnya",
@@ -131,7 +131,7 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
       name: "Ikan Bakar Parape",
       rating: "4.8",
       description: "Ikan laut kakap merah segar gemuk yang dibakar harum di atas bara arang kayu batok kelapa kering, disuguhkan berpasangan dng lumatan saus Parape karamel hitam kental manis-asam gurih dari paduan bawang merah giling tebal, perasan asam Jawa pekat, dan gula kelapa bakar.",
-      imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=600",
+      imageUrl: "https://i.pinimg.com/736x/a4/1d/6d/a41d6dc08c06c238fb8855504d426019.jpg",
       history: "Bumbu bawang karamel Parape merupakan salah satu pilar bumbu kharisma utama (Base Parape) yang diciptakan para nelayan Bugis pelaut samudera. Karakter rasanya yang manis-asam hangat melambangkan perlindungan batin kelapangan keluarga di kala kapal Phinisi berlabuh teduh merayakan hasil tangkapan laut murni.",
       ingredients: [
         "1 ekor Ikan Kakap merah atau Baronang segar grade prima seberat 700g, belah punggung melebar",
@@ -150,9 +150,9 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
   ];
 
   return (
-    <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
+    <div className="batik-dark-bg min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back button */}
-      <motion.button 
+      <motion.button
         id="back-to-home-btn"
         onClick={onBack}
         initial={{ opacity: 0, x: -10 }}
@@ -165,15 +165,15 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
 
       {/* 1. South Sulawesi Hero Section with Fort Rotterdam Sunset */}
       <section className="relative h-[65vh] w-full rounded-2xl overflow-hidden shadow-2xl border border-primary/10">
-        <img 
-          alt="Fort Rotterdam sunset Makassar Sulawesi Selatan" 
-          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwUGWF6srLGSPe5Ge_OSwMbrKYOM0ipnR_V1qOqaINK62H-3uf_q9kZ8tGMDdIQAMIv59zoJBIuBzN4yxmz0s-_y3kS4LJ2eLxqMoLVbv3R6a8XBB7I8dRuIvHOhUZBPrMBlox5ikDWUcv2sRs4rOPUBdHU7406ZgLLa4ZNHI7xEuF192GeurVG_xMzH3tHDEcVeb6vKy5ApJZ7_JlXOGm4oj-6Ubky-YHviN8qVWQRnT0NZUj1vrRnR_uHNXUa3rk8YuwpDl1TRk" 
+        <img
+          alt="Fort Rotterdam sunset Makassar Sulawesi Selatan"
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]"
+          src="https://i.pinimg.com/736x/10/12/30/10123025995894eff10fc9792d4aa072.jpg"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#131311]/80 via-transparent to-transparent"></div>
-        
+
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-12 z-10 max-w-4xl">
           <span className="font-sans text-xs tracking-[0.3em] text-primary mb-3 uppercase font-bold">
             BUMI BUGIS - MAKASSAR &bull; NUSA PHINISI
@@ -193,11 +193,10 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
       {/* 2. Heritage Section - Fort Rotterdam & Phinisi Spirit */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 relative group rounded-2xl overflow-hidden border border-primary/20 shadow-xl bg-surface-container-low">
-          <img 
-            alt="The structural majesty of Fort Rotterdam" 
-            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwUGWF6srLGSPe5Ge_OSwMbrKYOM0ipnR_V1qOqaINK62H-3uf_q9kZ8tGMDdIQAMIv59zoJBIuBzN4yxmz0s-_y3kS4LJ2eLxqMoLVbv3R6a8XBB7I8dRuIvHOhUZBPrMBlox5ikDWUcv2sRs4rOPUBdHU7406ZgLLa4ZNHI7xEuF192GeurVG_xMzH3tHDEcVeb6vKy5ApJZ7_JlXOGm4oj-6Ubky-YHviN8qVWQRnT0NZUj1vrRnR_uHNXUa3rk8YuwpDl1TRk"
-            referrerPolicy="no-referrer"
+          <img
+            alt="The structural majesty of Fort Rotterdam"
+            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]"
+            src="https://i.pinimg.com/736x/02/bb/b3/02bbb3a122c36e28e803b72f3aa97cce.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#131311]/50 to-transparent"></div>
         </div>
@@ -218,7 +217,7 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
               - Falsafah Mutlak Menjaga Harga Diri, Kedaulatan, dan Solidaritas Persaudaraan Suku Bugis-Makassar
             </span>
           </blockquote>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
             <div className="bg-surface-container-low/40 p-5 rounded-lg border border-primary/5 hover:border-primary/10 transition-colors">
               <span className="font-sans text-xs text-primary font-bold tracking-wider uppercase block mb-1">
@@ -272,190 +271,77 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
           </p>
         </div>
 
-        {/* Bento Grid Layout - Custom styling matching other regions */}
+        {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          
-          {/* Coto Makassar Card (Featured - 7 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[0])}
-            className="md:col-span-7 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-72 md:h-80 overflow-hidden">
-              <img 
-                alt="Coto Makassar Daging Sapi" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[0].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[0].rating} RATING
+          {dishes.map((dish, index) => (
+            <div
+              key={dish.name}
+              onClick={() => setSelectedDish(dish)}
+              className={`group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between ${index === 0 ? 'md:col-span-8' : 'md:col-span-4'}`}
+            >
+              <div className={`relative overflow-hidden ${index === 0 ? 'h-72 md:h-96' : index === 1 ? 'h-64 md:h-[24rem]' : 'h-56'}`}>
+                <img
+                  alt={dish.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src={dish.imageUrl}
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
+                {index < 2 && (
+                  <div className="absolute bottom-4 left-6 right-6">
+                    <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">
+                      {index === 0 ? 'KULINER UNGGULAN' : 'KULINER PILIHAN'}
+                    </span>
+                    <h4 className={`font-serif text-on-surface font-bold mt-1 ${index === 0 ? 'text-2xl md:text-3xl' : 'text-2xl'}`}>
+                      {dish.name}
+                    </h4>
+                  </div>
+                )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">PUSAKAN AGUNG ISTANA</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[0].name}</h4>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[0].description}
-              </p>
-              <div className="flex gap-4">
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedDish(dishes[0]);
-                  }}
-                  className="bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase"
-                >
-                  LIHAT RESEP
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Sop Konro Card (5 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[1])}
-            className="md:col-span-5 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-64 md:h-80 overflow-hidden">
-              <img 
-                alt="Sop Konro Sapi" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[1].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[1].rating} RATING
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">IGA RAKSASA KLOWEK</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[1].name}</h4>
+              <div className={`${index < 2 ? 'p-6' : 'p-5'} flex-grow flex flex-col justify-between gap-3`}>
+                <div>
+                  {index >= 2 && (
+                    <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">
+                      {dish.name}
+                    </h5>
+                  )}
+                  <p className={`font-sans text-xs text-on-surface-variant leading-relaxed ${index < 2 ? 'text-justify mb-5 line-clamp-3' : 'line-clamp-2'}`}>
+                    {dish.description}
+                  </p>
+                </div>
+                {index < 2 ? (
+                  <button
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      setSelectedDish(dish);
+                    }}
+                    className={index === 0
+                      ? 'bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase self-start'
+                      : 'text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase self-start'}
+                  >
+                    {index === 0 ? 'LIHAT RESEP' : 'EKSPLORASI RESEP'}
+                    {index === 1 && <span className="material-symbols-outlined text-[10px]">arrow_forward</span>}
+                  </button>
+                ) : (
+                  <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
+                    Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
+                  </span>
+                )}
               </div>
             </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[1].description}
-              </p>
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedDish(dishes[1]);
-                }}
-                className="text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase"
-              >
-                EKSPLORASI RESEP <span className="material-symbols-outlined text-[10px]">arrow_forward</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Pallubasa (6 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[2])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Pallubasa Alas Makassar" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[2].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[2].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">KELAPA SANGRAI TUMBUK</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[2].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[2].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Es Pisang Ijo (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[3])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Es Pisang Ijo" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[3].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[3].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">SUTERA PANDAN SEGAR</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[3].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[3].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Ikan Bakar Parape (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[4])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Ikan Bakar Parape" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[4].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[4].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">KARAMEL BAWANG MERAH</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[4].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[4].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
+          ))}
         </div>
       </section>
-
       {/* 4. Interactive Cooking Recipe Modal */}
       <AnimatePresence>
         {selectedDish && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0e0e0c]/85 backdrop-blur-md"
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.95, y: 15 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
@@ -463,7 +349,7 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
               className="bg-surface-container-low border border-primary/20 max-w-2xl w-full max-h-[85vh] overflow-y-auto rounded-xl p-6 md:p-8 shadow-2xl relative flex flex-col gap-6"
             >
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setSelectedDish(null)}
                 className="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors w-8 h-8 rounded-full bg-surface-container/30 flex items-center justify-center border border-primary/10 cursor-pointer"
               >
@@ -472,14 +358,9 @@ export function SulawesiSelatanDetail({ onBack, onViewRecipe }: SulawesiSelatanD
 
               {/* Title Header */}
               <div className="flex flex-col gap-1 pr-6">
-                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">RESEP ASLI BUGIS-MAKASSAR</span>
+                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">KULINER NUSANTARA</span>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-on-surface">{selectedDish.name}</h3>
-                <div className="flex items-center gap-1 text-[10px] text-primary font-bold">
-                  <span className="material-symbols-outlined text-xs" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  <span>{selectedDish.rating} Rating</span>
-                </div>
               </div>
-
               {/* Banner Image */}
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-primary/10">
                 <img src={selectedDish.imageUrl} alt={selectedDish.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />

@@ -70,6 +70,44 @@
   background-size: 24px 24px;
 }
 
+.batik-cream-bg {
+  background-color: #f4eadc;
+  background-image:
+    linear-gradient(rgba(244, 234, 220, 0.46), rgba(244, 234, 220, 0.46)),
+    url('/batik-background.jpg');
+  background-position: top center;
+  background-size: 420px auto;
+}
+
+.batik-dark-bg {
+  position: relative;
+  isolation: isolate;
+  background-color: #131311;
+  background-image:
+    linear-gradient(rgba(19, 19, 17, 0.54), rgba(19, 19, 17, 0.54)),
+    url('/batik-background.jpg');
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: 520px auto;
+}
+
+.batik-dark-bg::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  z-index: -1;
+  background-color: #131311;
+  background-image:
+    linear-gradient(rgba(19, 19, 17, 0.54), rgba(19, 19, 17, 0.54)),
+    url('/batik-background.jpg');
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: 520px auto;
+}
+
 /* Material Symbols Outlined Custom configurations if needed */
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;

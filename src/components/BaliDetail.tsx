@@ -39,7 +39,7 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
       name: "Ayam Betutu",
       rating: "4.9",
       description: "Ayam utuh yang dibalut dengan Base Genep (bumbu rempah lengkap khas Bali) dan minyak kelapa murni, dibungkus pelepah pinang atau daun pisang, lalu dipanggang/dikukus perlahan selama berjam-jam hingga dagingnya lembut terlepas dari tulang.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBzbWFMQVFomUvm67o1KRtFglhoRoU6Z9mTPOqTFN7CEE-VTT0A6CEY3HOUXQTkyZYus-LRriXgS4Np0Hq7FcO1RHGKPM7eXpIViWwilRYmK-dvlMHDnrgIKD7DoKtcZvVFe5bgiwg9ZwYF8_Nuy-pSOmCpHQOYn4yQCZq6gzR7zM0Wg6tr11D4YWPVc70LtPTpVTk8p-M0s2z75Uz1KueAe4xy_4RflPlT5VtjCN4iP9Swe9_273KEBTBAfpvHUfJjeEGotdrS0k0",
+      imageUrl: "https://i.pinimg.com/736x/7b/d4/7e/7bd47ea0ce92314b5e61681e6c62baa5.jpg",
       history: "Ayam Betutu merupakan kuliner ritual keagamaan Hindu Bali yang sakral. Awalnya disajikan khusus sebagai persembahan (banten) dalam upacara adat, hidangan ini melambangkan rasa syukur atas kesuburan tanah serta harmoni energi alam.",
       ingredients: [
         "1 ekor Ayam kampung utuh, bersihkan rongga dalamnya",
@@ -59,7 +59,7 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
       name: "Sate Lilit",
       rating: "4.8",
       description: "Sate khas Bali yang terbuat dari adonan ikan laut atau ayam cincang yang dicampur kelapa parut memanjang, santan kental, dan Base Genep wangi, lalu dililitkan pada batang serai segar sebelum dipanggang di atas bara arang kelapa.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAeLnDeshdTyzEsmeVvDaZf78QGrE_IcVonodamvL-4AC8tgmpLnFMwBvYcn2tkqCkz4n6tjSXfFdZCRrSiK8lRq5GKVYCD_dqpMxYw0D-7sCxDQdmFN5RwmTVTB_pMkWyQ9wWM5D32qBnC9afNqsNS-tgO9LsdDz4uATj8CeCMWdCyOXtJLHLUAe0gKkEnHCfHXQuhYjUfAJM4hp92f3YYxgdc0KMm8vt_b-Wz2rJjx3ajo77J6HfKu9kjzCKGQTohv7hSrBUXV0c",
+      imageUrl: "https://i.pinimg.com/1200x/3f/50/59/3f505998dd576a87af8b20311fa78061.jpg",
       history: "Sate Lilit secara sosiologis mencerminkan falsafah kegotongroyongan dan persatuan masyarakat Bali. Lilitan adonan yang erat melambangkan ikatan adat krama Bali yang kokoh, sedangkan tusuk serai melambangkan wewangian alam penyucian diri.",
       ingredients: [
         "400g Daging ikan tenggiri halus (bisa diganti ayam cincang)",
@@ -79,7 +79,7 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
       name: "Babi Guling",
       rating: "4.9",
       description: "Daging babi panggang khas Bali yang sangat ikonik. Babi utuh diisi dengan campuran bumbu Base Gede lengkap serta daun ketela di dalamnya, lalu digulingkan manual di atas api terbuka hingga kulitnya renyah keemasan (crackling) dan dagingnya luar biasa lembut.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCl4g61lym0sTJVMkyuT_jz95RW9GRucIo41vQ8kFJbKvW3AU2h6XpinvrwWYzViXiE7avof--IKcgi5oPZI36dcbwiMNVOoHTeTliqT2UPqrv8yLaajp1x1Erz1dE72fFoqaW2FY21WdR6QU3kHlptV4w9QrgKPbK9BaLVRE0_tQjEWCm4T1vKP5PJdwpN1gu72yU22IJNLb4cjFG-QxjU-r-kTs4umqZvyXt2uyPwRhjA9XNKHIAth7fSYzUmx4o0bDBlDNKggWQ",
+      imageUrl: "https://inivie.com/_next/image?url=https%3A%2F%2Fblog.inivie.com%2Fwp-content%2Fuploads%2F2025%2F02%2FArtboard-13-20-1-1024x683.jpg&w=1080&q=75",
       history: "Babi Guling pada mulanya adalah sajian istimewa dalam upacara keagamaan Hindu Bali seperti upacara potong gigi (Mepandes) atau pernikahan besar. Kulit renyah mengkilap keemasan melambangkan kemakmuran dan kesucian niat sesaji.",
       ingredients: [
         "1 unit Pork loin dengan kulit tebal (versi rumahan praktis)",
@@ -98,7 +98,7 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
       name: "Lawar Bali",
       rating: "4.8",
       description: "Hidangan tradisional Bali berupa campuran sayuran cincang (seperti kacang panjang rebus atau nangka muda), kelapa parut, serta bumbu Base Genep wangi dan daging cincang berlumur air jeruk purut segar.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBpkChzGOcODwbcdBGC_yL_VhrVsAoKc4WNU_uLMTaPegumvaoqbdp3xbEEwu7tTFGzBXesSzrG3R2G5c2a7XnYF7GqCCtv_fvT8oBoi0L5u6TCLF6v71bGDw-lhgzHBcLD1AJlDzzaGhs7fmH_zkU9scK94tn0PKi6xkotic37Eu89i1tuo_B52sjWOVQ8MQHwAvyLDpzDn0ZkupXHlXFr2PhZH7VamQmv4n_piJge8M_DiemO6wvfts-gTJqU0jm5vj8sL8V6Wh4",
+      imageUrl: "https://i.pinimg.com/1200x/62/b6/1e/62b61eade5b9e250c372112ed5b721a6.jpg",
       history: "Tradisi 'Ngelawar' adalah aktivitas meracik Lawar bersama yang wajib dilakukan oleh kaum pria Bali menjelang upacara adat besar. Kegiatan ini memupuk semangat kebersamaan (ngayah) demi menjaga kerukunan adat banjar.",
       ingredients: [
         "200g Kacang panjang, iris bulat tipis, rebus sebentar",
@@ -118,7 +118,7 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
       name: "Nasi Campur Bali",
       rating: "4.9",
       description: "Miniatur festival rasa Bali dalam satu piring harmoni. Nasi putih hangat disajikan lengkap bersama porsi kecil Ayam Betutu, Sate Lilit, Lawar kacang panjang, kacang tanah goreng renyah, telur rebus bumbu Bali, dan pedasnya Sambal Matah segar.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCvyTuOmKkB9cOKWQolEoNZdtChiCMrZUQrwdoNjuvLv3JwhJDY-b8BAe3_2OzQ7_SGyWIca1kcBaWUU0TzQ1uKKtDp1WuMGDSF2FQbsS-Fq_JO3f2E6c1qhsm6B4tKqmATHY9K-WITtDk_mViIrZay0DVE0D63puP6cg70RF9yUmEynQQYMhjoP6JDIQ0HLq0-djGLapNyzt0-rqQz_L5WrlHAmg7qsa-cU3wBhKKuoh19HUdqMzDD7eRs-0GDe9zHds-LRVH8okM",
+      imageUrl: "https://i.pinimg.com/1200x/f0/36/d3/f036d3b57e3a3255a3333a031abd1e32.jpg",
       history: "Nasi Campur mencerminkan kehidupan masyarakat Bali sehari-hari yang merangkum berbagai elemen rasa (manis, asin, pedas, gurih, kelat) dalam keserasian hidup berdampingan, selaras dengan falsafah keseimbangan kosmis Jawa-Bali.",
       ingredients: [
         "Nasi putih pulen hangat aromatik pandan",
@@ -136,9 +136,9 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
   ];
 
   return (
-    <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
+    <div className="batik-dark-bg min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back navigation dynamic trigger */}
-      <motion.button 
+      <motion.button
         id="back-to-home-btn"
         onClick={onBack}
         initial={{ opacity: 0, x: -10 }}
@@ -151,15 +151,15 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
 
       {/* 1. Immersive Bali Hero Section with Lake Beratan Temple */}
       <section className="relative h-[65vh] w-full rounded-2xl overflow-hidden shadow-2xl border border-primary/10">
-        <img 
-          alt="Pura Ulun Danu Beratan Temple Bali" 
-          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0WMdW_TnGi7vQlMtMXneCa1HKgr5JE0IISStI4TxaxR0CnPW5VMv-KsMFaKUpbylm6EwL8JYSB0Yf2bIFEU1dZ63iM_kW2BAV9RXO2PUKNjZ20Ah2WXQ8SS9apxpUn3XsJdX5ZEtWrq0fRGk2FM80b04X2NCKgGkOOL_kFrRJsVMWPj22hkT-J53Ib8XKhe15MBu05nEZvN0qyO-FRPGx5WC2WZkwWfU4IXrHuBuxXUI6koxzgDt7wugUmIfzMjFJENDMQetyMdg" 
+        <img
+          alt="Pura Ulun Danu Beratan Temple Bali"
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/74/Pura_Ulundanu_Bedugul_di_pagi_hari.jpg"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#131311]/80 via-transparent to-transparent"></div>
-        
+
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-12 z-10 max-w-4xl">
           <span className="font-sans text-xs tracking-[0.3em] text-primary mb-3 uppercase font-bold text-shadow">
             KOSMIS, INDAH, SAKRAL
@@ -179,10 +179,10 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
       {/* 2. Heritage Section - Warisan Luhur Tri Hita Karana & Subak */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 relative group rounded-2xl overflow-hidden border border-primary/20 shadow-xl bg-surface-container-low">
-          <img 
-            alt="Lush green Balinese rice terraces" 
-            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1OHQvedsRzskVYzIZUC5qWM3xUYYtJuMFu6y9ym2VbXz2odj2VqPI6kIdgi9MT-I7I94JaxdjWl8WGfFlGjrEKvLlsWAHqWkgMJ1JwUYBAfYshdciCz6-pLAYeubMeSuHpD8FviJrkPet1Wdm1GsGNLSNC32U8MpdZff0sktnI5GHQDq34ef3q13fFg6bkTmtr8Gjp5Bf9kNY9oVweCzv9234qoybhGKtiiAaWSv3lNqejqF9vTrVg1FMK7gC3DhuPSsMAjx_DPA"
+          <img
+            alt="Lush green Balinese rice terraces"
+            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]"
+            src="https://i.pinimg.com/736x/fa/7e/e6/fa7ee6b2ab08b2b8fc927265a70536fc.jpg"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#131311]/50 to-transparent"></div>
@@ -204,7 +204,7 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
               - Warisan Dunia UNESCO Warisan Subak Bali
             </span>
           </blockquote>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
             <div className="bg-surface-container-low/40 p-5 rounded-lg border border-primary/5 hover:border-primary/10 transition-colors">
               <span className="font-sans text-xs text-primary font-bold tracking-wider uppercase block mb-1">
@@ -260,182 +260,75 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          
-          {/* Ayam Betutu Card (Featured - 8 Cols width / Row span 2) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[0])}
-            className="md:col-span-8 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-72 md:h-96 overflow-hidden">
-              <img 
-                alt="Ayam Betutu Bali" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[0].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[0].rating} RATING
+          {dishes.map((dish, index) => (
+            <div
+              key={dish.name}
+              onClick={() => setSelectedDish(dish)}
+              className={`group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between ${index === 0 ? 'md:col-span-8' : 'md:col-span-4'}`}
+            >
+              <div className={`relative overflow-hidden ${index === 0 ? 'h-72 md:h-96' : index === 1 ? 'h-64 md:h-[24rem]' : 'h-56'}`}>
+                <img
+                  alt={dish.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src={dish.imageUrl}
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
+                {index < 2 && (
+                  <div className="absolute bottom-4 left-6 right-6">
+                    <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">
+                      {index === 0 ? 'KULINER UNGGULAN' : 'KULINER PILIHAN'}
+                    </span>
+                    <h4 className={`font-serif text-on-surface font-bold mt-1 ${index === 0 ? 'text-2xl md:text-3xl' : 'text-2xl'}`}>
+                      {dish.name}
+                    </h4>
+                  </div>
+                )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">TERFAVORIT</span>
-                <h4 className="font-serif text-2xl md:text-3xl text-on-surface font-bold mt-1">{dishes[0].name}</h4>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="font-sans text-xs md:text-sm text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[0].description}
-              </p>
-              <div className="flex gap-4">
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedDish(dishes[0]);
-                  }}
-                  className="bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase"
-                >
-                  LIHAT RESEP
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Sate Lilit Card (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[1])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-64 md:h-[24rem] overflow-hidden">
-              <img 
-                alt="Sate Lilit" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[1].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[1].rating} RATING
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">WANGI SERAI</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[1].name}</h4>
+              <div className={`${index < 2 ? 'p-6' : 'p-5'} flex-grow flex flex-col justify-between gap-3`}>
+                <div>
+                  {index >= 2 && (
+                    <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">
+                      {dish.name}
+                    </h5>
+                  )}
+                  <p className={`font-sans text-xs text-on-surface-variant leading-relaxed ${index < 2 ? 'text-justify mb-5 line-clamp-3' : 'line-clamp-2'}`}>
+                    {dish.description}
+                  </p>
+                </div>
+                {index < 2 ? (
+                  <button
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      setSelectedDish(dish);
+                    }}
+                    className={index === 0
+                      ? 'bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase self-start'
+                      : 'text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase self-start'}
+                  >
+                    {index === 0 ? 'LIHAT RESEP' : 'EKSPLORASI RESEP'}
+                    {index === 1 && <span className="material-symbols-outlined text-[10px]">arrow_forward</span>}
+                  </button>
+                ) : (
+                  <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
+                    Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
+                  </span>
+                )}
               </div>
             </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[1].description}
-              </p>
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedDish(dishes[1]);
-                }}
-                className="text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase"
-              >
-                EKSPLORASI RESEP <span className="material-symbols-outlined text-[10px]">arrow_forward</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Babi Guling (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[2])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Babi Guling" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[2].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[2].rating}
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <div>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[2].name}</h5>
-                <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2">{dishes[2].description}</p>
-              </div>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Lawar (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[3])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Lawar" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[3].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[3].rating}
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <div>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[3].name}</h5>
-                <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2">{dishes[3].description}</p>
-              </div>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Nasi Campur Bali (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[4])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Nasi Campur Bali" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[4].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[4].rating}
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <div>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[4].name}</h5>
-                <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2">{dishes[4].description}</p>
-              </div>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
+          ))}
         </div>
       </section>
-
       {/* 4. Interactive Cooking Recipe Modal */}
       <AnimatePresence>
         {selectedDish && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0e0e0c]/85 backdrop-blur-md"
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.95, y: 15 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
@@ -443,7 +336,7 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
               className="bg-surface-container-low border border-primary/20 max-w-2xl w-full max-h-[85vh] overflow-y-auto rounded-xl p-6 md:p-8 shadow-2xl relative flex flex-col gap-6"
             >
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setSelectedDish(null)}
                 className="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors w-8 h-8 rounded-full bg-surface-container/30 flex items-center justify-center border border-primary/10 cursor-pointer"
               >
@@ -452,14 +345,9 @@ export function BaliDetail({ onBack, onViewRecipe }: BaliDetailProps) {
 
               {/* Title Header */}
               <div className="flex flex-col gap-1 pr-6">
-                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">WARISAN ADAT DEWATA</span>
+                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">KULINER NUSANTARA</span>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-on-surface">{selectedDish.name}</h3>
-                <div className="flex items-center gap-1 text-[10px] text-primary font-bold">
-                  <span className="material-symbols-outlined text-xs" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  <span>{selectedDish.rating} Rating</span>
-                </div>
               </div>
-
               {/* Banner Image */}
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-primary/10">
                 <img src={selectedDish.imageUrl} alt={selectedDish.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />

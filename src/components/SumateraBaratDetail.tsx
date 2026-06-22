@@ -39,7 +39,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
       name: "Rendang Daging",
       rating: "5.0",
       description: "Sajian lambang kehormatan adat berupa potongan daging sapi paha berkualitas tinggi yang dimasak lambat (slow-cooked) selama 8 jam dengan limpahan santan kelapa tua pekat dan 15 bumbu rempah rahasia dari dataran tinggi Solok hingga berona cokelat gelap kehitaman pecah minyak harum luar biasa.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBlsjFG2dEcrh5KF2cN3RNiPp3UZ3RTOxD21KjGTd5oCqRaOgctJc_j4-ZZWF6ebz7jBlRgm_mi0qSlAnkH_kdbE-h6NJIgiWSM3SwlLSwNjRLRgXX5TjLtq9ms5yrUa5dngbH8330mSsGTmq7IOMqd_ppAVByFwPLjzXfwLJbBGHtaCUVMUAzt8SUN5PMkesxfXbFpoahhLvMSiSGidbQv-DnkO1JlcryZMNSnexrhe4GZXlMjaU0-PXZz-hE4d4aHcyS7fj1aNcE",
+      imageUrl: "/regions/sumbar-rendang.jfif",
       history: "Rendang menempati kasta tertinggi dalam adat Minangkabau. Hidangan ini melambangkan kekeluargaan dan mufakat: 'dagiang' (daging sapi) sebagai lambang Niniak Mamak (tetua adat), 'karambil' (kelapa) sebagai kaum intelektual (Cadiak Pandai), 'lado' (cabai) sebagai alim ulama pendidik moral, dan bumbu pelengkap sebagai representasi masyarakat Minang nan bersatu padu.",
       ingredients: [
         "1kg Daging sapi paha (gandik) segar, potong searah serat",
@@ -63,7 +63,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
       name: "Sate Padang",
       rating: "4.8",
       description: "Potongan daging dan lidah sapi yang gurih empuk, dibakar harum di atas bara kelapa kering kemudian diselimuti siraman saus bumbu kental berwarna kuning kecokelatan yang dipenuhi aroma jinten, ketumbar, merica, dan kapulaga, lalu dimahkotai bawang goreng merah renyah.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAEifsy0Ycnlku9Q9ux847_QrgknZhI3ujrtHH0K4zariAHDgw7M-bbdEA8AkEXvD-xgDWOhEfvV6v5qzQ5HiLEVNqeQlwL-kRRfe5UcE7J9jOnYc-DVxVa3odBLFjSN421BcEdAn336NXWP-PB-0qdmpw05XyZsAeuL-Xgm-QkqICbFmsmkR49_T_oQY3t2ZJprb49VYcd1kePBodtiDctHcV9-iHKNJ6jGZJvMAwKtHVFjyOxuRcfS9u6rcm8OJe79mRiXmry4f8",
+      imageUrl: "/regions/sumbar-sate-padang.jfif",
       history: "Sate Padang merupakan asimilasi bumbu kari pedagang India muslim dan kearifan kuliner Padang Panjang serta Pariaman sejak berabad silam. Disajikan hangat beralas daun pisang murni di atas pincuk bambu melambangkan penghargaan tinggi suku Minang menjamu tamu.",
       ingredients: [
         "600g Daging sapi has dalam atau lidah sapi empuk, potong dadu tipis",
@@ -84,7 +84,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
       name: "Ayam Pop",
       rating: "4.8",
       description: "Ayam kampung muda gurih pucat mentega tanpa kulit, direbus matang dalam ungkepan bumbu air kelapa muda manis, bawang putih parut, serai wangi, lalu digoreng sangat cepat (celup kejap) di dalam minyak kelapa panas murni.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCbinzxKYS-QdfVLaYIkPxrdVLh_j96x2s3PjdBODjYRKzSv5VallwsARW6EzLIzxqEVHBYGKunRHbq1_CdkTKF6QzczutWpV8fYBFi1s-aj8GILP01DAG58IZq530Tm6HSu8B9R7OkHxe9hcinuNITHMD6utRuMVBz5UEKSlsm-ahawalFpodfs7_lcjW3Ld9s6GONui21HWMvWZWcZBzMawvDrbJzb472yi9riKydPCTVQtrvvE5An3vudGVCzb1_5CygP8suLF8",
+      imageUrl: "/regions/sumbar-ayam-pop.jfif",
       history: "Ayam Pop diciptakan oleh salah satu rumah makan legendaris di Kota Bukittinggi sekitar tahun 1960. Namanya melambangkan kepopuleran lagu-lagu pop masa itu, menyajikan alternatif boga ayam non-pedas yang bertekstur sangat juicy dan empuk melumer di lidah.",
       ingredients: [
         "1 ekor Ayam kampung muda, belah empat kupas kulitnya bersih",
@@ -106,7 +106,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
       name: "Nasi Kapau",
       rating: "4.8",
       description: "Sajian nasi rames autentik khas nagari Kapau dengan tumpukan gulai bersantan tebal, gulai nangka koloid, gulai tunjang (urat kaki sapi kenyal), sambal cabai hijau petai segar, dan sisa taburan teri Medan renyah bergizi.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPHHD5DyVGGq5IQZmkaouaIjqxobWfVBOHR-eHKSRpC16cEuGFPJOGpB5arKlHh3sH8E3954ZvAn2f9IeDwmhqYEJ_Ad8DB4ZNrx4KflBoafGyc20m-zyE_2x2H7tgYOLQmYOGGHULy2GjGbCQUoVVMYjNPUx4Ib7ErGg0kc4XauCdWEd2R8uOM_T-tVSv4bmTAimpsPqM0L2_rAkD2WiAQOFUvVj1EpKwAX1NVe7DlPrR4DJ4f1Bqx90UpjmuE9dtJwN4S3akn0w",
+      imageUrl: "/regions/sumbar-nasi-kapau.jfif",
       history: "Nasi Kapau adalah lambang kemandirian tinggi para bundo kanduang nagari Kapau, Agam. Dahulu dijajakan oleh para Uni di pasar tradisional saat para suaminya merantau jauh. Keunikan penyajian menggunakan sendok kayu bersayap panjang adalah ciri khas yang dijaga luhur turun-temurun.",
       ingredients: [
         "Nasi putih pulen hangat aromatik",
@@ -125,7 +125,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
       name: "Teh Talua",
       rating: "4.8",
       description: "Minuman kesehatan pusaka penambah stamina legendaris khas Minang, terbuat dari kuning telur ayam kampung atau bebek segar yang dikocok kuat bersama gula aren halus hingga membusa krem tebal, disiram seduhan teh hitam pekat mendidih, menghasilkan gradasi 5 lapis warna visual yang cantik.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDVB4mMFGcVWt2karU8MztryrydTMsNMJTpcEo1lX3fSCdFyZtDpT8URXWnPexs2JMVLRn-DFv5tQpEt17yVgtf2FkFBMd88q1BC67iW5-rtTn9nIf5-tKmIpQP2BnLDkoU1nyVr6w7tULCMWXMXqC2YYBE38kwSM3MJ6vivqqSDdvBjaUddUYm7e_c_I56b8_9rzFYW53Ie3ZZaukXCiUjSOYqgyXVyN-U2BCMXkhT-LeMSjNv0Y6SMgSM-AN5GXkwCu2byRSN8D0",
+      imageUrl: "/regions/sumbar-teh-talua.jfif",
       history: "Teh Talua dahulu kala merupakan minuman kehormatan eksklusif yang hanya boleh dinikmati oleh para tetua adat (Niniak Mamak) atau saudagar kaya nagari Minang saat rapat adat luhur di balairung Keraton. Kini ia menjadi perekat solidaritas sosial masyarakat di kedai kopi hangat malam hari.",
       ingredients: [
         "1 butir Kuning telur bebek murni (pilih yang segar & merah)",
@@ -144,7 +144,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
   ];
 
   return (
-    <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
+    <div className="batik-dark-bg min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back button */}
       <motion.button 
         id="back-to-home-btn"
@@ -162,7 +162,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
         <img 
           alt="Rumah Gadang Minangkabau Sumatera Barat" 
           className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi73bYfLKYOLJ-ItGoTD9ETVMxiQhhRzv-VN-8ZQSIosYaueTfEIslBkgZuR6P5wGc7_zuWtTnqCOPs2mhPfFCHRfJw7VV9tdK_hBupA0e0SaGt6A4odOTw_QsRtUg0qMc4xEvZNMtaW_o9WlfTY3abeQXf5LJcyCksmCOTVwVpgNtkhSZLx5B7tMZuj2Qsmja2289sEN-vdzdx-ZLpmT4vbd-VOGfCiyTEUUcfA_Xw_JY_G6soKtnT5y94PHRm80i13gLpl8eSQw" 
+          src="/regions/sumbar-rumah-gadang-hero.jfif" 
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-transparent to-transparent"></div>
@@ -190,7 +190,7 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
           <img 
             alt="Intricate carvings of Rumah Gadang" 
             className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWNmF8s-AX8IXIf8bGAIWNxWTkI9tvNvRhxCiRDYrDXF_Eqij8btmMT-VoHtC7ow8ua4pckWF2hj_N5O9hIFsfGMatOEdfGlUnpWSH2TkuV3zb-i-A94v6Srwm0Is8unUo07V3l9gnJwnfsyu9wFrFrsDhfy6dZV6YYpgip1T6kje50wYsh_Exv1NTpyBedGjZd8mBYXQGdG-tEzNm9yuMc2jvZ0aeJiu1uG_XN1t0mnwmkhhBeUWMjm50kz827kNbAASyTRZwpVU"
+            src="/regions/sumbar-rumah-gadang.jfif"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#131311]/50 to-transparent"></div>
@@ -266,180 +266,67 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
           </p>
         </div>
 
-        {/* Bento Grid Layout - Custom styling matching other regions */}
+        {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          
-          {/* Rendang Card (Featured - 7 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[0])}
-            className="md:col-span-7 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-72 md:h-80 overflow-hidden">
-              <img 
-                alt="Rendang Daging Sapi Minangkabau" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[0].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[0].rating} RATING
+          {dishes.map((dish, index) => (
+            <div
+              key={dish.name}
+              onClick={() => setSelectedDish(dish)}
+              className={`group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between ${index === 0 ? 'md:col-span-8' : 'md:col-span-4'}`}
+            >
+              <div className={`relative overflow-hidden ${index === 0 ? 'h-72 md:h-96' : index === 1 ? 'h-64 md:h-[24rem]' : 'h-56'}`}>
+                <img
+                  alt={dish.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src={dish.imageUrl}
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
+                {index < 2 && (
+                  <div className="absolute bottom-4 left-6 right-6">
+                    <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">
+                      {index === 0 ? 'KULINER UNGGULAN' : 'KULINER PILIHAN'}
+                    </span>
+                    <h4 className={`font-serif text-on-surface font-bold mt-1 ${index === 0 ? 'text-2xl md:text-3xl' : 'text-2xl'}`}>
+                      {dish.name}
+                    </h4>
+                  </div>
+                )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">KASTA TERTINGGI BUMBU</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[0].name}</h4>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[0].description}
-              </p>
-              <div className="flex gap-4">
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedDish(dishes[0]);
-                  }}
-                  className="bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase"
-                >
-                  LIHAT RESEP
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Sate Padang Card (5 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[1])}
-            className="md:col-span-5 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-64 md:h-80 overflow-hidden">
-              <img 
-                alt="Sate Padang Lidah Sapi Legendaris" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[1].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[1].rating} RATING
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">ASIMILASI KARI KUNO</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[1].name}</h4>
+              <div className={`${index < 2 ? 'p-6' : 'p-5'} flex-grow flex flex-col justify-between gap-3`}>
+                <div>
+                  {index >= 2 && (
+                    <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">
+                      {dish.name}
+                    </h5>
+                  )}
+                  <p className={`font-sans text-xs text-on-surface-variant leading-relaxed ${index < 2 ? 'text-justify mb-5 line-clamp-3' : 'line-clamp-2'}`}>
+                    {dish.description}
+                  </p>
+                </div>
+                {index < 2 ? (
+                  <button
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      setSelectedDish(dish);
+                    }}
+                    className={index === 0
+                      ? 'bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase self-start'
+                      : 'text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase self-start'}
+                  >
+                    {index === 0 ? 'LIHAT RESEP' : 'EKSPLORASI RESEP'}
+                    {index === 1 && <span className="material-symbols-outlined text-[10px]">arrow_forward</span>}
+                  </button>
+                ) : (
+                  <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
+                    Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
+                  </span>
+                )}
               </div>
             </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[1].description}
-              </p>
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedDish(dishes[1]);
-                }}
-                className="text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase"
-              >
-                EKSPLORASI RESEP <span className="material-symbols-outlined text-[10px]">arrow_forward</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Ayam Pop (6 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[2])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Ayam Pop Bukittinggi" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[2].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[2].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">RESEP ISTIMEWA</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[2].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[2].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Nasi Kapau (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[3])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Nasi Kapau Bukittinggi" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[3].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[3].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">KULINER ASLI NAGARI</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[3].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[3].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Teh Talua (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[4])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Teh Talua Minang" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[4].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[4].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">MINUMAN ADAT KHAS</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[4].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[4].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
+          ))}
         </div>
       </section>
-
       {/* 4. Interactive Cooking Recipe Modal */}
       <AnimatePresence>
         {selectedDish && (
@@ -466,14 +353,9 @@ export function SumateraBaratDetail({ onBack, onViewRecipe }: SumateraBaratDetai
 
               {/* Title Header */}
               <div className="flex flex-col gap-1 pr-6">
-                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">RESEP ASLI MINANGKABAU</span>
+                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">KULINER NUSANTARA</span>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-on-surface">{selectedDish.name}</h3>
-                <div className="flex items-center gap-1 text-[10px] text-primary font-bold">
-                  <span className="material-symbols-outlined text-xs" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  <span>{selectedDish.rating} Rating</span>
-                </div>
               </div>
-
               {/* Banner Image */}
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-primary/10">
                 <img src={selectedDish.imageUrl} alt={selectedDish.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />

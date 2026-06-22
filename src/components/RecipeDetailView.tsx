@@ -93,11 +93,9 @@ export function RecipeDetailView({ recipe, onBack, onVideoPlay }: RecipeDetailVi
       </div>
 
       {/* Grid Layout: Left Side Info & Right Side Detail */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
-        
-        {/* Left Column (5 Cols) - Visual Hero & Ingredients */}
-        <div className="lg:col-span-5 flex flex-col gap-8">
-          
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-start">
+        {/* Left Column (5 Cols) */}
+        <div className="lg:col-span-5 flex flex-col gap-6 md:sticky md:top-28">
           {/* Main Hero Media Panel */}
           <div
             className={`relative rounded-2xl overflow-hidden border border-primary/20 bg-surface-container-low shadow-[0_15px_35px_rgba(0,0,0,0.5)] group ${showMieAcehVideo ? 'aspect-video' : 'aspect-[4/3]'}`}
@@ -105,41 +103,25 @@ export function RecipeDetailView({ recipe, onBack, onVideoPlay }: RecipeDetailVi
             onFocusCapture={showMieAcehVideo ? onVideoPlay : undefined}
           >
             {showMieAcehVideo ? (
-              <>
-                <iframe
-                  ref={videoIframeRef}
-                  id="mie-aceh-youtube-player"
-                  className="absolute inset-0 h-full w-full"
-                  src={youtubePlayerUrl}
-                  title="Tutorial Mie Aceh Special"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-                {recipe.rating && (
-                  <div className="pointer-events-none absolute top-4 right-4 bg-primary text-on-primary px-3 py-1.5 font-sans text-[10px] tracking-wider font-black rounded-full flex items-center gap-1 shadow-2xl">
-                    <span className="material-symbols-outlined text-[11px] leading-none text-on-primary font-bold" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span>{recipe.rating} RATING</span>
-                  </div>
-                )}
-              </>
+              <iframe
+                ref={videoIframeRef}
+                id="mie-aceh-youtube-player"
+                className="absolute inset-0 h-full w-full"
+                src={youtubePlayerUrl}
+                title="Tutorial Mie Aceh Special"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             ) : (
               <>
-                <img 
-                  src={recipe.imageUrl} 
-                  alt={recipe.name} 
+                <img
+                  src={recipe.imageUrl}
+                  alt={recipe.name}
                   className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-lowest via-transparent to-transparent"></div>
-                
-                {recipe.rating && (
-                  <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1.5 font-sans text-[10px] tracking-wider font-black rounded-full flex items-center gap-1 shadow-2xl">
-                    <span className="material-symbols-outlined text-[11px] leading-none text-on-primary font-bold" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span>{recipe.rating} RATING</span>
-                  </div>
-                )}
-
                 <div className="absolute bottom-4 left-6 z-10">
                   <span className="font-sans text-[9px] tracking-[0.25em] font-black text-primary uppercase">CITA RASA LEGENDARIS</span>
                   <h2 className="font-serif text-2xl font-bold text-on-surface mt-1">{recipe.name}</h2>
@@ -147,7 +129,6 @@ export function RecipeDetailView({ recipe, onBack, onVideoPlay }: RecipeDetailVi
               </>
             )}
           </div>
-
           {/* Quick Stats Panel */}
           <div className="grid grid-cols-3 gap-2 bg-surface-container-low/40 p-4 border border-primary/10 rounded-xl text-center text-xs">
             <div className="py-1">

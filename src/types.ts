@@ -8,6 +8,7 @@ export interface ProvinceData {
   territory: 'SUMATERA' | 'JAWA' | 'SULAWESI' | 'PAPUA' | 'MALUKU' | 'KALIMANTAN' | 'NUSA TENGGARA' | 'BALI';
   description: string;
   dishName: string;
+  dishNames: string[];
   imageUrl: string;
   ingredients: string[];
   history: string;

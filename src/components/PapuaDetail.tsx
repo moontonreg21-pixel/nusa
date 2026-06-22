@@ -90,7 +90,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
       rating: "4.9",
       category: "Makanan Utama",
       description: "Paduan kelembutan bubur pati sagu murni hangat yang kenyal transparan dengan kuah kakap kuning segar gurih yang sarat rempah kunyit tua dan aroma harum daun kemangi hutan.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDQwLv1J3l2tnMuOvnXcntYTv6tVoQq001M1EHEEXfvv5Nx46YgZOd1EqMS4e9J4YGyNzXkq00iaNXK5wPPjri25yMkhwxjU2XELmnS9OaeOTQMUTJ3-qDQezInTRzmzDqiIW2TlffCcTMDGi95CO4dK5XQXooorBr8PRIxsPQBWRfHOwQeuD7KvJGCrv5qJjuNzqnQbcV-q2Wnn1QlQuPpB-J0wmU1LFZqfjL_3_pCdERxiMXCSvGwlw07smRzX3FLnJ1fpmwhVjo",
+      imageUrl: "https://i.pinimg.com/736x/38/c1/19/38c119f18024a093eb1195492146a3e8.jpg",
       history: "Sagu merupakan representasi spiritual dari 'Ibu Bumi' bagi masyarakat adat Papua. Teknik mengolah sagu basah menjadi Papeda berlendir kenyal hangat melambangkan kedaulatan pangan lokal yang telah menjaga keselamatan marga dari kelaparan selama ribuan tahun lamanya.",
       ingredients: [
         "250g Tepung Sagu basah murni (tanpa fermentasi)",
@@ -113,7 +113,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
       rating: "4.8",
       category: "Sajian Laut",
       description: "Ikan tongkol atau kuwe segar pesisir Papua yang dibakar murni tanpa bumbu kecap manis, disajikan istimewa dengan lumuran sambal kasar bawang merah mentah dan cabai rawit pedas menggetarkan lidah.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCwUGWF6srLGSPe5Ge_OSwMbrKYOM0ipnR_V1qOqaINK62H-3uf_q9kZ8tGMDdIQAMIv59zoJBIuBzN4yxmz0s-_y3kS4LJ2eLxqMoLVbv3R6a8XBB7I8dRuIvHOhUZBPrMBlox5ikDWUcv2sRs4rOPUBdHU7406ZgLLa4ZNHI7xEuF192GeurVG_xMzH3tHDEcVeb6vKy5ApJZ7_JlXOGm4oj-6Ubky-YHviN8qVWQRnT0NZUj1vrRnR_uHNXUa3rk8YuwpDl1TRk",
+      imageUrl: "https://i.pinimg.com/736x/52/a8/b8/52a8b8f201ebe5c697567691af754b61.jpg",
       history: "Sajian khas pesisir Teluk Cendrawasih Papua Barat, khususnya Manokwari. Hidangan ini dinikmati turun-temurun oleh suku Arfak sebagai representasi kesederhanaan boga bahari yang mengandalkan kemurnian rasa manis asli ikan segar hasil laut.",
       ingredients: [
         "1 ekor Ikan Kakap atau Tongkol besar segar",
@@ -134,7 +134,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
       rating: "4.8",
       category: "Kearifan Hutan",
       description: "Protein hewani terbaik dan paling bergizi dari jantung pohon sagu busuk di pedalaman. Dibakar dengan rapi di atas arang batok, menyemburkan tekstur lumer (juicy) manis gurih mentega alami.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8tTIq3K7LVnut3OJtc8QKKLRX7K6cxB5mkRKeaiP8eZGCJczypGG3_qWBcO-6kFTPM1Z5u5tkheeAJ9-fjaetvWR4Fd-zmem3C5N0Eg-AOI--Fck8vaXGnWadYNo1_aBCYCXb5LKSgRrZfmwxT2jcqiG53iqEx_n2TJxG3FEgVzguRncw6Rcs2wJZ34NKyu0p0eshQZCHWH2tu5gXGgnI4rZakgVjYx3L3d0qZ9TE1iOke7ETkn5IcpI_i4dd7S26PaC9Ax604hI",
+      imageUrl: "https://i.pinimg.com/736x/62/c9/be/62c9be1fff233220bc40590ac179bc42.jpg",
       history: "Suku Kamoro dan suku Kombai di pedalaman rimbun Papua mengagungkan ulat sagu sebagai sumber suplemen energi alami murni dari hutan bapak moyang. Protein bebas kolesterol jahat ini hanya diambil secukupnya dari sisa pembabatan hutan sagu lestari.",
       ingredients: [
         "20 butir Ulat Sagu segar ukuran gembung sehat",
@@ -155,7 +155,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
       rating: "4.8",
       category: "Air Tawar",
       description: "Udang galah air tawar endemik dengan capit kokoh menyerupai kepiting (sehingga dijuluki 'selingkuh' oleh warga setempat) yang ditumis lumer bumbu mentega lada hitam.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBqtNY5WznNwpdiguBbzdegozXFa0fCbU1ailWsOZn8g8VusRseYiO6ZS7xDLLrOqkkEMVFOcuNriG2hWtrEnlH_r3PJmEaue0V1XdRrPn3HFyc2GebA62Nrw0_7MRrcyphSWI6b6DSL3zLkTi3Sbp-XBBfIjNMehFuWzAVyTWI2yf9EqeURh1x1iuA1GDzJGcCkTWr5eb9XMWzqja9-evPSGmrb2fAVYKEeiHyfRBNjGLTYFg6zaRcojC2fmsvh9_qTdU_vAzDN0c",
+      imageUrl: "https://www.indonesia.travel/contentassets/82ff0935066647a0a48400631de23f52/udang-selingkuh.jpg",
       history: "Udang ajaib ini hidup subur di perairan tawar Danau Sentani, Jayapura, dan kawasan gletser dingin Lembah Baliem. Dinamakan selingkuh karena keunikan fisik kawin silang fiktif antara tubuh tebal udang galah dan kekuatan sepasang capit besi kepiting.",
       ingredients: [
         "500g Udang Selingkuh segar (atau udang galah capit biru)",
@@ -178,7 +178,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
       rating: "4.9",
       category: "Kudapan Manis",
       description: "Pai susu legendaris khas bumi Papua yang bercangkang renyah garing dengan isian custard telur susu murni yang sangat lembut, legit, lumer, dan manis memanjakan jiwa.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAysc2rOprmo-VJtHB_0IcXchSPYAn-vAdGn9E4Bp1pNuNj06aBlmgczrvs7kmBWeKRyURCprtZQqNh9uX5aqkOchiHm5R6GEetnL0kZsfLt_lw5qJQEWHeT6hIpp8VXVqHRUJ3i9bexrs_MYYy1mdjIQL7QnkmuWVc7D_umW-5SLSpUU_3BIB_h1xSkekPAKAOI7lxXW-H09uA2C6SEQyLHxBYDp5K_9gR5vbYeXYsqf_g7JGOgFphsmtxxseXPK3AjuySbAMH-BA",
+      imageUrl: "https://i.pinimg.com/736x/1d/86/a7/1d86a7742e95c493bd22a0ebcfe4c3a6.jpg",
       history: "Kue Lontar lahir dari jejak peninggalan pendudukan kolonial Belanda di timur Indonesia abad lampau (awalnya bernama 'Rondo' atau 'Lontart' yang mengadopsi rupa 'milktert' kue susu Belanda). Diolah penuh keramahtamahan lokal menggunakan wadah piring berbahan keramik khusus bermotif ikan atau daun.",
       ingredients: [
         "Cangkang (Kulit): 150g Tepung terigu protein sedang, 100g Mentega dingin beku, 1 butir Kuning telur, 1 sdm Gula es.",
@@ -195,9 +195,9 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
   ];
 
   return (
-    <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
+    <div className="batik-dark-bg min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back navigation button */}
-      <motion.button 
+      <motion.button
         id="back-to-gallery-papua"
         onClick={onBack}
         initial={{ opacity: 0, x: -10 }}
@@ -210,15 +210,15 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
 
       {/* 1. Stunning Papua Landscape Hero Section */}
       <section className="relative h-[65vh] w-full rounded-2xl overflow-hidden shadow-2xl border border-primary/10">
-        <img 
-          alt="Papua Pristine Raja Ampat Misty Landscape" 
-          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc7rOxEyENw4Mp1pqjKq3yT-i3Iwyb7o7fnCf3kmXCbWPklCfEZmbsty_NzP93PLk8umyNW0XVBcmv55H8hC5FpGBKX53RO2rxBwic2Vdf2VyYEf87xMWXi4ylydnC3RESdEOKYrEqVIHYL7_WqUxLuZEa18tDCfzksJdYCjdp1oy2iG8YVKX1R81bwB6JBgyPm7b5H9HXaR-dBnYA4t40641jEguzRUdHGQRXi0DCejOnxOEjDPwvYXiP8gkwTjhNGVuOmhRQNDI"
+        <img
+          alt="Papua Pristine Raja Ampat Misty Landscape"
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]"
+          src="https://i.pinimg.com/736x/56/5a/00/565a00f30d24b39bb39301fd1fd265cf.jpg"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#131311]/80 via-transparent to-transparent"></div>
-        
+
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-12 z-10 max-w-4xl animate-fade-in">
           <span className="font-sans text-xs tracking-[0.3em] text-primary mb-3 uppercase font-bold text-shadow">
             TIMUR INDONESIA &bull; SURGA KATULISTIWA
@@ -283,10 +283,10 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
       {/* 3. HISTORICAL SECTION (Historial & Filosofi Adat) */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 relative group rounded-2xl overflow-hidden border border-primary/20 shadow-xl bg-surface-container-low/50">
-          <img 
-            alt="Warga Papua Tradisional Hutan Sagu" 
-            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.75]" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ9qkSPxYoQy2snMpq1Y_-NWpw2r7T5UaML7PXVn97pFWeTFNxWojMkNtGFvx9d78z9x46C34EgU0o2KIdBBRUXzcp3mWF2NNWE-OX-0roNnD7utx-1aAf9Y-4-v0v9V9U2fRK9K8_shsbA4ueGPLPjxfTqBmwIcN8sIkUXULsNogt_kPdzOJICBKRtQ_Aut5qHMEDA6aC9D8Z6tKt8kAYeUcY1iX1juWygEqiAbhnc_-rIuYNGaOzXrtYB6SundqZshHTcjozJw0"
+          <img
+            alt="Warga Papua Tradisional Hutan Sagu"
+            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.75]"
+            src="https://i.pinimg.com/736x/9d/8f/28/9d8f2870c82b1dbe8d8204affa519099.jpg"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#131311]/60 via-transparent to-transparent"></div>
@@ -311,7 +311,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
               - Falsafah Ketahanan Pangan Adat Papua
             </span>
           </blockquote>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
             <div className="bg-surface-container-low/40 p-5 rounded-lg border border-primary/5 hover:border-primary/10 transition-colors">
               <span className="font-sans text-xs text-primary font-bold tracking-wider uppercase block mb-1">
@@ -351,175 +351,53 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
         </div>
 
         {/* Bento Grid Layout - 5 dishes */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          {dishes.map((dish, idx) => {
-            let gridColClass = "md:col-span-6";
-            if (idx === 0) gridColClass = "md:col-span-8";
-            else if (idx === 1) gridColClass = "md:col-span-4";
-            else if (idx === 2) gridColClass = "md:col-span-4";
-            else if (idx === 3) gridColClass = "md:col-span-4";
-            else if (idx === 4) gridColClass = "md:col-span-4";
-
-            return (
-              <motion.div
-                key={dish.name}
-                onClick={() => {
-                  setSelectedDish(dish);
-                  setActiveTab('recipe');
-                }}
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.3 }}
-                className={`${gridColClass} group relative rounded-xl overflow-hidden cursor-pointer border border-primary/15 hover:border-primary/40 transition-colors shadow-lg bg-surface-container-low h-[380px]`}
-              >
-                <img 
-                  alt={dish.name} 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" 
-                  src={dish.imageUrl} 
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000000]/95 via-[#000000]/40 to-[#000000]/10"></div>
-                
-                <div className="absolute top-4 left-4 flex gap-2">
-                  <div className="bg-primary/20 backdrop-blur-md border border-primary/40 px-2.5 py-1 rounded text-primary flex items-center gap-1 font-sans text-[10px] font-bold">
-                    <span className="material-symbols-outlined text-[10px] font-semibold" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span>{dish.rating}</span>
-                  </div>
-                  <div className="bg-black/40 backdrop-blur-md border border-white/10 px-2.5 py-1 rounded text-on-surface flex items-center gap-1 font-sans text-[9px] font-bold">
-                    <span>{dish.category}</span>
-                  </div>
-                </div>
-
-                <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
-                  <span className="font-sans text-[10px] tracking-[0.2em] text-primary/80 mb-1.5 font-bold uppercase block">
-                    KULINER TRADISIONAL PAPUA
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {dishes.map((dish, index) => (
+            <motion.div
+              key={dish.name}
+              onClick={() => setSelectedDish(dish)}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.08 }}
+              className="group relative h-[320px] cursor-pointer overflow-hidden rounded-xl border border-primary/10 bg-surface-container-low/30 shadow-md transition-all duration-300 hover:border-primary/30 hover:shadow-lg"
+            >
+              <img
+                src={dish.imageUrl}
+                alt={dish.name}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/45 to-transparent"></div>
+              <div className="absolute right-4 top-4 z-10 rounded bg-black/40 px-2.5 py-1 font-sans text-[9px] font-bold text-on-surface backdrop-blur-md border border-white/10">
+                {dish.category}
+              </div>
+              <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
+                <span className="font-sans text-[10px] tracking-[0.2em] text-primary/80 mb-1.5 font-bold uppercase block">
+                  KULINER TRADISIONAL PAPUA
+                </span>
+                <h4 className="font-serif text-xl sm:text-2xl text-on-surface font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                  {dish.name}
+                </h4>
+                <p className="font-sans text-xs text-on-surface-variant/90 leading-relaxed line-clamp-2 max-w-xl group-hover:text-on-surface transition-colors duration-300">
+                  {dish.description}
+                </p>
+                <div className="flex items-center gap-1.5 mt-4 text-[9px] sm:text-[10px] font-bold tracking-wider text-primary uppercase">
+                  <span>Lihat Resep &amp; Kisah Adat</span>
+                  <span className="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">
+                    arrow_right_alt
                   </span>
-                  <h4 className="font-serif text-xl sm:text-2xl text-on-surface font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
-                    {dish.name}
-                  </h4>
-                  <p className="font-sans text-xs text-on-surface-variant/90 leading-relaxed line-clamp-2 max-w-xl group-hover:text-on-surface transition-colors duration-300">
-                    {dish.description}
-                  </p>
-                  
-                  <div className="flex items-center gap-1.5 mt-4 text-[9px] sm:text-[10px] font-bold tracking-wider text-primary uppercase">
-                    <span>Lihat Resep &amp; Kisah Adat</span>
-                    <span className="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">
-                      arrow_right_alt
-                    </span>
-                  </div>
                 </div>
-              </motion.div>
-            );
-          })}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
-
-      {/* Cultural Divider */}
-      <div className="cultural-divider"></div>
-
-      {/* 5. SPICES AND GEOGRAPHY SECTION */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-7 flex flex-col gap-6">
-          <span className="font-sans text-xs tracking-[0.25em] font-semibold text-primary uppercase">
-            RASA PENYOKONG REMPAH
-          </span>
-          <h3 className="font-serif text-3xl md:text-4xl text-on-surface font-bold tracking-tight">
-            Esensi Rempah Tanah Papua
-          </h3>
-          <p className="font-sans text-sm md:text-base text-on-surface-variant leading-relaxed text-justify">
-            Rasa autentik sajian timur fajar lahir dari pemanfaatan komoditi tanaman lokal alami yang tumbuh liar di lereng-lereng teduh pegunungan, lembah sungai, serta pinggiran hutan hujan tropis basah:
-          </p>
-          
-          <div className="flex flex-col gap-4 mt-2">
-            <div className="flex gap-4 p-4 rounded-xl border border-primary/10 bg-surface-container-low/40 hover:bg-surface-container-low/75 transition-colors">
-              <div className="w-10 h-10 shrink-0 rounded-full border border-primary/25 bg-primary/10 flex items-center justify-center text-primary">
-                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>eco</span>
-              </div>
-              <div>
-                <h4 className="font-sans text-xs text-primary font-bold tracking-wide uppercase mb-1">
-                  Kunyit Tua Merauke
-                </h4>
-                <p className="font-sans text-xs text-on-surface-variant/80 leading-relaxed text-justify">
-                  Rimpang ruji kunyit tua berwarna oranye kemerahan menyala melimpah zat kurkumin alami, ragi warna utama penyaji Ikan Kuah Kuning.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 p-4 rounded-xl border border-primary/10 bg-surface-container-low/40 hover:bg-surface-container-low/75 transition-colors">
-              <div className="w-10 h-10 shrink-0 rounded-full border border-primary/25 bg-primary/10 flex items-center justify-center text-primary">
-                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>eco</span>
-              </div>
-              <div>
-                <h4 className="font-sans text-xs text-primary font-bold tracking-wide uppercase mb-1">
-                  Jahe Pegunungan Papua
-                </h4>
-                <p className="font-sans text-xs text-on-surface-variant/80 leading-relaxed text-justify">
-                  Jahe liar pedas menyengat yang melunakkan serat bau amis olahan ikan kakap pesisir teluk Mansinam peninggalan purba.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 p-4 rounded-xl border border-primary/10 bg-surface-container-low/40 hover:bg-surface-container-low/75 transition-colors">
-              <div className="w-10 h-10 shrink-0 rounded-full border border-primary/25 bg-primary/10 flex items-center justify-center text-primary">
-                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>eco</span>
-              </div>
-              <div>
-                <h4 className="font-sans text-xs text-primary font-bold tracking-wide uppercase mb-1">
-                  Kemangi Hutan Lebar
-                </h4>
-                <p className="font-sans text-xs text-on-surface-variant/80 leading-relaxed text-justify">
-                  Dedaunan herba berhelai lebar wangi mint citrus tanah pegunungan basah penyubur aroma murni sepiring kuah sup ikan kuning.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="lg:col-span-5 relative group rounded-2xl overflow-hidden border border-primary/20 shadow-xl bg-surface-container-low/50">
-          <img 
-            alt="Danau Sentani Landscape" 
-            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8]" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJvgVf2kyBQsWip8tEZvAQREscacUsbNYgfEQS3WqIpyGjZ13pTo2Nj-PJNtzbyAcxXV8VI0W6MncivrB96PujL49jV98r_daG4sJQUEfvgdpDCn39yc4rs_IZgmJtKlv4nKjiHaEpZ_XA6R7PSw8tjvh9ZF1TZC7o3BMjCpz48PQcsJ28I2oC7xVn3KkOc_g-EA2Xi20B7xever52mP0dfnMzrCLSnCjSC2-JmZXBuSlmHondVMRf8i6AwvM7SVKME3Jy99wL-P0"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#13110e]/60 to-transparent"></div>
-        </div>
-      </section>
-
-      {/* Cultural Divider */}
-      <div className="cultural-divider"></div>
-
-      {/* 6. ARTS & SITE ATTRACTIONS AREA */}
-      <section className="bg-surface-container-low/50 border border-primary/15 rounded-2xl p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="flex flex-col gap-4 justify-center">
-          <span className="font-sans text-xs tracking-[0.25em] font-bold text-primary uppercase block">
-            PANGGUNG TRADISI &amp; GERAK JIWA
-          </span>
-          <h4 className="font-serif text-2xl md:text-3xl font-bold text-on-surface">
-            Tari Yospan Kegembiraan
-          </h4>
-          <p className="font-sans text-xs sm:text-sm text-on-surface-variant/90 leading-relaxed text-justify">
-            Tarian persahabatan rakyat Papua Barat yang mengekspresikan sukaria pertemanan tanpa sekat suku. Dikombinasikan dengan detak gerak kaki meloncat kencang seirama ketukan dawai gitar kentrung ganda dan tabuhan perkusi tifa bambu.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-4 justify-center border-t md:border-t-0 md:border-l border-primary/10 pt-6 md:pt-0 md:pl-10">
-          <span className="font-sans text-xs tracking-[0.25em] font-bold text-primary uppercase block">
-            POROS ALAM SANUBARI
-          </span>
-          <h4 className="font-serif text-2xl md:text-3xl font-bold text-on-surface">
-            Danau Sentani Jayapura
-          </h4>
-          <p className="font-sans text-xs sm:text-sm text-on-surface-variant/90 leading-relaxed text-justify">
-            Danau vulkanik luas legendaris berketinggian rimbun di lereng suaka alam Gunung Cycloop Jayapura. Menjadi sumbu budidaya udang selingkuh air tawar serta rumah panggung kayu lestari suku adat pesisir danau.
-          </p>
-        </div>
-      </section>
-
       {/* 7. MODAL UNTUK INTERAKSI DETAIL MAKANAN */}
       <AnimatePresence>
         {selectedDish && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0e0e0c]/95 overflow-y-auto backdrop-blur-sm">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 30 }}
@@ -527,7 +405,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
               className="relative bg-surface border border-primary/20 w-full max-w-5xl rounded-lg overflow-hidden shadow-[0_20px_50px_rgba(233,193,118,0.15)] grid grid-cols-1 md:grid-cols-12 max-h-[90vh]"
             >
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setSelectedDish(null)}
                 className="absolute top-4 right-4 z-55 w-10 h-10 rounded-full bg-surface-lowest/80 border border-primary/30 text-primary hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300 flex items-center justify-center shadow-lg active:scale-95 cursor-pointer"
                 aria-label="Tutup Detail"
@@ -538,13 +416,13 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
               {/* Left Column: Image */}
               <div className="md:col-span-5 relative bg-[#13110e] flex flex-col h-full min-h-[300px] md:min-h-0 md:max-h-[90vh]">
                 <div className="relative h-full w-full">
-                  <img 
-                    className="w-full h-full object-cover absolute inset-0" 
-                    src={selectedDish.imageUrl} 
+                  <img
+                    className="w-full h-full object-cover absolute inset-0"
+                    src={selectedDish.imageUrl}
                     alt={selectedDish.name}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#13110e]/40 via-transparent to-transparent"></div>
-                  
+
                   {/* Floating badge */}
                   <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 bg-primary/20 backdrop-blur-md border border-primary/30 px-3 py-1 rounded">
                     <span className="font-sans text-[10px] tracking-widest font-extrabold text-primary uppercase">
@@ -567,13 +445,13 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
 
                 {/* Tabs button */}
                 <div className="flex border-b border-primary/15 gap-6 mb-6 font-sans text-xs tracking-widest font-bold">
-                  <button 
+                  <button
                     onClick={() => setActiveTab('recipe')}
                     className={`pb-3 border-b-2 transition-all cursor-pointer ${activeTab === 'recipe' ? 'border-primary text-primary' : 'border-transparent text-on-surface-variant/60 hover:text-primary'}`}
                   >
                     RESEP & BAHAN
                   </button>
-                  <button 
+                  <button
                     onClick={() => setActiveTab('philosophy')}
                     className={`pb-3 border-b-2 transition-all cursor-pointer ${activeTab === 'philosophy' ? 'border-primary text-primary' : 'border-transparent text-on-surface-variant/60 hover:text-primary'}`}
                   >
@@ -584,7 +462,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
                 {/* Tab content */}
                 <div className="flex-grow">
                   {activeTab === 'recipe' && (
-                    <motion.div 
+                    <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       className="flex flex-col gap-6"
@@ -595,7 +473,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
                         </h4>
                         <ul className="flex flex-col gap-2">
                           {selectedDish.ingredients.map((ing) => (
-                            <li 
+                            <li
                               key={ing}
                               className="font-sans text-xs text-on-surface-variant leading-relaxed flex items-start gap-2.5 py-1"
                             >
@@ -614,7 +492,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
                         </h4>
                         <ol className="flex flex-col gap-4">
                           {selectedDish.cookingSteps.map((step, sIdx) => (
-                            <li 
+                            <li
                               key={sIdx}
                               className="font-sans text-xs text-on-surface-variant leading-relaxed flex gap-4 items-start"
                             >
@@ -630,7 +508,7 @@ export function PapuaDetail({ onBack, onViewRecipe }: PapuaDetailProps) {
                   )}
 
                   {activeTab === 'philosophy' && (
-                    <motion.div 
+                    <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       className="flex flex-col gap-4"

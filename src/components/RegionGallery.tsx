@@ -7,11 +7,12 @@ interface RegionGalleryProps {
   onSelectProvince: (province: ProvinceData) => void;
   searchQuery: string;
   setSearchQuery: (query: string) => void;
+  showHeaderSearch?: boolean;
 }
 
 const TERRITORIES = ['SEMUA', 'SUMATERA', 'JAWA', 'SULAWESI', 'BALI', 'KALIMANTAN', 'NUSA TENGGARA', 'MALUKU', 'PAPUA'];
 
-export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery }: RegionGalleryProps) {
+export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery, showHeaderSearch = true }: RegionGalleryProps) {
   const [selectedTerritory, setSelectedTerritory] = useState<string>('SEMUA');
   const galleryRef = useRef<HTMLDivElement>(null);
 
@@ -24,6 +25,7 @@ export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery }:
       const matchesSearch = !searchQuery || 
         p.name.toLowerCase().includes(q) ||
         p.dishName.toLowerCase().includes(q) ||
+        p.dishNames.some(dishName => dishName.toLowerCase().includes(q)) ||
         p.territory.toLowerCase().includes(q) ||
         p.description.toLowerCase().includes(q) ||
         p.ingredients.some(ing => ing.toLowerCase().includes(q)) ||
@@ -116,67 +118,69 @@ export function RegionGallery({ onSelectProvince, searchQuery, setSearchQuery }:
 
   return (
     <div id="jelajahi-section" className="bg-pattern py-16 px-6 md:px-12 max-w-7xl mx-auto">
-      {/* 1. Header & Search Section */}
-      <section className="mb-20 text-center animate-fade-in">
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary font-bold leading-tight tracking-tight mb-6">
-          Jelajahi Nusantara
-        </h2>
-        <p className="font-sans text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
-          Ekspedisi kuliner melintasi ribuan pulau, mengungkap rahasia bumbu warisan dan cita rasa autentik dari setiap sudut Indonesia.
-        </p>
+      {showHeaderSearch && (
+        /* 1. Header & Search Section */
+        <section className="mb-20 text-center animate-fade-in">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary font-bold leading-tight tracking-tight mb-6">
+            Jelajahi Nusantara
+          </h2>
+          <p className="font-sans text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
+            Ekspedisi kuliner melintasi ribuan pulau, mengungkap rahasia bumbu warisan dan cita rasa autentik dari setiap sudut Indonesia.
+          </p>
 
-        {/* Input search bar */}
-        <div className="max-w-xl mx-auto relative group">
-          <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60 group-focus-within:text-primary transition-colors duration-300">
-            search
-          </span>
-          <input 
-            type="text"
-            value={searchQuery}
-            onChange={(e) => {
-              const query = e.target.value;
-              setSearchQuery(query);
-              // Reset category to "SEMUA" automatically to ensure comprehensive global search
-              if (query.trim() !== "") {
-                setSelectedTerritory("SEMUA");
-              }
-            }}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' && filteredProvinces.length > 0) {
-                // Instantly open the first matching province detail on Enter
-                onSelectProvince(filteredProvinces[0]);
-              }
-            }}
-            className="w-full bg-surface-container/60 border-b border-primary/40 focus:border-primary focus:ring-0 text-on-surface py-4 pl-14 pr-10 transition-all duration-300 outline-none placeholder:text-on-surface-variant/40 rounded-t-md text-sm tracking-wide"
-            placeholder="Cari daerah, masakan, rempah atau bahan..."
-          />
-          {searchQuery && (
-            <button 
-              onClick={() => setSearchQuery('')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 hover:text-primary text-on-surface-variant/75 text-sm transition-colors"
-            >
-              <span className="material-symbols-outlined">close</span>
-            </button>
-          )}
-        </div>
+          {/* Input search bar */}
+          <div className="max-w-xl mx-auto relative group">
+            <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60 group-focus-within:text-primary transition-colors duration-300">
+              search
+            </span>
+            <input 
+              type="text"
+              value={searchQuery}
+              onChange={(e) => {
+                const query = e.target.value;
+                setSearchQuery(query);
+                // Reset category to "SEMUA" automatically to ensure comprehensive global search
+                if (query.trim() !== "") {
+                  setSelectedTerritory("SEMUA");
+                }
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && filteredProvinces.length > 0) {
+                  // Instantly open the first matching province detail on Enter
+                  onSelectProvince(filteredProvinces[0]);
+                }
+              }}
+              className="w-full bg-surface-container/60 border-b border-primary/40 focus:border-primary focus:ring-0 text-on-surface py-4 pl-14 pr-10 transition-all duration-300 outline-none placeholder:text-on-surface-variant/40 rounded-t-md text-sm tracking-wide"
+              placeholder="Cari daerah, masakan, rempah atau bahan..."
+            />
+            {searchQuery && (
+              <button 
+                onClick={() => setSearchQuery('')}
+                className="absolute right-4 top-1/2 -translate-y-1/2 hover:text-primary text-on-surface-variant/75 text-sm transition-colors"
+              >
+                <span className="material-symbols-outlined">close</span>
+              </button>
+            )}
+          </div>
 
-        {/* Quick Island Segment Controls */}
-        <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-3xl mx-auto">
-          {TERRITORIES.map((terr) => (
-            <button
-              key={terr}
-              onClick={() => setSelectedTerritory(terr)}
-              className={`px-4 py-1.5 rounded-full text-[10px] tracking-widest font-bold uppercase transition-all duration-300 cursor-pointer ${
-                selectedTerritory === terr
-                  ? 'bg-primary text-on-primary font-semibold shadow-md'
-                  : 'bg-surface-container text-on-surface-variant hover:text-primary border border-primary/10'
-              }`}
-            >
-              {terr}
-            </button>
-          ))}
-        </div>
-      </section>
+          {/* Quick Island Segment Controls */}
+          <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-3xl mx-auto">
+            {TERRITORIES.map((terr) => (
+              <button
+                key={terr}
+                onClick={() => setSelectedTerritory(terr)}
+                className={`px-4 py-1.5 rounded-full text-[10px] tracking-widest font-bold uppercase transition-all duration-300 cursor-pointer ${
+                  selectedTerritory === terr
+                    ? 'bg-primary text-on-primary font-semibold shadow-md'
+                    : 'bg-surface-container text-on-surface-variant hover:text-primary border border-primary/10'
+                }`}
+              >
+                {terr}
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 2. Province of the Month (Featured Carousel) */}
       <section className="mb-24 animate-fade-in relative z-10">

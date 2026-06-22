@@ -30,7 +30,7 @@ export function DynamicProvinceDetail({ provinceId, onBack, onViewRecipe }: Dyna
 
   if (!detail) {
     return (
-      <div className="bg-pattern min-h-screen py-20 text-center flex flex-col justify-center items-center">
+      <div className="batik-dark-bg min-h-screen py-20 text-center flex flex-col justify-center items-center">
         <h3 className="font-serif text-2xl text-primary font-bold mb-4">Wilayah Tidak Ditemukan</h3>
         <button 
           onClick={onBack}
@@ -43,7 +43,7 @@ export function DynamicProvinceDetail({ provinceId, onBack, onViewRecipe }: Dyna
   }
 
   return (
-    <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
+    <div className="batik-dark-bg min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back Button */}
       <motion.button 
         id={`back-to-gallery-${provinceId}`}
@@ -166,65 +166,45 @@ export function DynamicProvinceDetail({ provinceId, onBack, onViewRecipe }: Dyna
         </div>
 
         {/* Bento Grid Layout - 4 dishes */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          {detail.dishes.map((dish, idx) => {
-            // Setup responsive layout class combinations like real static components
-            let gridColClass = "md:col-span-6";
-            if (idx === 0) gridColClass = "md:col-span-8";
-            else if (idx === 1) gridColClass = "md:col-span-4";
-            else if (idx === 2) gridColClass = "md:col-span-4";
-            else if (idx === 3) gridColClass = "md:col-span-8";
-
-            return (
-              <motion.div
-                key={dish.name}
-                onClick={() => {
-                  setSelectedDish(dish);
-                  setActiveTab('recipe');
-                }}
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.3 }}
-                className={`${gridColClass} group relative rounded-xl overflow-hidden cursor-pointer border border-primary/15 hover:border-primary/40 transition-colors shadow-lg bg-surface-container-low h-[380px]`}
-              >
-                <img 
-                  alt={dish.name} 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" 
-                  src={dish.imageUrl} 
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000000]/95 via-[#000000]/40 to-[#000000]/10"></div>
-                
-                <div className="absolute top-4 left-4 flex gap-2">
-                  <div className="bg-primary/20 backdrop-blur-md border border-primary/40 px-2.5 py-1 rounded text-primary flex items-center gap-1 font-sans text-[10px] font-bold">
-                    <span className="material-symbols-outlined text-[10px] font-semibold" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span>{dish.rating}</span>
-                  </div>
-                </div>
-
-                <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
-                  <span className="font-sans text-[10px] tracking-[0.2em] text-primary/80 mb-1.5 font-bold uppercase block">
-                    KULINER HIDANGAN PILIHAN
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {detail.dishes.map((dish, index) => (
+            <motion.div
+              key={dish.name}
+              onClick={() => setSelectedDish(dish)}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.08 }}
+              className="group relative h-[320px] cursor-pointer overflow-hidden rounded-xl border border-primary/10 bg-surface-container-low/30 shadow-md transition-all duration-300 hover:border-primary/30 hover:shadow-lg"
+            >
+              <img
+                src={dish.imageUrl}
+                alt={dish.name}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/45 to-transparent"></div>
+              <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
+                <span className="font-sans text-[10px] tracking-[0.2em] text-primary/80 mb-1.5 font-bold uppercase block">
+                  KULINER HIDANGAN PILIHAN
+                </span>
+                <h4 className="font-serif text-xl sm:text-2xl text-on-surface font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                  {dish.name}
+                </h4>
+                <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 max-w-xl group-hover:text-on-surface transition-colors duration-300">
+                  {dish.description}
+                </p>
+                <div className="flex items-center gap-1.5 mt-4 text-[9px] sm:text-[10px] font-bold tracking-wider text-primary uppercase">
+                  <span>Lihat Resep &amp; Kisah Adat</span>
+                  <span className="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">
+                    arrow_right_alt
                   </span>
-                  <h4 className="font-serif text-xl sm:text-2xl text-on-surface font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
-                    {dish.name}
-                  </h4>
-                  <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 max-w-xl group-hover:text-on-surface transition-colors duration-300">
-                    {dish.description}
-                  </p>
-                  
-                  <div className="flex items-center gap-1.5 mt-4 text-[9px] sm:text-[10px] font-bold tracking-wider text-primary uppercase">
-                    <span>Lihat Resep &amp; Kisah Adat</span>
-                    <span className="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">
-                      arrow_right_alt
-                    </span>
-                  </div>
                 </div>
-              </motion.div>
-            );
-          })}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
-
       {/* Section Divider */}
       <div className="cultural-divider"></div>
 

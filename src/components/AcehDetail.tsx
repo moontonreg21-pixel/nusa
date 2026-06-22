@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface AcehDetailProps {
@@ -148,7 +148,7 @@ export function AcehDetail({ onBack, onViewRecipe }: AcehDetailProps) {
   ];
 
   return (
-    <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
+    <div className="batik-dark-bg min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back button */}
       <motion.button 
         id="back-to-home-btn"
@@ -270,180 +270,67 @@ export function AcehDetail({ onBack, onViewRecipe }: AcehDetailProps) {
           </p>
         </div>
 
-        {/* Bento Grid Layout - Custom styling matching other regions */}
+        {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          
-          {/* Mie Aceh Card (Featured - 7 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[0])}
-            className="md:col-span-7 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-72 md:h-80 overflow-hidden">
-              <img 
-                alt="Mie Aceh Special Curry" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[0].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[0].rating} RATING
+          {dishes.map((dish, index) => (
+            <div
+              key={dish.name}
+              onClick={() => setSelectedDish(dish)}
+              className={`group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between ${index === 0 ? 'md:col-span-8' : 'md:col-span-4'}`}
+            >
+              <div className={`relative overflow-hidden ${index === 0 ? 'h-72 md:h-96' : index === 1 ? 'h-64 md:h-[24rem]' : 'h-56'}`}>
+                <img
+                  alt={dish.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src={dish.imageUrl}
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
+                {index < 2 && (
+                  <div className="absolute bottom-4 left-6 right-6">
+                    <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">
+                      {index === 0 ? 'KULINER UNGGULAN' : 'KULINER PILIHAN'}
+                    </span>
+                    <h4 className={`font-serif text-on-surface font-bold mt-1 ${index === 0 ? 'text-2xl md:text-3xl' : 'text-2xl'}`}>
+                      {dish.name}
+                    </h4>
+                  </div>
+                )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">KARI REMPAH PEKAT</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[0].name}</h4>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[0].description}
-              </p>
-              <div className="flex gap-4">
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedDish(dishes[0]);
-                  }}
-                  className="bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase"
-                >
-                  LIHAT RESEP
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Sate Matang Card (5 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[1])}
-            className="md:col-span-5 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-64 md:h-80 overflow-hidden">
-              <img 
-                alt="Sate Matang Soto Sapi" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[1].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[1].rating} RATING
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">KOMBINASI GOURMET</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[1].name}</h4>
+              <div className={`${index < 2 ? 'p-6' : 'p-5'} flex-grow flex flex-col justify-between gap-3`}>
+                <div>
+                  {index >= 2 && (
+                    <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">
+                      {dish.name}
+                    </h5>
+                  )}
+                  <p className={`font-sans text-xs text-on-surface-variant leading-relaxed ${index < 2 ? 'text-justify mb-5 line-clamp-3' : 'line-clamp-2'}`}>
+                    {dish.description}
+                  </p>
+                </div>
+                {index < 2 ? (
+                  <button
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      setSelectedDish(dish);
+                    }}
+                    className={index === 0
+                      ? 'bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase self-start'
+                      : 'text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase self-start'}
+                  >
+                    {index === 0 ? 'LIHAT RESEP' : 'EKSPLORASI RESEP'}
+                    {index === 1 && <span className="material-symbols-outlined text-[10px]">arrow_forward</span>}
+                  </button>
+                ) : (
+                  <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
+                    Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
+                  </span>
+                )}
               </div>
             </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[1].description}
-              </p>
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedDish(dishes[1]);
-                }}
-                className="text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase"
-              >
-                EKSPLORASI RESEP <span className="material-symbols-outlined text-[10px]">arrow_forward</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Ayam Tangkap (6 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[2])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Ayam Tangkap Garing Rempah" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[2].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[2].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">AROMATIK HERBAL</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[2].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[2].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Kuah Pliek U (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[3])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Kuah Pliek U Aceh" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[3].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[3].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">KARYA FERMENTASI</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[3].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[3].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Timphan (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[4])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Timphan Labu Srikaya" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[4].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[4].rating} Rating
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-3 left-4">
-                <span className="font-sans text-[9px] tracking-widest text-primary uppercase font-bold">JAJANAN HARI RAYA</span>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[4].name}</h5>
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2 md:line-clamp-3">{dishes[4].description}</p>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
+          ))}
         </div>
       </section>
-
       {/* 4. Interactive Cooking Recipe Modal */}
       <AnimatePresence>
         {selectedDish && (
@@ -470,14 +357,9 @@ export function AcehDetail({ onBack, onViewRecipe }: AcehDetailProps) {
 
               {/* Title Header */}
               <div className="flex flex-col gap-1 pr-6">
-                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">RESEP ASLI MEKKAH BARU</span>
+                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">KULINER NUSANTARA</span>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-on-surface">{selectedDish.name}</h3>
-                <div className="flex items-center gap-1 text-[10px] text-primary font-bold">
-                  <span className="material-symbols-outlined text-xs" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  <span>{selectedDish.rating} Rating</span>
-                </div>
               </div>
-
               {/* Banner Image */}
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-primary/10">
                 <img src={selectedDish.imageUrl} alt={selectedDish.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
@@ -498,7 +380,7 @@ export function AcehDetail({ onBack, onViewRecipe }: AcehDetailProps) {
                   <ul className="flex flex-col gap-2">
                     {selectedDish.ingredients.map((ing, i) => (
                       <li key={i} className="font-sans text-xs text-on-surface-variant flex items-start gap-2">
-                        <span className="text-primary text-[10px] mt-1 select-none">âœ¦</span>
+                        <span className="text-primary text-[10px] mt-1 select-none">✦</span>
                         <span>{ing}</span>
                       </li>
                     ))}

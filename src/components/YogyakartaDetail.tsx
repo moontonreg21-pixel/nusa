@@ -39,7 +39,7 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
       name: "Gudeg Jogja",
       rating: "4.9",
       description: "Kelembutan nangka muda yang dimasak perlahan dalam kendil tanah liat dengan gula merah asli dan santan kental, menghasilkan rona cokelat legendaris dan rasa manis gurih yang medok.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAe6rRGV1szwOA6vqxnhBXupwcrJCKuzI_walLcV5ctpMpV1oULQF5dAtr7PE0vU9HtRc7fneSt0BCXpp30Gh_DHQbkaLjwKQ7Wca3FiBEzqu919GFxTkVErmORRfBpvXg_67kHUQcNCoYCIA9gHk7ILg6cv_a1g93Sl_Yyv71t3Y1LVfdN__bo_065ILBO-lXjOolFpBy85t3der5V9cwjbfUmKzplsSS1Y500Mk-doK9C_zBe0PBNi3PhTSNUady2B6sLs3LOfA4",
+      imageUrl: "https://i.pinimg.com/736x/65/99/d8/6599d8b5261f20d3f1863e94f6be9522.jpg",
       history: "Gudeg telah diolah sejak abad ke-16 bertepatan dengan pembangunan Kerajaan Mataram Islam di Alas Mentaok. Hidangan ini melambangkan ketenangan, kesabaran (sabar narimo), dan ketekunan masyarakat Jawa karena proses memasaknya yang memakan waktu hingga puluhan jam.",
       ingredients: [
         "1 kg Nangka muda (tewel), potong kotak sedang",
@@ -62,7 +62,7 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
       name: "Sate Klatak",
       rating: "4.8",
       description: "Sate kambing muda legendaris khas Pleret, Bantul. Dagingnya hanya diberi garam laut, ditusuk menggunakan jeruji besi sepeda, lalu dibakar di atas arang terbuka untuk menghasilkan sate yang juicy dengan kuah gulai gurih pendamping.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDDmbZlftlPMdNjgw2Aa2-t7WLhBWnjhQVBRCUy7DpOoYMhLQRt8Vax8XVTzcAqtrg0K9i7InFtmewk6rhP3Czcy1ltgIY3SKxjY0IQvJm1yvbBfH0rSInmZSE-pnoUebVUj1y6ZapbD9P8uuc0a2qOp8SxuRt_5O9guXpEVLF8267NMxvpedgsz_cdVJT8hw-xlj0mHIZwzh46xaMEdmCy0Vb15kQEC1CfIwPHrMiI3LPwS11GPTlE0gAcRPeJJUBX0wqQjPDB_zk",
+      imageUrl: "https://i.pinimg.com/1200x/67/3e/43/673e43c846da0d7615b2b50b8ef9e6c7.jpg",
       history: "Penggunaan jeruji besi sepeda bukan sekadar estetika, melainkan teknik hantaran panas yang cerdas. Besi menghantarkan panas langsung ke bagian dalam daging, membuat sate kambing matang merata di dalam sembari tetap empuk (juicy) di luar.",
       ingredients: [
         "500g Daging kambing muda, potong dadu agak besar",
@@ -82,7 +82,7 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
       name: "Bakpia Pathok",
       rating: "4.7",
       description: "Kue kering bulat berisi kacang hijau manis bertekstur kulit luar renyah (flaky) dan isi lembut, menjadi buah tangan nomor satu yang merepresentasikan sejarah panjang harmoni budaya di Yogyakarta.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDGkZaSS8r8HYKFuUW102YmVzLgvdwHvvhuxrgJWNmjKOQ5Qx7uqd1ifmcTJNtvp2cGA78jz-vJ7TQTUbvmJPaI7bSBBxs4pFmu_8zISf2w2hp37r70bc8Wfsenu57YUzlqbw3uODMsw2dv4r1I9iMpeXUKIzCeRiz2-pqAOtn9M9hjBLYEvbG3eNWeCmmA5hIoSNwQg4r7ZunG--DYbOFnRClSz2TVMoqarYjacOkw27SQlCnIwVScb8DiUeX2_AKQ9yY858neGUU",
+      imageUrl: "https://i.pinimg.com/736x/1c/53/48/1c53487bec2aa2bce6e69aae414b9818.jpg",
       history: "Bakpia berasal dari Tionghoa (bernama 'Tou Pia' berarti pia kacang hijau) yang diperkenalkan di kampung Pathok Yogyakarta sekitar awal abad ke-20. Kini ia bertransformasi menjadi ikon jajanan tradisional Jawa yang dicintai seluruh golongan.",
       ingredients: [
         "250g Tepung terigu protein sedang",
@@ -102,7 +102,7 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
       name: "Mangut Lele",
       rating: "4.8",
       description: "Masakan rumahan legendaris berupa ikan lele yang terlebih dahulu diasap menggunakan sabut kelapa hingga harum kering, kemudian dimasak dalam kuah santan kuning-oranye yang pedas membakar beraroma kencur segar.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBFzpxptBK6ckTBKVTFg_VLKrjH8Tu-R9zb6yNKoCkC4hTqbAEEMbzuhqrBgl1IcN0u7sz4PQI0LZt1A6SbPsZWBU8ZuFJX2Rfo6xUIambINtLnbqjV77096lG_FJ8Kha_pjji9-Od_RA4LJeSHselWwn5vjk-xakgWa31rHL8txQfveBaGqEgmHtB-qi5Oy-OIH-B6_5zekM0Uaa6hSA3KPVANqIj1ouDDUF84aetVx2LzvntI5XMXNZzQAbvr7Wk1ihM5aBuPfdI",
+      imageUrl: "https://i.pinimg.com/736x/aa/42/1c/aa421cd6146ce6c794728eb36e964695.jpg",
       history: "Makanan ini sangat populer di kawasan perdesaan Yogyakarta. Pengasapan lele adalah kearifan lokal untuk mengawetkan ikan air tawar pasca panen sekaligus memberi aroma smokey yang unik yang tidak dapat ditiru oleh teknik memasak modern.",
       ingredients: [
         "4 ekor Ikan lele asap sabut kelapa",
@@ -123,7 +123,7 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
       name: "Jadah Tempe",
       rating: "4.6",
       description: "Kombinasi cemilan tradisional khas lereng Gunung Merapi: Jadah (ketan kukus gurih berlumat kelapa) disiram dengan tempe bacem legit yang empuk manis hitam pekat. Dinikmati secara bersamaan dalam gigitan tunggal.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBk1j1Jss2SD1ohpAqzQkSz5wttRVlj7WgOkS3wQpJBS4M5rU_QTMvftXgb0USNmezSThZf2ddKKq9KVtjyBMekxYCxF3lboFvZifU8GEXVlIbXSX62Ie0W8w9bJiNQ7BnR0WsLIKfLmKqG7iw_nFpuLYCvzsxjPJfg3LhKQyDp6K419lbebkRHFBwnhpFk5gmVgDOUC6wT7GcRfif-Fh928M-9K9PxVdZW8pnv6H5LBWoae831zAY2H2R5Rsn2A4Tl0sy4fEaLmuc",
+      imageUrl: "https://i.pinimg.com/736x/13/18/50/13185064dd4323972526177714b3e296.jpg",
       history: "Jadah Tempe mulai terkenal luas sejak tahun 1950-an ketika diperkenalkan di Kaliurang dan menjadi cemilan favorit Sri Sultan Hamengkubuwono IX. Gabungan rasa gurih lemak ketan dan manis legit tempe bacem menciptakan sensasi rasa umami tradisional Jawa.",
       ingredients: [
         "300g Beras ketan (rendam 2 jam, kukus matang)",
@@ -142,9 +142,9 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
   ];
 
   return (
-    <div className="bg-pattern min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
+    <div className="batik-dark-bg min-h-screen py-10 px-4 md:px-12 max-w-7xl mx-auto flex flex-col gap-12 text-on-surface">
       {/* Back navigation dynamic trigger */}
-      <motion.button 
+      <motion.button
         id="back-to-home-btn"
         onClick={onBack}
         initial={{ opacity: 0, x: -10 }}
@@ -157,15 +157,15 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
 
       {/* 1. Misty Yogyakarta Hero Section */}
       <section className="relative h-[65vh] w-full rounded-2xl overflow-hidden shadow-2xl border border-primary/10">
-        <img 
-          alt="Yogyakarta Misty Landscape" 
-          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8raGnYwVqzg9uRoegr0nAGzH4KtjLa0T_I4r5Srir-BPyJulEU0HMqxwXQaIp1AuTzst3DIDCCR0GaTGdxsel_IrDsQ5WjEQVZdehuCGjaGjd7Byp7ep3lfS483dJ9vF6WO71xnMnL_8RPhJIVoacIpZfybH-I05EqGZxTSKUl2gKsyBnXOQMdDHEpctjgnwQh07K8wU4cwy_y3_Vu0tzkfcCgSZEDdNa8EAC0XURa-ARx-f26Fm3p6BCH_QfbJzcyU7SPVTJ0uU" 
+        <img
+          alt="Yogyakarta Misty Landscape"
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.7] contrast-[1.05]"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8raGnYwVqzg9uRoegr0nAGzH4KtjLa0T_I4r5Srir-BPyJulEU0HMqxwXQaIp1AuTzst3DIDCCR0GaTGdxsel_IrDsQ5WjEQVZdehuCGjaGjd7Byp7ep3lfS483dJ9vF6WO71xnMnL_8RPhJIVoacIpZfybH-I05EqGZxTSKUl2gKsyBnXOQMdDHEpctjgnwQh07K8wU4cwy_y3_Vu0tzkfcCgSZEDdNa8EAC0XURa-ARx-f26Fm3p6BCH_QfbJzcyU7SPVTJ0uU"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#131311]/80 via-transparent to-transparent"></div>
-        
+
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-12 z-10 max-w-4xl">
           <span className="font-sans text-xs tracking-[0.3em] text-primary mb-3 uppercase font-bold">
             ISTIMEWA &amp; SAKRAL
@@ -185,10 +185,10 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
       {/* 2. Heritage Section - Warisan Agung Kasultanan */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 relative group rounded-2xl overflow-hidden border border-primary/20 shadow-xl bg-surface-container-low">
-          <img 
-            alt="Keraton Yogyakarta Hall" 
-            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuACs2m74KkNSPJj-P2XuI59mHbMTgLPybV_tWK5lCnr0c_9funnxRCnp_Z4Ffswz9GI5T7__ZFkHN63cOPdHgOqeJLIeg3BJbZgkOlesQelRbZLV1Ao2e1N3X1rUTeN1i5nCHcFSvO0AK_gbas1iMll813lnxAzuneXGi3R9ZukNdDromB7otK9MeYwNjUja-jsFc_LzbJ4NK10NFIpckxeIzAdSJDzBC6hHMpnmj7oJYcuh-dhYe-ZUuMXVtmpBOjrAN_h2SKTeNc"
+          <img
+            alt="Keraton Yogyakarta Hall"
+            className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 brightness-[0.8] contrast-[1.1]"
+            src="/regions/yogya-keraton-warisan.jpg"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#131311]/50 to-transparent"></div>
@@ -210,7 +210,7 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
               - Prinsip Keharmonisan Rakyat dan Pemimpin Mataram
             </span>
           </blockquote>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
             <div className="bg-surface-container-low/40 p-5 rounded-lg border border-primary/5 hover:border-primary/10 transition-colors">
               <span className="font-sans text-xs text-primary font-bold tracking-wider uppercase block mb-1">
@@ -264,184 +264,77 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
           </p>
         </div>
 
-        {/* Bento Grid Layout - Custom styling matching the provided prototype */}
+        {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          
-          {/* Gudeg Card (Featured - 7 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[0])}
-            className="md:col-span-7 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-72 md:h-80 overflow-hidden">
-              <img 
-                alt="Gudeg Jogja" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[0].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[0].rating} RATING
+          {dishes.map((dish, index) => (
+            <div
+              key={dish.name}
+              onClick={() => setSelectedDish(dish)}
+              className={`group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between ${index === 0 ? 'md:col-span-8' : 'md:col-span-4'}`}
+            >
+              <div className={`relative overflow-hidden ${index === 0 ? 'h-72 md:h-96' : index === 1 ? 'h-64 md:h-[24rem]' : 'h-56'}`}>
+                <img
+                  alt={dish.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  src={dish.imageUrl}
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
+                {index < 2 && (
+                  <div className="absolute bottom-4 left-6 right-6">
+                    <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">
+                      {index === 0 ? 'KULINER UNGGULAN' : 'KULINER PILIHAN'}
+                    </span>
+                    <h4 className={`font-serif text-on-surface font-bold mt-1 ${index === 0 ? 'text-2xl md:text-3xl' : 'text-2xl'}`}>
+                      {dish.name}
+                    </h4>
+                  </div>
+                )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">LEGENDARIS</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[0].name}</h4>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[0].description}
-              </p>
-              <div className="flex gap-4">
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedDish(dishes[0]);
-                  }}
-                  className="bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase"
-                >
-                  LIHAT RESEP
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Sate Klatak Card (5 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[1])}
-            className="md:col-span-5 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between"
-          >
-            <div className="relative h-64 md:h-80 overflow-hidden">
-              <img 
-                alt="Sate Klatak" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[1].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-sans text-xs font-bold rounded-full flex items-center gap-1 shadow-lg">
-                <span className="material-symbols-outlined text-xs leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[1].rating} RATING
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131311] via-[#131311]/20 to-transparent"></div>
-              <div className="absolute bottom-4 left-6">
-                <span className="font-sans text-[10px] tracking-widest text-primary uppercase font-bold">KULINER KHAS</span>
-                <h4 className="font-serif text-2xl text-on-surface font-bold mt-1">{dishes[1].name}</h4>
+              <div className={`${index < 2 ? 'p-6' : 'p-5'} flex-grow flex flex-col justify-between gap-3`}>
+                <div>
+                  {index >= 2 && (
+                    <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">
+                      {dish.name}
+                    </h5>
+                  )}
+                  <p className={`font-sans text-xs text-on-surface-variant leading-relaxed ${index < 2 ? 'text-justify mb-5 line-clamp-3' : 'line-clamp-2'}`}>
+                    {dish.description}
+                  </p>
+                </div>
+                {index < 2 ? (
+                  <button
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      setSelectedDish(dish);
+                    }}
+                    className={index === 0
+                      ? 'bg-primary text-on-primary px-5 py-2 font-sans text-[10px] font-bold tracking-wider hover:brightness-110 rounded transition-all uppercase self-start'
+                      : 'text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase self-start'}
+                  >
+                    {index === 0 ? 'LIHAT RESEP' : 'EKSPLORASI RESEP'}
+                    {index === 1 && <span className="material-symbols-outlined text-[10px]">arrow_forward</span>}
+                  </button>
+                ) : (
+                  <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
+                    Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
+                  </span>
+                )}
               </div>
             </div>
-            <div className="p-6">
-              <p className="font-sans text-xs text-on-surface-variant leading-relaxed text-justify mb-5 line-clamp-3">
-                {dishes[1].description}
-              </p>
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedDish(dishes[1]);
-                }}
-                className="text-primary font-sans text-[10px] font-bold tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all uppercase"
-              >
-                EKSPLORASI RESEP <span className="material-symbols-outlined text-[10px]">arrow_forward</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Bakpia Pathok (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[2])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Bakpia" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[2].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[2].rating}
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <div>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[2].name}</h5>
-                <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2">{dishes[2].description}</p>
-              </div>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Mangut Lele (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[3])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Mangut Lele" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[3].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[3].rating}
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <div>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[3].name}</h5>
-                <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2">{dishes[3].description}</p>
-              </div>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Jadah Tempe (4 Cols width) */}
-          <div 
-            onClick={() => setSelectedDish(dishes[4])}
-            className="md:col-span-4 group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low/30 border border-primary/5 hover:border-primary/25 transition-all duration-300 shadow-sm flex flex-col justify-between"
-          >
-            <div className="relative h-56 overflow-hidden">
-              <img 
-                alt="Jadah Tempe" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={dishes[4].imageUrl} 
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute top-3 right-3 bg-primary text-on-primary px-2.5 py-0.5 font-sans text-[10px] font-bold rounded-full flex items-center gap-1">
-                <span className="material-symbols-outlined text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                {dishes[4].rating}
-              </div>
-            </div>
-            <div className="p-5 flex-grow flex flex-col justify-between gap-3">
-              <div>
-                <h5 className="font-serif text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-1">{dishes[4].name}</h5>
-                <p className="font-sans text-xs text-on-surface-variant leading-relaxed line-clamp-2">{dishes[4].description}</p>
-              </div>
-              <span className="text-primary font-sans text-[9px] tracking-widest font-bold uppercase flex items-center gap-1.5 mt-2">
-                Lihat Resep <span className="material-symbols-outlined text-[9px]">arrow_forward</span>
-              </span>
-            </div>
-          </div>
-
+          ))}
         </div>
       </section>
-
       {/* 4. Interactive Cooking Recipe Modal */}
       <AnimatePresence>
         {selectedDish && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0e0e0c]/85 backdrop-blur-md"
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.95, y: 15 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
@@ -449,7 +342,7 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
               className="bg-surface-container-low border border-primary/20 max-w-2xl w-full max-h-[85vh] overflow-y-auto rounded-xl p-6 md:p-8 shadow-2xl relative flex flex-col gap-6"
             >
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setSelectedDish(null)}
                 className="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors w-8 h-8 rounded-full bg-surface-container/30 flex items-center justify-center border border-primary/10 cursor-pointer"
               >
@@ -458,14 +351,9 @@ export function YogyakartaDetail({ onBack, onViewRecipe }: YogyakartaDetailProps
 
               {/* Title Header */}
               <div className="flex flex-col gap-1 pr-6">
-                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">RESEP PUSAKA MATARAM</span>
+                <span className="font-sans text-[9px] tracking-widest font-bold text-primary uppercase">KULINER NUSANTARA</span>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-on-surface">{selectedDish.name}</h3>
-                <div className="flex items-center gap-1 text-[10px] text-primary font-bold">
-                  <span className="material-symbols-outlined text-xs" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  <span>{selectedDish.rating} Rating</span>
-                </div>
               </div>
-
               {/* Banner Image */}
               <div className="relative aspect-[16/9] rounded-lg overflow-hidden border border-primary/10">
                 <img src={selectedDish.imageUrl} alt={selectedDish.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a140e"/>
+      <stop offset="100%" stop-color="#0e0906"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9c176"/>
+      <stop offset="100%" stop-color="#b7802f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- Fork -->
+  <g transform="translate(32,32) rotate(-25) translate(-32,-32)">
+    <line x1="24" y1="10" x2="24" y2="30" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="10" x2="20" y2="22" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="10" x2="28" y2="22" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="30" x2="24" y2="52" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Spoon -->
+  <g transform="translate(32,32) rotate(25) translate(-32,-32)">
+    <ellipse cx="40" cy="16" rx="6" ry="9" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+    <line x1="40" y1="25" x2="40" y2="52" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

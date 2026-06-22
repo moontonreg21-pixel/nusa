@@ -7,6 +7,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "SUMATERA",
     description: "Kekayaan rempah tanah Rencong dalam setiap suapan Mie Aceh.",
     dishName: "Mie Aceh",
+    dishNames: ["Mie Aceh Special", "Mie Aceh", "Sate Matang", "Ayam Tangkap", "Kuah Pliek U", "Timphan"],
     imageUrl: "/regions/aceh-baiturrahman-aerial.jpg",
     ingredients: [
       "400g mi kuning tebal basah",
@@ -41,6 +42,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "SUMATERA",
     description: "Mahakarya Rendang yang diakui dunia dari Minangkabau.",
     dishName: "Rendang Daging",
+    dishNames: ["Rendang Daging", "Rendang", "Sate Padang", "Ayam Pop", "Nasi Kapau", "Teh Talua"],
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Istano_Pagaruyuang.jpg/250px-Istano_Pagaruyuang.jpg",
     ingredients: [
       "1kg daging sapi paha (gandik/grade terbaik)",
@@ -73,6 +75,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "JAWA",
     description: "Manisnya harmoni Gudeg di kota yang sarat tradisi.",
     dishName: "Gudeg Jogja",
+    dishNames: ["Gudeg Jogja", "Gudeg", "Sate Klatak", "Bakpia Pathok", "Mangut Lele", "Jadah Tempe"],
     imageUrl: "/regions/yogyakarta.jpg",
     ingredients: [
       "1kg nangka muda (tewel), potong kotak sedang",
@@ -105,6 +108,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "SULAWESI",
     description: "Gurihnya Coto Makassar, warisan pelaut tangguh.",
     dishName: "Coto Makassar",
+    dishNames: ["Coto Makassar", "Sop Konro", "Pallubasa", "Es Pisang Ijo", "Ikan Bakar Parape"],
     imageUrl: "/regions/sulawesi-selatan.jpg",
     ingredients: [
       "500g daging sapi sandung lamur",
@@ -137,6 +141,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "JAWA",
     description: "Kesegaran bumi Parahyangan dalam balutan Sate Maranggi.",
     dishName: "Sate Maranggi",
+    dishNames: ["Sate Maranggi Purwakarta", "Sate Maranggi", "Karedok Parahyangan", "Karedok", "Nasi Liwet Sunda", "Nasi Liwet", "Batagor Bandung", "Batagor"],
     imageUrl: "/regions/jawa-barat.jpg",
     ingredients: [
       "600g daging sapi bagian has dalam, potong dadu 2cm",
@@ -167,6 +172,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "PAPUA",
     description: "Eksotisme Papeda dan Ikan Kuah Kuning dari timur fajar.",
     dishName: "Papeda & Ikan Kuah Kuning",
+    dishNames: ["Papeda & Ikan Kuah Kuning", "Papeda", "Ikan Kuah Kuning", "Ikan Bakar Manokwari", "Sate Ulat Sagu Barapen", "Sate Ulat Sagu", "Udang Selingkuh Sentani", "Udang Selingkuh", "Kue Lontar Papua"],
     imageUrl: "/regions/papua.jpg",
     ingredients: [
       "250g tepung sagu murni kualitas premium",
@@ -199,6 +205,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "MALUKU",
     description: "Jejak Kepulauan Rempah dalam Ikan Kuah Pala Banda.",
     dishName: "Ikan Kuah Pala Banda",
+    dishNames: ["Ikan Kuah Pala Banda", "Papeda & Ikan Kuah Kuning", "Papeda", "Gohu Ikan", "Gohu Ikan (Indonesian Sashimi)", "Nasi Kelapa Ambon", "Halua Kenari"],
     imageUrl: "/regions/maluku.jpg",
     ingredients: [
       "600g ikan kakap putih segar (atau kerapu)",
@@ -231,6 +238,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "KALIMANTAN",
     description: "Keaslian rasa pesisir dalam Nasi Kuning Banjar yang khas.",
     dishName: "Nasi Kuning Banjar Haruan Habang",
+    dishNames: ["Nasi Kuning Banjar Haruan Habang", "Nasi Kuning Banjar", "Ayam Cincane", "Gence Ruan", "Sate Payau Kalimantan", "Sate Payau", "Amplang Tenggiri Pesisir", "Amplang Tenggiri"],
     imageUrl: "/regions/kalimantan-timur.jpg",
     ingredients: [
       "500g beras aromatik cuci bersih",
@@ -262,6 +270,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "NUSA TENGGARA",
     description: "Aroma asap Se'i Sapi yang legendaris dari tanah Flobamora.",
     dishName: "Se'i Sapi NTT",
+    dishNames: ["Se'i Sapi NTT", "Se'i Sapi Kupang", "Se'i Sapi", "Jagung Bose", "Katemak", "Kopi Bajawa Flores", "Kopi Bajawa"],
     imageUrl: "/regions/nusa-tenggara-timur.jpg",
     ingredients: [
       "800g daging sapi bagian khas luar lemak tipis (tenderloin/strip)",
@@ -289,6 +298,7 @@ export const PROVINCES: ProvinceData[] = [
     territory: "BALI",
     description: "Perpaduan mistis bumbu rempah dalam sebatang Sate Lilit.",
     dishName: "Sate Lilit Ikan Tenggiri",
+    dishNames: ["Sate Lilit Ikan Tenggiri", "Sate Lilit", "Ayam Betutu", "Babi Guling", "Lawar Bali", "Lawar", "Nasi Campur Bali"],
     imageUrl: "/regions/bali.jpg",
     ingredients: [
       "500g daging ikan tenggiri giling super halus dingin",
