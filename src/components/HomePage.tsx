@@ -1,8 +1,7 @@
-import React, { useEffect, useMemo, useState } from 'react';
+﻿import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'motion/react';
 import { ProvinceData } from '../types';
 import { PROVINCES } from '../data';
-import { SocialLinks } from './SocialLinks';
 
 interface HomePageProps {
   onSelectProvince: (province: ProvinceData) => void;
@@ -229,20 +228,8 @@ export function HomePage({ onSelectProvince, onExploreRegions, onAbout }: HomePa
       </section>
 
       {/* Region map */}
-      <section className="relative overflow-hidden bg-[#14100d] px-6 py-16 text-white md:px-12">
+      <section className="relative overflow-hidden bg-[#14100d] px-6 py-10 text-white md:px-12 md:py-12">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25px_25px,rgba(233,193,118,0.16)_1.5px,transparent_1.5px)] bg-[length:42px_42px] opacity-40"></div>
-        <img
-          src="/siluet-background.png"
-          alt=""
-          className="pointer-events-none absolute -right-12 bottom-0 hidden w-[360px] opacity-35 drop-shadow-[0_0_18px_rgba(233,193,118,0.12)] lg:block"
-          aria-hidden="true"
-        />
-        <img
-          src="/siluet-background.png"
-          alt=""
-          className="pointer-events-none absolute -left-24 bottom-0 hidden w-[260px] -scale-x-100 opacity-18 lg:block"
-          aria-hidden="true"
-        />
         <div className="absolute -left-10 bottom-0 hidden h-80 w-80 rounded-full border border-primary/10 lg:block"></div>
         <div className="absolute -left-2 bottom-0 hidden h-64 w-80 border-l border-primary/10 opacity-50 lg:block"></div>
         <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-12">
@@ -262,36 +249,43 @@ export function HomePage({ onSelectProvince, onExploreRegions, onAbout }: HomePa
           </div>
 
           <div className="lg:col-span-7">
-            <div className="relative flex min-h-[300px] items-center justify-center overflow-visible">
-              <div
-                className="absolute inset-0 bg-[url('/batik-background.jpg')] bg-[length:380px_auto] bg-center opacity-[0.13] mix-blend-screen"
-                aria-hidden="true"
-              ></div>
-              <svg viewBox="0 0 920 360" className="absolute inset-0 h-full w-full text-[#4a2b18] opacity-45" fill="currentColor" aria-hidden="true">
-                <path d="M658 70c-38 34-86 31-120 13 9 30 47 55 96 51-46 25-96 18-142-13 35 58 127 61 204 2-25-4-53-10-76-18 34-2 62-15 84-43-16 6-31 8-46 8Z" />
-                <path d="M82 286c72-35 143-32 205 2-58-69-162-81-270-38 24 10 46 22 65 36Z" opacity=".65" />
-                <path d="M708 264c42-14 88-8 136 18-28-47-95-66-166-36 12 5 22 11 30 18Z" opacity=".55" />
-              </svg>
-              <img
-                src="/logo-removebg-preview.png"
-                alt="Nusa Culinary"
-                className="relative z-10 w-full max-w-[620px] object-contain drop-shadow-[0_0_28px_rgba(233,193,118,0.22)]"
-              />
+            <div className="relative overflow-hidden rounded-lg border border-primary/20 bg-[#0e0e0c] shadow-[0_20px_50px_rgba(0,0,0,0.38)]">
+              <div className="relative aspect-video h-full w-full overflow-hidden bg-[#14100d]">
+                <img
+                  src="/batik-background.jpg"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover opacity-20"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#14100d]/88 via-[#14100d]/42 to-[#14100d]/80"></div>
+                <img
+                  src="/logo-removebg-preview.png"
+                  alt="Nusa Culinary"
+                  className="relative z-10 h-full w-full object-contain px-10 py-7"
+                />
+                <img
+                  src="/siluet-background.png"
+                  alt=""
+                  className="pointer-events-none absolute -bottom-8 -right-8 w-52 opacity-70 md:w-72"
+                />
+              </div>
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#14100d]/22"></div>
             </div>
           </div>
         </div>
       </section>
 
-      <div
-        className="h-8"
+
+
+            <div
+        data-section-separator="region-footer"
+        className="h-12 border-y border-[#b7802f]/20"
         style={{
           backgroundColor: '#f4eadc',
-          backgroundImage: "linear-gradient(rgba(244, 234, 220, 0.34), rgba(244, 234, 220, 0.34)), url('/batik-background.jpg')",
-          backgroundPosition: 'center',
+          backgroundImage: "linear-gradient(rgba(244, 234, 220, 0.46), rgba(244, 234, 220, 0.46)), url('/batik-background.jpg')",
+          backgroundPosition: 'top center',
           backgroundSize: '420px auto',
         }}
       />
-
       <footer className="bg-[#11110f] px-6 md:px-12 py-8 text-white">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 md:flex-row md:items-center">
           <div className="text-center md:text-left">
@@ -302,14 +296,16 @@ export function HomePage({ onSelectProvince, onExploreRegions, onAbout }: HomePa
               Melestarikan Warisan Adat, Merayakan Cita Rasa Autentik Nusantara.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 md:items-end">
-            <SocialLinks />
-            <p className="font-sans text-xs tracking-wide text-on-surface-variant/70 text-center md:text-right">
-              &copy; 2026 NUSA CULINARY. Seluruh Hak Cipta Dilindungi.
-            </p>
-          </div>
+          <p className="font-sans text-xs tracking-wide text-on-surface-variant/70 text-center md:text-right">
+            &copy; 2026 NUSA CULINARY. Seluruh Hak Cipta Dilindungi.
+          </p>
         </div>
       </footer>
     </div>
   );
 }
+
+
+
+
+

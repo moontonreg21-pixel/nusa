@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'motion/react';
 
 export function AboutUs() {
@@ -26,8 +26,8 @@ export function AboutUs() {
           <div className="md:col-span-5 relative aspect-square rounded-md overflow-hidden border border-primary/20">
             <img
               className="w-full h-full object-cover brightness-[0.6] contrast-[1.1]"
-              src="https://light-black-wui5vqph.edgeone.dev/login.jpeg"
-              alt="Ulekan bumbu rempah tradisional"
+              src="/regions/login.jpeg"
+              alt=""
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface-lowest via-transparent to-transparent"></div>
@@ -41,7 +41,7 @@ export function AboutUs() {
               Indonesia adalah untaian zamrud khatulistiwa yang dianugerahi kekayaan tanah vulkanis yang subur. Dari situlah, ribuan jenis rempah dan bahan makanan lahir, melahirkan khazanah kuliner tradisional terluas di dunia.
             </p>
             <p className="font-sans text-sm font-medium text-[#2f2118] leading-relaxed text-justify">
-              Setiap hidangan tradisional di Indonesia menyimpan cerita tersendiri—mencerminkan adat istiadat, falsafah gotong royong, hingga asimilasi lintas bangsa yang berlabuh di pelabuhan niaga Nusantara. Nusa Culinary mendokumentasikan nilai-nilai adat ini agar tidak lekang oleh gelombang globalisasi.
+              Setiap hidangan tradisional di Indonesia menyimpan cerita tersendiriâ€”mencerminkan adat istiadat, falsafah gotong royong, hingga asimilasi lintas bangsa yang berlabuh di pelabuhan niaga Nusantara. Nusa Culinary mendokumentasikan nilai-nilai adat ini agar tidak lekang oleh gelombang globalisasi.
             </p>
           </div>
         </section>
@@ -96,7 +96,7 @@ export function AboutUs() {
 
         {/* 4. Beautiful closing quote */}
         <section className="text-center py-8 px-6 bg-white/84 border border-[#b7802f]/35 rounded-lg max-w-2xl mx-auto my-4 flex flex-col items-center shadow-[0_10px_24px_rgba(48,27,13,0.1)]">
-          <span className="material-symbols-outlined text-[#7a4d12] text-3xl mb-3 select-none">format_quote</span>
+          <span className="material-symbols-outlined text-[#7a4d12] text-3xl mb-3 select-none"></span>
           <blockquote className="font-serif text-base md:text-lg italic font-medium text-[#2f2118] max-w-sm mb-4">
             &ldquo;Memasak makanan leluhur adalah laku menghormati tanah air dan melestarikan ingatan sejarah ke lidah generasi penerus.&rdquo;
           </blockquote>
@@ -108,3 +108,4 @@ export function AboutUs() {
     </div>
   );
 }
+
