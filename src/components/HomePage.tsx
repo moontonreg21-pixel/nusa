@@ -9,6 +9,7 @@ interface HomePageProps {
   setSearchQuery: (query: string) => void;
   onExploreRegions: () => void;
   onAbout: () => void;
+  onAdminLogin?: () => void;
 }
 
 const monthlyHighlights = [
@@ -46,7 +47,7 @@ const monthlyHighlights = [
   }
 ];
 
-export function HomePage({ onSelectProvince, onExploreRegions, onAbout }: HomePageProps) {
+export function HomePage({ onSelectProvince, onExploreRegions, onAbout, onAdminLogin }: HomePageProps) {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const featuredSlides = useMemo(() => {
@@ -276,7 +277,7 @@ export function HomePage({ onSelectProvince, onExploreRegions, onAbout }: HomePa
 
 
 
-            <div
+      <div
         data-section-separator="region-footer"
         className="h-12 border-y border-[#b7802f]/20"
         style={{
@@ -296,9 +297,26 @@ export function HomePage({ onSelectProvince, onExploreRegions, onAbout }: HomePa
               Melestarikan Warisan Adat, Merayakan Cita Rasa Autentik Nusantara.
             </p>
           </div>
-          <p className="font-sans text-xs tracking-wide text-on-surface-variant/70 text-center md:text-right">
-            &copy; 2026 NUSA CULINARY. Seluruh Hak Cipta Dilindungi.
-          </p>
+          <div className="flex flex-col md:items-end gap-1.5 text-center md:text-right">
+            <p className="font-sans text-xs tracking-wide text-on-surface-variant/70">
+              &copy; 2026 NUSA CULINARY. Seluruh Hak Cipta Dilindungi.
+            </p>
+            <a
+              href="/admin-login"
+              onClick={(e) => {
+                e.preventDefault();
+                if (onAdminLogin) {
+                  onAdminLogin();
+                } else {
+                  window.history.pushState(null, '', '/admin-login');
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                }
+              }}
+
+            >
+
+            </a>
+          </div>
         </div>
       </footer>
     </div>

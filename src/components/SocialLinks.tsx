@@ -4,17 +4,17 @@ import { Instagram, MessageCircle } from 'lucide-react';
 const SOCIAL_LINKS = [
   {
     label: 'Facebook',
-    href: 'https://www.facebook.com/share/19349B5Cft/',
+    href: '',
     icon: <span className="font-sans text-sm font-black leading-none">f</span>,
   },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/lightdashh?igsh=MXBlOWtkcWpjcmd5dw==',
+    href: '',
     icon: <Instagram className="h-4 w-4" aria-hidden="true" />,
   },
   {
     label: 'WhatsApp',
-    href: 'https://wa.me/6283161046331?text=Halo',
+    href: '',
     icon: <MessageCircle className="h-4 w-4" aria-hidden="true" />,
   },
 ];

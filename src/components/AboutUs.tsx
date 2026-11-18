@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'motion/react';
 
 export function AboutUs() {
@@ -23,14 +23,12 @@ export function AboutUs() {
 
         {/* 2. Hero Brand Section */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white/82 p-6 md:p-10 border border-[#b7802f]/35 rounded-lg shadow-[0_14px_34px_rgba(48,27,13,0.12)]">
-          <div className="md:col-span-5 relative aspect-square rounded-md overflow-hidden border border-primary/20">
+          <div className="md:col-span-5 relative aspect-[3/4] rounded-lg overflow-hidden border border-[#b7802f]/40 bg-[#0f0f0f] shadow-lg">
             <img
-              className="w-full h-full object-cover brightness-[0.6] contrast-[1.1]"
-              src="/regions/login.jpeg"
-              alt=""
-              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover object-center"
+              src="/regions/indonesia-map.jpg"
+              alt="Peta Khazanah Nusantara Indonesia"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-surface-lowest via-transparent to-transparent"></div>
           </div>
 
           <div className="md:col-span-7 flex flex-col gap-4">
@@ -41,7 +39,7 @@ export function AboutUs() {
               Indonesia adalah untaian zamrud khatulistiwa yang dianugerahi kekayaan tanah vulkanis yang subur. Dari situlah, ribuan jenis rempah dan bahan makanan lahir, melahirkan khazanah kuliner tradisional terluas di dunia.
             </p>
             <p className="font-sans text-sm font-medium text-[#2f2118] leading-relaxed text-justify">
-              Setiap hidangan tradisional di Indonesia menyimpan cerita tersendiriâ€”mencerminkan adat istiadat, falsafah gotong royong, hingga asimilasi lintas bangsa yang berlabuh di pelabuhan niaga Nusantara. Nusa Culinary mendokumentasikan nilai-nilai adat ini agar tidak lekang oleh gelombang globalisasi.
+              Setiap hidangan tradisional di Indonesia menyimpan cerita tersendiri—mencerminkan adat istiadat, falsafah gotong royong, hingga asimilasi lintas bangsa yang berlabuh di pelabuhan niaga Nusantara. Nusa Culinary mendokumentasikan nilai-nilai adat ini agar tidak lekang oleh gelombang globalisasi.
             </p>
           </div>
         </section>

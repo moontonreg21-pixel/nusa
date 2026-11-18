@@ -21,9 +21,20 @@ import { RecipeDetailView, RecipeDetail } from './components/RecipeDetailView';
 import { motion, AnimatePresence } from 'motion/react';
 import { YouTubeMusicPlayer } from './components/YouTubeMusicPlayer';
 import { SocialLinks } from './components/SocialLinks';
+import { AdminLayout } from './admin/AdminLayout';
+
+const isAdminPath = (pathname: string) => {
+  const p = pathname.toLowerCase();
+  return p === '/admin-login' || p === '/admin' || p.startsWith('/admin-login') || p.startsWith('/admin');
+};
 
 export default function App() {
-  const [activeView, setActiveView] = useState<'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail'>('home');
+  const [activeView, setActiveView] = useState<'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail' | 'admin'>(() => {
+    if (typeof window !== 'undefined' && isAdminPath(window.location.pathname)) {
+      return 'admin';
+    }
+    return 'home';
+  });
   const [selectedProvince, setSelectedProvince] = useState<ProvinceData | null>(null);
   const [selectedRecipe, setSelectedRecipe] = useState<RecipeDetail | null>(null);
   const [prevViewForRecipe, setPrevViewForRecipe] = useState<string>('gallery');
@@ -37,12 +48,33 @@ export default function App() {
     localStorage.removeItem('nusa-theme');
   }, []);
 
-  const handleNavTransition = (view: 'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail') => {
+  // Listen to browser Back/Forward (popstate)
+  useEffect(() => {
+    const handlePopState = () => {
+      if (isAdminPath(window.location.pathname)) {
+        setActiveView('admin');
+      } else if (activeView === 'admin') {
+        setActiveView('home');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [activeView]);
+
+  const handleNavTransition = (view: 'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail' | 'admin') => {
     if (view === 'home') {
       setSelectedProvince(null);
       setSelectedRecipe(null);
       setPrevViewForRecipe('regions');
       setSearchQuery('');
+      if (typeof window !== 'undefined' && isAdminPath(window.location.pathname)) {
+        window.history.pushState(null, '', '/');
+      }
+    } else if (view === 'admin') {
+      if (typeof window !== 'undefined' && window.location.pathname.toLowerCase() !== '/admin-login') {
+        window.history.pushState(null, '', '/admin-login');
+      }
     }
     setActiveView(view);
     // Auto-scroll to top on view change
@@ -102,6 +134,17 @@ export default function App() {
   ];
   const shouldPlayMusic = musicStarted && musicEnabledViews.includes(activeView);
 
+  if (activeView === 'admin') {
+    return (
+      <AdminLayout onBackToPublic={() => {
+        if (typeof window !== 'undefined') {
+          window.history.pushState(null, '', '/');
+        }
+        handleNavTransition('home');
+      }} />
+    );
+  }
+
   return (
     <div className="min-h-screen bg-surface text-on-surface font-sans flex flex-col justify-between selection:bg-primary selection:text-on-primary">
       {shouldPlayMusic && (
@@ -109,9 +152,9 @@ export default function App() {
       )}
 
       {/* 1. Header */}
-      <Header 
-        onNavClick={handleNavTransition} 
-        activeView={activeView} 
+      <Header
+        onNavClick={handleNavTransition}
+        activeView={activeView}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />
@@ -136,6 +179,7 @@ export default function App() {
                   handleNavTransition('regions');
                 }}
                 onAbout={() => handleNavTransition('about')}
+                onAdminLogin={() => handleNavTransition('admin')}
               />
             </motion.div>
           )}
@@ -164,8 +208,8 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <RegionGallery 
-                onSelectProvince={handleSelectProvince} 
+              <RegionGallery
+                onSelectProvince={handleSelectProvince}
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
               />
@@ -192,7 +236,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <YogyakartaDetail 
+              <YogyakartaDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -207,7 +251,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <BaliDetail 
+              <BaliDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -222,7 +266,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <KalimantanTimurDetail 
+              <KalimantanTimurDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -237,7 +281,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <PapuaDetail 
+              <PapuaDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -252,7 +296,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <JawaBaratDetail 
+              <JawaBaratDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -267,7 +311,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <AcehDetail 
+              <AcehDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -282,7 +326,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <SumateraBaratDetail 
+              <SumateraBaratDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -297,7 +341,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <SulawesiSelatanDetail 
+              <SulawesiSelatanDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -312,7 +356,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <MalukuDetail 
+              <MalukuDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -327,7 +371,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <NusaTenggaraTimurDetail 
+              <NusaTenggaraTimurDetail
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
               />
@@ -342,7 +386,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <DynamicProvinceDetail 
+              <DynamicProvinceDetail
                 provinceId={selectedProvince.id}
                 onBack={() => handleNavTransition('regions')}
                 onViewRecipe={handleViewRecipe}
@@ -358,7 +402,7 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <RecipeDetailView 
+              <RecipeDetailView
                 recipe={selectedRecipe}
                 onVideoPlay={() => setMusicStarted(false)}
                 onBack={() => {
@@ -375,35 +419,46 @@ export default function App() {
       </main>
 
       {/* 3. Global Recipe Card / Regional Detail Modal */}
-      <RegionDetailModal 
-        province={selectedProvince} 
-        onClose={() => setSelectedProvince(null)} 
+      <RegionDetailModal
+        province={selectedProvince}
+        onClose={() => setSelectedProvince(null)}
         onViewRecipe={handleViewRecipe}
       />
 
       {/* 4. Footer */}
       {activeView !== 'home' && (
-      <footer className="bg-surface border-t border-primary/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
-          
-          {/* Logo and quote */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h2 className="font-serif text-xl font-bold text-primary tracking-widest uppercase mb-1">
-              NUSA CULINARY
-            </h2>
-            <p className="text-on-surface-variant/80 text-xs tracking-wider">
-              Melestarikan Warisan Adat, Merayakan Cita Rasa Autentik Nusantara.
-            </p>
-          </div>
+        <footer className="bg-surface border-t border-primary/10">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
 
-          <div className="flex flex-col items-center gap-3 md:items-end">
-            <SocialLinks />
-            <p className="font-sans text-[10px] tracking-wider text-on-surface-variant/50 text-center md:text-right">
-              &copy; 2026 NUSA CULINARY. Seluruh Hak Cipta Dilindungi.
-            </p>
+            {/* Logo and quote */}
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              <h2 className="font-serif text-xl font-bold text-primary tracking-widest uppercase mb-1">
+                NUSA CULINARY
+              </h2>
+              <p className="text-on-surface-variant/80 text-xs tracking-wider">
+                Melestarikan Warisan Adat, Merayakan Cita Rasa Autentik Nusantara.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-3 md:items-end">
+              <SocialLinks />
+              <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-2 gap-y-1 font-sans text-[10px] tracking-wider text-on-surface-variant/50">
+                <span>&copy; 2026 NUSA CULINARY. Seluruh Hak Cipta Dilindungi.</span>
+                <span>•</span>
+                <a
+                  href="/admin-login"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavTransition('admin');
+                  }}
+
+                >
+
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
       )}
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 interface HeaderProps {
-  onNavClick: (view: 'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail') => void;
+  onNavClick: (view: 'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'admin') => void;
   activeView: string;
   searchQuery: string;
   setSearchQuery: (query: string) => void;
@@ -76,44 +76,47 @@ export function Header({ onNavClick, activeView, searchQuery, setSearchQuery }: 
           </button>
         </nav>
 
-        {/* Header Search */}
-        <form
-          onSubmit={handleSearchSubmit}
-          className={`group relative flex h-10 items-center overflow-hidden rounded-full border border-primary/60 text-primary transition-all duration-300 ${
-            isSearchOpen ? 'w-[210px] bg-[#13110e]/85 md:w-[260px]' : 'w-10 bg-transparent hover:bg-primary/10'
-          }`}
-          id="btn-jelajah"
-        >
-          {isSearchOpen && (
-            <input
-              ref={inputRef}
-              type="text"
-              value={searchQuery}
-              onChange={(event) => setSearchQuery(event.target.value)}
-              onBlur={() => {
-                if (!searchQuery.trim()) {
-                  setIsSearchOpen(false);
+        {/* Right Actions: Search & Admin Button */}
+        <div className="flex items-center gap-3">
+          {/* Header Search */}
+          <form
+            onSubmit={handleSearchSubmit}
+            className={`group relative flex h-10 items-center overflow-hidden rounded-full border border-primary/60 text-primary transition-all duration-300 ${
+              isSearchOpen ? 'w-[200px] bg-[#13110e]/85 md:w-[240px]' : 'w-10 bg-transparent hover:bg-primary/10'
+            }`}
+            id="btn-jelajah"
+          >
+            {isSearchOpen && (
+              <input
+                ref={inputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(event) => setSearchQuery(event.target.value)}
+                onBlur={() => {
+                  if (!searchQuery.trim()) {
+                    setIsSearchOpen(false);
+                  }
+                }}
+                className="h-full min-w-0 flex-1 bg-transparent pl-4 pr-10 font-sans text-xs font-semibold text-white outline-none placeholder:text-white/55"
+                placeholder="Cari makanan..."
+              />
+            )}
+            <button
+              type={isSearchOpen ? 'submit' : 'button'}
+              onClick={() => {
+                if (!isSearchOpen) {
+                  setIsSearchOpen(true);
                 }
               }}
-              className="h-full min-w-0 flex-1 bg-transparent pl-4 pr-10 font-sans text-xs font-semibold text-white outline-none placeholder:text-white/55"
-              placeholder="Cari makanan atau daerah..."
-            />
-          )}
-          <button
-            type={isSearchOpen ? 'submit' : 'button'}
-            onClick={() => {
-              if (!isSearchOpen) {
-                setIsSearchOpen(true);
-              }
-            }}
-            className={`grid h-10 w-10 shrink-0 cursor-pointer place-items-center transition-colors ${
-              isSearchOpen ? 'absolute right-0 top-0 hover:bg-primary/10' : ''
-            }`}
-            aria-label="Cari makanan atau daerah"
-          >
-            <span className="material-symbols-outlined text-[20px]">search</span>
-          </button>
-        </form>
+              className={`grid h-10 w-10 shrink-0 cursor-pointer place-items-center transition-colors ${
+                isSearchOpen ? 'absolute right-0 top-0 hover:bg-primary/10' : ''
+              }`}
+              aria-label="Cari makanan atau daerah"
+            >
+              <span className="material-symbols-outlined text-[20px]">search</span>
+            </button>
+          </form>
+        </div>
       </div>
     </header>
   );
