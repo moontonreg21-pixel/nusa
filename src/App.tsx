@@ -23,14 +23,24 @@ import { YouTubeMusicPlayer } from './components/YouTubeMusicPlayer';
 import { SocialLinks } from './components/SocialLinks';
 import { AdminLayout } from './admin/AdminLayout';
 
-const isAdminPath = (pathname: string) => {
+const isAdminPath = (pathname: string = '', hash: string = '') => {
   const p = pathname.toLowerCase();
-  return p === '/admin-login' || p === '/admin' || p.startsWith('/admin-login') || p.startsWith('/admin');
+  const h = hash.toLowerCase();
+  return (
+    p === '/admin-login' ||
+    p === '/admin' ||
+    p.startsWith('/admin-login') ||
+    p.startsWith('/admin') ||
+    h === '#admin-login' ||
+    h === '#/admin-login' ||
+    h === '#admin' ||
+    h === '#/admin'
+  );
 };
 
 export default function App() {
   const [activeView, setActiveView] = useState<'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail' | 'admin'>(() => {
-    if (typeof window !== 'undefined' && isAdminPath(window.location.pathname)) {
+    if (typeof window !== 'undefined' && isAdminPath(window.location.pathname, window.location.hash)) {
       return 'admin';
     }
     return 'home';
@@ -48,18 +58,22 @@ export default function App() {
     localStorage.removeItem('nusa-theme');
   }, []);
 
-  // Listen to browser Back/Forward (popstate)
+  // Listen to browser Back/Forward (popstate) & hash changes
   useEffect(() => {
-    const handlePopState = () => {
-      if (isAdminPath(window.location.pathname)) {
+    const handleUrlChange = () => {
+      if (isAdminPath(window.location.pathname, window.location.hash)) {
         setActiveView('admin');
       } else if (activeView === 'admin') {
         setActiveView('home');
       }
     };
 
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    window.addEventListener('popstate', handleUrlChange);
+    window.addEventListener('hashchange', handleUrlChange);
+    return () => {
+      window.removeEventListener('popstate', handleUrlChange);
+      window.removeEventListener('hashchange', handleUrlChange);
+    };
   }, [activeView]);
 
   const handleNavTransition = (view: 'home' | 'gallery' | 'regions' | 'about' | 'yogyakarta' | 'bali' | 'kaltim' | 'papua' | 'jabar' | 'aceh' | 'sumbar' | 'sulsel' | 'maluku' | 'ntt' | 'province-detail' | 'recipe-detail' | 'admin') => {
@@ -68,7 +82,7 @@ export default function App() {
       setSelectedRecipe(null);
       setPrevViewForRecipe('regions');
       setSearchQuery('');
-      if (typeof window !== 'undefined' && isAdminPath(window.location.pathname)) {
+      if (typeof window !== 'undefined' && isAdminPath(window.location.pathname, window.location.hash)) {
         window.history.pushState(null, '', '/');
       }
     } else if (view === 'admin') {
