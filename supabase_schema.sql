@@ -251,6 +251,5 @@ INSERT INTO daerah (id, nama_provinsi, wilayah, ibu_kota, deskripsi_singkat, nar
 ON CONFLICT (id) DO UPDATE SET nama_provinsi = EXCLUDED.nama_provinsi, narasi_budaya = EXCLUDED.narasi_budaya, gambar_url = EXCLUDED.gambar_url;
 
 INSERT INTO admin_users (id, email, full_name, role, avatar_url, phone, status) VALUES
-  ('usr-01', 'admin.utama@kulinerindo.id', 'Raden Arya Wicaksana', 'super_admin', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150', '+6281234567890', 'active'),
-  ('usr-02', 'siti.rahmawati@kulinerindo.id', 'Siti Rahmawati, S.Hum', 'editor', 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150', '+6281987654321', 'active')
+  ('usr-01', 'sahila@gmail.com', 'Sahila', 'super_admin', 'https://i.pinimg.com/1200x/59/33/e7/5933e73bc380d86fce64f3058c63b231.jpg', '+6281234567890', 'active')
 ON CONFLICT (email) DO UPDATE SET full_name = EXCLUDED.full_name, role = EXCLUDED.role;

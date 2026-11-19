@@ -1,16 +1,16 @@
 // src/admin/views/PenggunaAdminView.tsx
 import React, { useState, useEffect } from 'react';
-import { 
-  Users, 
-  Search, 
-  Plus, 
-  Edit3, 
-  Trash2, 
-  ShieldCheck, 
-  ShieldAlert, 
-  Mail, 
-  Phone, 
-  Clock, 
+import {
+  Users,
+  Search,
+  Plus,
+  Edit3,
+  Trash2,
+  ShieldCheck,
+  ShieldAlert,
+  Mail,
+  Phone,
+  Clock,
   X,
   UserCheck,
   KeyRound,
@@ -35,7 +35,7 @@ export function PenggunaAdminView() {
     email: '',
     password: '',
     role: 'editor' as 'super_admin' | 'editor' | 'kontributor',
-    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
+    avatarUrl: 'https://i.pinimg.com/1200x/59/33/e7/5933e73bc380d86fce64f3058c63b231.jpg',
     phone: '+62 812-0000-0000',
     status: 'active' as 'active' | 'suspended',
   });
@@ -68,7 +68,7 @@ export function PenggunaAdminView() {
       email: '',
       password: '',
       role: 'editor',
-      avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
+      avatarUrl: 'https://i.pinimg.com/1200x/59/33/e7/5933e73bc380d86fce64f3058c63b231.jpg',
       phone: '+62 812-0000-0000',
       status: 'active',
     });
@@ -114,7 +114,7 @@ export function PenggunaAdminView() {
       AdminService.addUser({
         fullName: formData.fullName,
         email: formData.email,
-        password: formData.password.trim() || 'admin123',
+        password: formData.password.trim() || 'admin321',
         role: formData.role,
         avatarUrl: formData.avatarUrl,
         phone: formData.phone,
@@ -239,21 +239,19 @@ export function PenggunaAdminView() {
                   </td>
 
                   <td className="py-3.5 px-4">
-                    <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                      user.role === 'super_admin'
+                    <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${user.role === 'super_admin'
                         ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
                         : user.role === 'editor'
-                        ? 'bg-amber-600/20 text-amber-300 border border-amber-600/40'
-                        : 'bg-teal-500/20 text-teal-300 border border-teal-500/40'
-                    }`}>
+                          ? 'bg-amber-600/20 text-amber-300 border border-amber-600/40'
+                          : 'bg-teal-500/20 text-teal-300 border border-teal-500/40'
+                      }`}>
                       {user.role === 'super_admin' ? 'Super Admin' : user.role === 'editor' ? 'Editor Budaya' : 'Kontributor'}
                     </span>
                   </td>
 
                   <td className="py-3.5 px-4">
-                    <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold uppercase ${
-                      user.status === 'active' ? 'bg-[#28170d] text-amber-400' : 'bg-rose-950 text-rose-400'
-                    }`}>
+                    <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold uppercase ${user.status === 'active' ? 'bg-[#28170d] text-amber-400' : 'bg-rose-950 text-rose-400'
+                      }`}>
                       {user.status === 'active' ? 'Aktif' : 'Ditangguhkan'}
                     </span>
                   </td>
@@ -328,7 +326,7 @@ export function PenggunaAdminView() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full bg-[#180e07] border border-[#4d301d]/60 rounded-xl px-3.5 py-2.5 text-stone-100 focus:outline-none focus:border-[#dca156]"
-                  placeholder="admin@kulinerindo.id"
+                  placeholder="sahila@gmail.com"
                 />
               </div>
 
@@ -341,10 +339,10 @@ export function PenggunaAdminView() {
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                   className="w-full bg-[#180e07] border border-[#4d301d]/60 rounded-xl px-3.5 py-2.5 text-stone-100 focus:outline-none focus:border-[#dca156] font-mono text-xs"
-                  placeholder={editingItem ? 'Masukkan kata sandi baru...' : 'Kata sandi login (default: admin123)'}
+                  placeholder={editingItem ? 'Masukkan kata sandi baru...' : 'Kata sandi login (default: admin321)'}
                 />
                 <span className="text-[10px] text-amber-400/80 mt-1 block">
-                  {editingItem ? 'Kosongkan jika tetap menggunakan kata sandi lama.' : 'Jika dikosongkan, kata sandi bawaan adalah admin123.'}
+                  {editingItem ? 'Kosongkan jika tetap menggunakan kata sandi lama.' : 'Jika dikosongkan, kata sandi bawaan adalah admin321.'}
                 </span>
               </div>
 

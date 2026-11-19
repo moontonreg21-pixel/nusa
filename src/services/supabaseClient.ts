@@ -1,16 +1,16 @@
 // src/services/supabaseClient.ts
 // Direct Supabase Integration Client with Bidirectional Synchronization for Nusa Culinary
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
-import type { 
-  KulinerItem, 
-  DaerahItem, 
-  KategoriItem, 
-  ArtikelItem, 
-  MediaItem, 
-  AdminUser, 
-  VisitorFeedback, 
+import type {
+  KulinerItem,
+  DaerahItem,
+  KategoriItem,
+  ArtikelItem,
+  MediaItem,
+  AdminUser,
+  VisitorFeedback,
   ActivityLog,
-  SupabaseConfig 
+  SupabaseConfig
 } from './adminService';
 
 let supabaseInstance: SupabaseClient | null = null;
@@ -249,10 +249,10 @@ export function dbRowToUser(row: any): AdminUser {
   return {
     id: row.id,
     email: row.email,
-    password: 'admin123',
+    password: 'admin321',
     fullName: row.full_name,
     role: row.role || 'editor',
-    avatarUrl: row.avatar_url || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
+    avatarUrl: row.avatar_url || 'https://i.pinimg.com/1200x/59/33/e7/5933e73bc380d86fce64f3058c63b231.jpg',
     phone: row.phone || '',
     status: row.status || 'active',
     lastLogin: row.last_login || '-',

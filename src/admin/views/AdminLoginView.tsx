@@ -131,7 +131,7 @@ export function AdminLoginView({ onLoginSuccess, onBackToPublic }: AdminLoginVie
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isLoading}
-                  placeholder="admin.utama@kulinerindo.id"
+                  placeholder="sahila@gmail.com"
                   className="w-full bg-[#180e07] border border-[#52331c] focus:border-[#dca156] rounded-xl pl-10 pr-4 py-2.5 text-xs text-[#fcfbf7] placeholder:text-[#e5d7c3]/40 focus:outline-none transition-colors"
                 />
               </div>
@@ -169,7 +169,7 @@ export function AdminLoginView({ onLoginSuccess, onBackToPublic }: AdminLoginVie
               </div>
             </div>
 
-            {/* Remember Me */}
+            {/* Remember Me & Password hint */}
             <div className="flex items-center justify-between text-xs pt-1">
               <label className="flex items-center gap-2 cursor-pointer select-none">
                 <input
@@ -180,6 +180,7 @@ export function AdminLoginView({ onLoginSuccess, onBackToPublic }: AdminLoginVie
                 />
                 <span className="text-[#e5d7c3]/80 text-[11px]">Ingat sesi login saya</span>
               </label>
+
 
             </div>
 
@@ -205,14 +206,20 @@ export function AdminLoginView({ onLoginSuccess, onBackToPublic }: AdminLoginVie
 
           {/* Quick Demo Credentials Box */}
           <div className="mt-6 pt-5 border-t border-[#52331c]/60">
-            <div className="flex items-center gap-1.5 text-[11px] font-semibold text-amber-300 uppercase tracking-wider mb-2.5">
 
-            </div>
+
+
 
             <div className="space-y-2">
+              <button
+
+              >
+                <div>
 
 
+                </div>
 
+              </button>
             </div>
           </div>
         </div>
